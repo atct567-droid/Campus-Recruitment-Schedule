@@ -2,6 +2,7 @@
 import argparse
 import json
 import os
+import sys
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -19,6 +20,7 @@ from .schedule import conflicts, fair_activities, load_personal
 from .storage import Store
 
 ROOT = Path(__file__).resolve().parents[2]
+RESOURCE_ROOT = ROOT if (ROOT / "configs").is_dir() else Path(sys.prefix) / "campus-recruitment"
 
 
 def write_json(path, data):
@@ -33,8 +35,9 @@ def enabled(variable):
 
 def private_location(path):
     resolved = Path(path).resolve()
+    project_root = ROOT if (ROOT / ".git").exists() else Path.cwd()
     try:
-        relative = resolved.relative_to(ROOT)
+        relative = resolved.relative_to(project_root)
     except ValueError:
         return resolved
     if not relative.parts or relative.parts[0] != "private":
@@ -43,7 +46,8 @@ def private_location(path):
 
 
 def run(args):
-    output = Path(args.output_dir)
+    output = Path(args.output_dir or Path("reports") / args.mode)
+    args.output_dir = output
     output.mkdir(parents=True, exist_ok=True)
     status = {"mode": args.mode, "started_at": now_iso(), "real_school_access_verified": False,
               "real_calendar_sync_performed": False, "status": "not_started"}
@@ -52,7 +56,7 @@ def run(args):
         write_json(output / "run.json", status)
         print(status["reason"])
         return 0
-    schema_path = args.schema or ROOT / "configs" / ("synthetic-schema.json" if args.mode == "offline" else "school-schema.example.json")
+    schema_path = args.schema or RESOURCE_ROOT / "configs" / ("synthetic-schema.json" if args.mode == "offline" else "school-schema.example.json")
     normalizer = Normalizer.from_file(schema_path)
     if args.mode == "real" and (normalizer.synthetic or not normalizer.verified):
         status.update(status="blocked", reason="真实字段映射未验证，或配置是 synthetic；未调用学校接口")
@@ -61,7 +65,7 @@ def run(args):
         return 2
     if args.mode == "offline" and not normalizer.synthetic:
         raise ValueError("Offline mode requires a synthetic mapping")
-    fixture_path = args.fixture or ROOT / "fixtures/synthetic-recruitment.json"
+    fixture_path = args.fixture or RESOURCE_ROOT / "fixtures/synthetic-recruitment.json"
     start = args.start
     if start is None:
         start = date.fromisoformat(json.loads(Path(fixture_path).read_text())["reference_date"]) if args.mode == "offline" else today_shanghai()
@@ -84,8 +88,8 @@ def run(args):
                            max_fairs=args.max_fairs, max_records=args.max_records)
     finally:
         client.close()
-    matcher = JobMatcher.from_file(args.matching or ROOT / "configs/matching.json")
-    schedule_config = json.loads(Path(args.schedule or ROOT / "configs/schedule.json").read_text())
+    matcher = JobMatcher.from_file(args.matching or RESOURCE_ROOT / "configs/matching.json")
+    schedule_config = json.loads(Path(args.schedule or RESOURCE_ROOT / "configs/schedule.json").read_text())
     for position in snapshot.positions:
         matcher.match(position)
     with Store(db_path) as store:
@@ -154,8 +158,8 @@ def parser():
     job.add_argument("--mode", choices=["offline", "real"], default="offline")
     for name in ("fixture", "schema", "db", "matching", "schedule", "personal-file"):
         job.add_argument("--" + name, type=Path)
-    job.add_argument("--private-output-dir", type=Path, default=ROOT / "private/diagnostics")
-    job.add_argument("--output-dir", type=Path, default=Path("reports/offline"))
+    job.add_argument("--private-output-dir", type=Path, default=Path("private/diagnostics"))
+    job.add_argument("--output-dir", type=Path)
     job.add_argument("--start", type=date_argument)
     job.add_argument("--end", type=date_argument, help="Exclusive window end")
     job.add_argument("--days", type=int, default=30)

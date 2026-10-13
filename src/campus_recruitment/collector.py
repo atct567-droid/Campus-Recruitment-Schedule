@@ -71,6 +71,10 @@ def collect(client, normalizer, plan: QueryPlan, *, fair_ids=(), page_size=50, m
                          for row in client.companies(identifier, page_size=page_size).rows]
             positions = [normalizer.position(row, identifier, snapshot.checked_at)
                          for row in client.positions(identifier, page_size=page_size).rows]
+            known_companies = {company.company_id for company in companies}
+            missing_companies = {position.company_id for position in positions} - known_companies
+            if missing_companies:
+                snapshot.warnings.append(f"招聘会 {identifier} 的岗位企业 ID 缺少企业记录：" + ",".join(sorted(missing_companies)))
             if len(snapshot.positions) + len(snapshot.companies) + len(positions) + len(companies) > max_records:
                 raise ApiError("record_limit", "Snapshot record limit exceeded")
             # Commit a fair to the snapshot only after all its subrequests succeed.

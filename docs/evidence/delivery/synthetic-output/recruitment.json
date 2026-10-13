@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-14T02:04:37+08:00",
+  "as_of": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "provenance": [
+    "synthetic"
+  ],
+  "collection_complete": true,
+  "query_semantics_verified": true,
+  "warnings": [],
+  "errors": [],
+  "conflicts": [
+    {
+      "left_id": "666",
+      "left_title": "综合双选会（合成）",
+      "right_id": "667",
+      "right_title": "嵌入式专场宣讲（合成）",
+      "overlap_start": "2026-10-15T11:00:00+08:00",
+      "overlap_end": "2026-10-15T12:00:00+08:00",
+      "suggested_priority_id": "667",
+      "private": false,
+      "action": "仅供参考，不自动取消活动"
+    }
+  ],
+  "fairs": [
+    {
+      "announcement_date": "2026-10-13",
+      "end_time": "2026-10-15T12:00:00+08:00",
+      "event_type": "job_fair",
+      "issues": [],
+      "job_fair_id": "666",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "provenance": "synthetic",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "start_date": "2026-10-15",
+      "start_time": "2026-10-15T09:00:00+08:00",
+      "status": "scheduled",
+      "status_verified": true,
+      "title": "综合双选会（合成）",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "announcement_date": "2026-10-13",
+      "end_time": "2026-10-15T13:00:00+08:00",
+      "event_type": "important_talk",
+      "issues": [],
+      "job_fair_id": "667",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "provenance": "synthetic",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "start_date": "2026-10-15",
+      "start_time": "2026-10-15T11:00:00+08:00",
+      "status": "scheduled",
+      "status_verified": true,
+      "title": "嵌入式专场宣讲（合成）",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "announcement_date": "2026-10-13",
+      "end_time": "2026-10-16T12:00:00+08:00",
+      "event_type": "talk",
+      "issues": [],
+      "job_fair_id": "668",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "provenance": "synthetic",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "start_date": "2026-10-16",
+      "start_time": "2026-10-16T10:00:00+08:00",
+      "status": "cancelled",
+      "status_verified": true,
+      "title": "取消活动（合成）",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "announcement_date": "2026-10-13",
+      "end_time": null,
+      "event_type": "talk",
+      "issues": [
+        "开始时间缺失或仅有日期，需人工确认",
+        "结束时间缺失，禁止推测"
+      ],
+      "job_fair_id": "669",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "provenance": "synthetic",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "start_date": "2026-10-17",
+      "start_time": null,
+      "status": "scheduled",
+      "status_verified": true,
+      "title": "时间待确认（合成）",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "announcement_date": "2026-10-13",
+      "end_time": "2026-10-16T01:00:00+08:00",
+      "event_type": "talk",
+      "issues": [],
+      "job_fair_id": "670",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "provenance": "synthetic",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "start_date": "2026-10-15",
+      "start_time": "2026-10-15T23:30:00+08:00",
+      "status": "scheduled",
+      "status_verified": true,
+      "title": "跨天活动（合成）",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    }
+  ],
+  "companies": [
+    {
+      "company_id": "c1",
+      "company_name": "合成电子科技",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "provenance": "synthetic",
+      "related_job_fair_ids": [
+        "666",
+        "667"
+      ],
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "company_id": "c2",
+      "company_name": "合成电子科技",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "provenance": "synthetic",
+      "related_job_fair_ids": [
+        "666"
+      ],
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "company_id": "c3",
+      "company_name": "合成自动化",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "provenance": "synthetic",
+      "related_job_fair_ids": [
+        "666"
+      ],
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    }
+  ],
+  "positions": [
+    {
+      "company_id": "c1",
+      "issues": [],
+      "job_fair_id": "666",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "matching_priority": "high",
+      "matching_reasons": [
+        "嵌入式：岗位名称匹配，要求支持",
+        "技术岗位要求匹配：STM32/单片机"
+      ],
+      "matching_score": 95,
+      "position_id": "p1",
+      "position_name": "嵌入式软件开发",
+      "provenance": "synthetic",
+      "recruitment_count": 3,
+      "requirements": "C/C++、STM32、MCU、RTOS，单片机开发",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "company_id": "c2",
+      "issues": [],
+      "job_fair_id": "666",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "matching_priority": "high",
+      "matching_reasons": [
+        "PCB/电路设计：岗位名称匹配，要求支持"
+      ],
+      "matching_score": 95,
+      "position_id": "p2",
+      "position_name": "PCB工程师",
+      "provenance": "synthetic",
+      "recruitment_count": 2,
+      "requirements": "印制电路板布局布线及电路设计",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "company_id": "c2",
+      "issues": [],
+      "job_fair_id": "666",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "matching_priority": "high",
+      "matching_reasons": [
+        "硬件研发：岗位名称匹配，要求支持",
+        "技术岗位要求匹配：电子工程"
+      ],
+      "matching_score": 95,
+      "position_id": "p6",
+      "position_name": "助理硬件工程师",
+      "provenance": "synthetic",
+      "recruitment_count": 2,
+      "requirements": "模拟电路、数字电路、硬件调试",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "company_id": "c1",
+      "issues": [],
+      "job_fair_id": "667",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "matching_priority": "high",
+      "matching_reasons": [
+        "嵌入式：岗位名称匹配，要求支持",
+        "技术岗位要求匹配：STM32/单片机、FPGA"
+      ],
+      "matching_score": 95,
+      "position_id": "p1",
+      "position_name": "Embedded Engineer",
+      "provenance": "synthetic",
+      "recruitment_count": 1,
+      "requirements": "Firmware, FPGA, ARM, MCU",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "company_id": "c3",
+      "issues": [
+        "招聘人数格式未知，未推测"
+      ],
+      "job_fair_id": "666",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "matching_priority": "medium",
+      "matching_reasons": [
+        "自动化/电气：岗位名称匹配，要求支持"
+      ],
+      "matching_score": 65,
+      "position_id": "p5",
+      "position_name": "自动化工程师",
+      "provenance": "synthetic",
+      "recruitment_count": null,
+      "requirements": "PLC 工业控制，电气自动化",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "company_id": "c1",
+      "issues": [],
+      "job_fair_id": "666",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "matching_priority": "excluded",
+      "matching_reasons": [
+        "岗位名称命中销售/非研发排除规则"
+      ],
+      "matching_score": 0,
+      "position_id": "p3",
+      "position_name": "硬件销售",
+      "provenance": "synthetic",
+      "recruitment_count": null,
+      "requirements": "销售硬件设备，拓展客户",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    },
+    {
+      "company_id": "c3",
+      "issues": [],
+      "job_fair_id": "666",
+      "last_checked_at": "2026-10-14T02:04:37+08:00",
+      "matching_priority": "low",
+      "matching_reasons": [
+        "软件测试不能自动等同硬件测试"
+      ],
+      "matching_score": 0,
+      "position_id": "p4",
+      "position_name": "软件测试工程师",
+      "provenance": "synthetic",
+      "recruitment_count": 1,
+      "requirements": "Web自动化测试",
+      "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "first_seen_at": "2026-10-14T02:04:37+08:00",
+      "revision": 0
+    }
+  ]
+}

@@ -11,6 +11,9 @@ credentials*.json
 token*.json
 private/
 state/
+state-cache/
+build/
+dist/
 *.db
 *.db-wal
 *.db-shm

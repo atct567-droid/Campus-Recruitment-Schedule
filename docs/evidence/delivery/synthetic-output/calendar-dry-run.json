@@ -1,0 +1,45 @@
+{
+  "dry_run": true,
+  "real_sync_performed": false,
+  "actions": [
+    {
+      "job_fair_id": "666",
+      "event_id": "guatovj1d0hf6pnr3df0ellf966c279c11heripip9iogbr25vpprodg",
+      "provenance": "synthetic",
+      "action": "create",
+      "content_hash": "abf1ca27444311be91105246bbc9381fbb66a7ba4457ada12c161ca2ea8d8993",
+      "reason": "仅生成计划，不读取授权、不调用 Google、不推进同步状态"
+    },
+    {
+      "job_fair_id": "667",
+      "event_id": "guathdal3qki5n94c9e4a18scimra3uvv4fupnqj4ug2ouobse9jipf0",
+      "provenance": "synthetic",
+      "action": "create",
+      "content_hash": "b99338e74026698bb181dccdba6a220bc5415dd70982bae25276df7e83223333",
+      "reason": "仅生成计划，不读取授权、不调用 Google、不推进同步状态"
+    },
+    {
+      "job_fair_id": "668",
+      "event_id": "guatdu0ggatdvk076l5cdqtnhbda0ivurud1ved0344nh2td8sg0hqhg",
+      "provenance": "synthetic",
+      "action": "skip",
+      "reason": "取消活动无已管理事件，不创建取消占位日程"
+    },
+    {
+      "job_fair_id": "669",
+      "event_id": "guatnsouc4k3079hnd019unmm7gf0npqn23npdassf8qmchgqbl8k8g0",
+      "provenance": "synthetic",
+      "action": "skip",
+      "reason": "时间或状态不明确，或属于私人记录"
+    },
+    {
+      "job_fair_id": "670",
+      "event_id": "guat2sn1ctndkhoerobujl4hal5snqbrkhkhv4k801ichip9tgqq8pv0",
+      "provenance": "synthetic",
+      "action": "create",
+      "content_hash": "f1d1668234e2776eab50c385bd6cdd7db414658d5e534a0fb63de39f6c9ce848",
+      "reason": "仅生成计划，不读取授权、不调用 Google、不推进同步状态"
+    }
+  ],
+  "errors": []
+}

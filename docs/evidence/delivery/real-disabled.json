@@ -1,0 +1,8 @@
+{
+  "mode": "real",
+  "started_at": "2026-10-14T02:06:28+08:00",
+  "real_school_access_verified": false,
+  "real_calendar_sync_performed": false,
+  "status": "skipped",
+  "reason": "ENABLE_REAL_COLLECTION 未设为 true；未调用学校接口"
+}

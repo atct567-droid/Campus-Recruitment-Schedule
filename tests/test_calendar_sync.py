@@ -159,3 +159,43 @@ def test_stable_event_ids_have_google_allowed_alphabet():
     assert event_id("666") == event_id("666")
     assert event_id("666") != event_id("667")
     assert set(event_id("666")) <= set("0123456789abcdefghijklmnopqrstuv")
+
+
+def test_cancelled_google_tombstone_is_idempotent(tmp_path):
+    api = MockCalendarAPI()
+    with Store(tmp_path / "state.db") as store:
+        engine = SyncEngine(store, api, dry_run=False)
+        event = fair()
+        engine.sync([event])
+        event["status"] = "cancelled"
+        api.events["dry-run", event_id("666")] = {"id": event_id("666"), "status": "cancelled"}
+        assert engine.sync([event])["actions"][0]["action"] == "noop"
+        assert not any(c[0] == "cancel" for c in api.calls)
+        assert store.mapping("dry-run", "666")["status"] == "cancelled"
+
+
+def test_409_race_recovers_owned_event(tmp_path):
+    class RacingAPI(MockCalendarAPI):
+        def insert(self, calendar_id, identifier, body):
+            super().insert(calendar_id, identifier, body)
+            raise CalendarError("http", "synthetic racing create", 409)
+    api = RacingAPI()
+    with Store(tmp_path / "state.db") as store:
+        result = SyncEngine(store, api, dry_run=False).sync([fair()])
+        assert not result["errors"] and len(api.events) == 1
+        assert store.mapping("dry-run", "666")
+
+
+def test_google_401_refresh_once_and_checks_response_id(monkeypatch):
+    api, session, _ = google([response(status=401), response({"id": "event"})])
+    refreshes = []
+    def refresh():
+        refreshes.append(True)
+        api.credentials.token = "synthetic-refreshed-token"
+    monkeypatch.setattr(api, "_refresh", refresh)
+    api.get("calendar", "event")
+    assert len(refreshes) == 1
+    assert session.sent[1][0].headers["Authorization"] == "Bearer synthetic-refreshed-token"
+    invalid, _, _ = google([response({"id": "wrong"})])
+    with pytest.raises(CalendarError, match="different/missing"):
+        invalid.get("calendar", "event")

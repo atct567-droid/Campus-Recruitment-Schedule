@@ -1,4 +1,4 @@
-name: Phase 1 tests
+name: Recruitment system CI
 
 on:
   push:
@@ -20,5 +20,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: python -m pip install -e '.[test]'
-      - run: python -m pytest -q
+      - run: python -m pip install -e '.[test,calendar]'
+      - run: ruff check src tests scripts
+      - name: Unit, mock, fault injection and offline integration tests
+        run: python -m pytest -q --junitxml=reports/tests.xml
+      - name: Offline pipeline
+        run: python -m campus_recruitment.cli run --mode offline --db work/ci.db --output-dir reports/public
+      - name: Independent JSON, CSV and ICS format validation
+        run: python scripts/validate_outputs.py reports/public
+      - name: Save synthetic evidence and test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: offline-validation-python-${{ matrix.python-version }}
+          path: reports/
+          retention-days: 14

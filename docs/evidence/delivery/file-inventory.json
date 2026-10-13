@@ -1,0 +1,277 @@
+{
+  "baseline_commit": "5f5e988",
+  "files": [
+    {
+      "path": ".github/workflows/recruitment.yml",
+      "status": "A"
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "status": "M"
+    },
+    {
+      "path": ".gitignore",
+      "status": "M"
+    },
+    {
+      "path": "AGENTS.md",
+      "status": "A"
+    },
+    {
+      "path": "README.md",
+      "status": "M"
+    },
+    {
+      "path": "configs/matching.json",
+      "status": "A"
+    },
+    {
+      "path": "configs/schedule.json",
+      "status": "A"
+    },
+    {
+      "path": "configs/school-schema.example.json",
+      "status": "A"
+    },
+    {
+      "path": "configs/synthetic-schema.json",
+      "status": "A"
+    },
+    {
+      "path": "docs/architecture.md",
+      "status": "A"
+    },
+    {
+      "path": "docs/calendar-setup.md",
+      "status": "A"
+    },
+    {
+      "path": "docs/deployment.md",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/file-inventory.json",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/github-status.json",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/lint.txt",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/offline-first-run.txt",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/offline-second-run.txt",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/original-phase1-tests.txt",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/output-validation.json",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/real-disabled.json",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/real-disabled.txt",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/runtime.json",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/synthetic-output/calendar-dry-run.json",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/synthetic-output/companies.csv",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/synthetic-output/daily.md",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/synthetic-output/fairs.csv",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/synthetic-output/positions.csv",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/synthetic-output/recruitment.ics",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/synthetic-output/recruitment.json",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/synthetic-output/run.json",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/synthetic-output/weekly.md",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/tests.txt",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/tests.xml",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/workflow-format-validation.json",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/workflow-offline.txt",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/workflow-real-disabled.json",
+      "status": "A"
+    },
+    {
+      "path": "docs/evidence/delivery/workflow-real-disabled.txt",
+      "status": "A"
+    },
+    {
+      "path": "docs/final-delivery-report.md",
+      "status": "A"
+    },
+    {
+      "path": "docs/phase1.md",
+      "status": "M"
+    },
+    {
+      "path": "docs/phase2.md",
+      "status": "A"
+    },
+    {
+      "path": "docs/phase3.md",
+      "status": "A"
+    },
+    {
+      "path": "docs/progress.md",
+      "status": "A"
+    },
+    {
+      "path": "docs/troubleshooting.md",
+      "status": "A"
+    },
+    {
+      "path": "fixtures/synthetic-recruitment.json",
+      "status": "A"
+    },
+    {
+      "path": "pyproject.toml",
+      "status": "M"
+    },
+    {
+      "path": "scripts/run_workflow.py",
+      "status": "A"
+    },
+    {
+      "path": "scripts/validate_outputs.py",
+      "status": "A"
+    },
+    {
+      "path": "src/campus_recruitment/calendar_sync.py",
+      "status": "A"
+    },
+    {
+      "path": "src/campus_recruitment/cli.py",
+      "status": "A"
+    },
+    {
+      "path": "src/campus_recruitment/client.py",
+      "status": "M"
+    },
+    {
+      "path": "src/campus_recruitment/collector.py",
+      "status": "A"
+    },
+    {
+      "path": "src/campus_recruitment/fixtures.py",
+      "status": "A"
+    },
+    {
+      "path": "src/campus_recruitment/ical.py",
+      "status": "A"
+    },
+    {
+      "path": "src/campus_recruitment/matcher.py",
+      "status": "A"
+    },
+    {
+      "path": "src/campus_recruitment/models.py",
+      "status": "A"
+    },
+    {
+      "path": "src/campus_recruitment/normalizer.py",
+      "status": "A"
+    },
+    {
+      "path": "src/campus_recruitment/parsing.py",
+      "status": "M"
+    },
+    {
+      "path": "src/campus_recruitment/probe.py",
+      "status": "M"
+    },
+    {
+      "path": "src/campus_recruitment/reports.py",
+      "status": "A"
+    },
+    {
+      "path": "src/campus_recruitment/schedule.py",
+      "status": "A"
+    },
+    {
+      "path": "src/campus_recruitment/storage.py",
+      "status": "A"
+    },
+    {
+      "path": "tests/test_calendar_sync.py",
+      "status": "A"
+    },
+    {
+      "path": "tests/test_client.py",
+      "status": "M"
+    },
+    {
+      "path": "tests/test_data.py",
+      "status": "A"
+    },
+    {
+      "path": "tests/test_matching_schedule_reports.py",
+      "status": "A"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "status": "A"
+    },
+    {
+      "path": "tests/test_probe.py",
+      "status": "M"
+    },
+    {
+      "path": "tests/test_workflows.py",
+      "status": "A"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import hashlib
 import json
 import sqlite3
 import uuid
+from contextlib import closing
 from dataclasses import fields
 from pathlib import Path
 
@@ -160,7 +161,7 @@ class Store:
     def backup(self, destination, *, public=False):
         destination = Path(destination)
         destination.parent.mkdir(parents=True, exist_ok=True)
-        with sqlite3.connect(destination) as target:
+        with closing(sqlite3.connect(destination)) as target, target:
             self.db.backup(target)
             if public:
                 from .reports import public_data

@@ -27,6 +27,7 @@ def fixture_data():
 
 @pytest.mark.parametrize("value,expected", [
     ("2026年10月15日 09:30", "2026-10-15T09:30:00+08:00"),
+    ("2026年10月15日 9时30分", "2026-10-15T09:30:00+08:00"),
     ("2026-10-15T01:30:00Z", "2026-10-15T09:30:00+08:00"),
     ("2026-10-15 09:30", "2026-10-15T09:30:00+08:00"),
     ("2026-10-15", None), ("unknown", None), (1730000000, None),
@@ -47,6 +48,18 @@ def test_missing_fields_are_not_invented(schema):
 def test_missing_id_rejected(schema):
     with pytest.raises(ApiError):
         schema.company({"company_name": "同名企业"}, "666")
+
+
+def test_explicit_split_time_and_epoch_unit_mapping(schema):
+    config = copy.deepcopy(schema.config)
+    config["fields"]["fair"]["start_time"] = {"date_path": "day", "time_path": "clock"}
+    config["fields"]["fair"]["end_time"] = {"path": "end_ms", "unit": "milliseconds"}
+    normalizer = Normalizer(config)
+    fair = normalizer.fair({"fair_id": 1, "day": "2026-10-15", "clock": "09:00", "end_ms": 1792029600000})
+    assert fair.start_time == "2026-10-15T09:00:00+08:00"
+    assert fair.end_time == "2026-10-15T10:00:00+08:00"
+    missing = normalizer.fair({"fair_id": 1, "day": "2026-10-15", "end_ms": None})
+    assert missing.start_time is None and missing.end_time is None
 
 
 def test_invalid_interval_rejected(schema):
@@ -137,3 +150,17 @@ def test_conflicting_duplicates_rollback(tmp_path, schema):
         with pytest.raises(ValueError):
             store.apply(Snapshot(fairs=[fair, different], checked_at=fair.last_checked_at))
         assert store.list("fair") == []
+
+
+def test_equal_duplicate_fairs_are_collapsed(tmp_path, schema):
+    fair = schema.fair({"fair_id": 1})
+    with Store(tmp_path / "state.db") as store:
+        _, changes = store.apply(Snapshot(fairs=[fair, fair], checked_at=fair.last_checked_at))
+        assert len(changes) == 1 and len(store.list("fair")) == 1
+
+
+def test_empty_synthetic_collect_is_valid_without_invented_fairs(schema, fixture_data):
+    fixture_data["fairs"] = []
+    snapshot = collect(fixture_client(fixture=fixture_data), schema,
+                       QueryPlan(date(2026, 10, 14), date(2026, 11, 13), verified=True))
+    assert snapshot.complete and not snapshot.errors and snapshot.fairs == []

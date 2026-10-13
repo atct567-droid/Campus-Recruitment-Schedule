@@ -122,6 +122,10 @@ class SyncEngine:
                 continue
             try:
                 remote = self.api.get(self.calendar_id, action["event_id"])
+                # Google may retain a minimal cancelled tombstone without extended properties.
+                # An already-managed cancellation needs no remote mutation or ownership override.
+                if remote and cancelled and mapping and remote.get("status") == "cancelled":
+                    remote = None
                 if remote and not self._owned(remote, fair):
                     raise CalendarError("ownership", "Refuse to change a calendar event owned by another source")
                 if cancelled:

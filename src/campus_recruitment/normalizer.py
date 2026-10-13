@@ -38,6 +38,7 @@ def parse_time(value) -> tuple[str | None, str | None]:
     text = value.strip()
     text = re.sub(r"(\d{4})年(\d{1,2})月(\d{1,2})日", lambda m: f"{m[1]}-{int(m[2]):02}-{int(m[3]):02}", text)
     text = text.replace("时", ":").replace("分", "").replace("：", ":")
+    text = re.sub(r"(?<=[T ])(\d)(?=:)", r"0\1", text)
     try:
         if re.fullmatch(r"\d{4}-\d{2}-\d{2}", text):
             return None, date.fromisoformat(text).isoformat()
@@ -71,8 +72,26 @@ class Normalizer:
         path = self.config["fields"][kind].get(name)
         if path is None:
             return None
+        if isinstance(path, dict):
+            if set(path) == {"date_path", "time_path"}:
+                day = self._path(row, path["date_path"])
+                clock = self._path(row, path["time_path"])
+                return f"{day} {clock}" if isinstance(day, str) and isinstance(clock, str) and day and clock else None
+            if set(path) == {"path", "unit"} and path["unit"] in {"seconds", "milliseconds"}:
+                value = self._path(row, path["path"])
+                if isinstance(value, bool) or not isinstance(value, (int, float)):
+                    return None
+                try:
+                    return datetime.fromtimestamp(value / (1000 if path["unit"] == "milliseconds" else 1), SHANGHAI).isoformat()
+                except (ValueError, OSError, OverflowError):
+                    return None
+            raise ValueError("Unsupported explicit field mapping transform")
+        return self._path(row, path)
+
+    @staticmethod
+    def _path(row, path):
         if not isinstance(path, str):
-            raise ValueError("Field mappings must be string paths or null")
+            raise ValueError("Field paths must be strings")
         value = row
         for key in path.split("."):
             if not isinstance(value, dict):
