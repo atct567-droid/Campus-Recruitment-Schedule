@@ -9,9 +9,11 @@
 | 岗位筛选/冲突/报告/JSON/CSV | 是 | 可解释误匹配、跨日、半开区间、隐私隔离通过 | 没有真实学校数据报告 |
 | ICS | 是 | 独立 icalendar 解析、中文/转义/75 字节/时区/改期/取消通过 | Apple 客户端导入/订阅未实机验证 |
 | Google Calendar | 是，默认 dry-run | 模拟幂等、改期、取消、断线、429、401、409、所有权通过 | 无 OAuth 授权，无真实同步 |
-| GitHub Actions | CI、手动探测、三次定时框架 | YAML 审计与本地等效链路通过 | 在线结果待分支推送后检查，见 delivery/github-status.json |
+| GitHub Actions | CI、手动探测、三次定时框架 | YAML 审计与本地等效链路通过 | CI push/PR 均成功，Python 3.10/3.12 全部测试、ruff、离线 pipeline 与格式验证通过；定时工作流尚未在默认分支启用 |
 
-总测试：**188 passed**；其中第一阶段 **103 passed**。新增 85 项参数化/单元/故障注入/端到端验证。运行 Python 3.12.14，ruff 通过。GitHub 的 Python 3.10 矩阵尚须在线执行，不能由本地语法/配置推断运行通过。JUnit 和文本日志保存在 [docs/evidence/delivery/](evidence/delivery/)。
+总测试：**188 passed**；其中第一阶段 **103 passed**。新增 85 项参数化/单元/故障注入/端到端验证。本地 Python 3.12.14，ruff 通过；GitHub Python 3.10 和 3.12 两个矩阵实际运行均为 **188 passed**，离线 pipeline 和独立格式校验均通过。核心代码提交为 95dba42，后续交付证据提交不更改核心实现。JUnit 和文本日志保存在 [docs/evidence/delivery/](evidence/delivery/)，在线日志摘要见 [github-status.json](evidence/delivery/github-status.json)。
+
+[CI push 运行](https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38444773370)、[CI PR 运行](https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38444903617) 已成功。正常 wheel 构建及独立安装后的命令/配置资源验证通过，依赖复用测试 venv，细节见 [packaging.json](evidence/delivery/packaging.json)。
 
 ## 端到端结果
 
@@ -29,7 +31,7 @@
 
 ## 审查与提交
 
-功能分支：`feature/recruitment-phases-2-3`。已分功能保存第一阶段基线、第二阶段数据层、匹配/报告/ICS、日历适配器/CLI，以及自动化与文档成果。没有覆盖或合并 main。远端分支/PR 状态另记录 github-status.json，只有实际成功才更新为已推送/已创建。
+功能分支：`feature/recruitment-phases-2-3` 已推送，已创建 [Draft PR #1](https://github.com/atct567-droid/Campus-Recruitment-Schedule/pull/1)。已分功能保存第一阶段基线、第二阶段数据层、匹配/报告/ICS、日历适配器/CLI，以及自动化与文档成果。没有覆盖或合并 main。远端与 CI 证据记录在 github-status.json。
 
 文件清单见 [file-inventory.json](evidence/delivery/file-inventory.json)。第一阶段证据保留，旧测试只整理导入，没有删除有效断言或跳过测试。原客户端唯一功能扩展为可选记录数上限。
 

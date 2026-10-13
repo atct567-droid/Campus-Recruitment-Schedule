@@ -1,0 +1,17 @@
+{
+  "status": "wheel-entry-and-bundled-resources-verified",
+  "version": "0.2.0",
+  "dependency_setup": "core dependencies reused from test venv via PYTHONPATH; application loaded from independent installed wheel",
+  "bundled_resources": 5,
+  "pipeline_result": {
+    "mode": "offline",
+    "status": "complete",
+    "provenance": "synthetic",
+    "counts": {
+      "fair": 5,
+      "company": 3,
+      "position": 7
+    },
+    "requests_attempted": 22
+  }
+}
