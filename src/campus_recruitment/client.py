@@ -43,7 +43,7 @@ class RecruitmentClient:
     def __init__(self, *, base_url=BASE_URL, success_codes=(200,), interval=2.0,
                  timeout=(5.0, 20.0), retries=2, max_pages=1000, request_budget=200,
                  max_retry_after=60.0, session=None, sleep=time.sleep,
-                 monotonic=time.monotonic, emit=None):
+                 monotonic=time.monotonic, emit=None, max_records=10000):
         parsed = urlsplit(base_url)
         if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password:
             raise ValueError("base_url must be an HTTPS origin without credentials")
@@ -61,6 +61,9 @@ class RecruitmentClient:
             raise ValueError("At least one explicitly accepted business code is required")
         self.interval, self.timeout, self.retries = interval, timeout, retries
         self.max_pages, self.request_budget = max_pages, request_budget
+        if isinstance(max_records, bool) or not isinstance(max_records, int) or max_records < 1:
+            raise ValueError("max_records must be a positive integer")
+        self.max_records = max_records
         self.max_retry_after = max_retry_after
         self.session = session or requests.Session()
         # Avoid adapter retries outside our limiter/budget.
@@ -211,6 +214,8 @@ class RecruitmentClient:
                 raise ApiError("pagination", "Repeated rows; page parameter may be ignored or data changed")
             seen.update(signatures)
             rows.extend(page.rows)
+            if len(rows) > self.max_records or page.total is not None and page.total > self.max_records:
+                raise ApiError("record_limit", "Record limit exceeded; result is incomplete")
             if page.total is not None and len(rows) > page.total:
                 raise ApiError("pagination", "Rows exceed advertised total")
             end_by_total = page.total is not None and len(rows) == page.total
