@@ -1,10 +1,10 @@
 """SQLite upserts, revision history, run audit, and calendar mapping."""
-from dataclasses import fields
 import hashlib
 import json
-from pathlib import Path
 import sqlite3
 import uuid
+from dataclasses import fields
+from pathlib import Path
 
 from .models import Company, Fair, Position
 

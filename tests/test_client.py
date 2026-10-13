@@ -2,10 +2,10 @@ from urllib.parse import parse_qs, urlsplit
 
 import pytest
 import requests
+from conftest import response
 
 from campus_recruitment.client import COMPANY_PATH, LIST_PATH, POSITION_PATH, RecruitmentClient
 from campus_recruitment.errors import ApiError
-from conftest import response
 
 
 def page(rows, **metadata):

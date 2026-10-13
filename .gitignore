@@ -9,3 +9,10 @@ reports/
 .env.*
 credentials*.json
 token*.json
+private/
+state/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite*
+.ruff_cache/

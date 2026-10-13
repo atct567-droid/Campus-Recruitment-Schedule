@@ -1,0 +1,79 @@
+{
+  "weights": {
+    "high_title": 75,
+    "medium_title": 45,
+    "requirements": 20,
+    "requirements_signal": 25
+  },
+  "thresholds": {
+    "high": 70,
+    "medium": 40
+  },
+  "exclude_titles": [
+    "销售|营销|商务|采购|文员|财务|\\bsales\\b|marketing"
+  ],
+  "software_test_pattern": "软件测试|web.*测试|software.*test|\\bQA\\b",
+  "technical_role_pattern": "工程|开发|研发|测试|设计|engineer|developer|embedded|firmware",
+  "rules": [
+    {
+      "label": "硬件研发",
+      "priority": "high",
+      "title_pattern": "硬件.*(工程师|研发|开发|设计)|hardware.*engineer",
+      "requirements_pattern": "硬件|模拟电路|数字电路|hardware"
+    },
+    {
+      "label": "嵌入式",
+      "priority": "high",
+      "title_pattern": "嵌入式.*(软件|硬件|开发|工程|研发)|embedded|firmware",
+      "requirements_pattern": "嵌入式|RTOS|firmware|embedded"
+    },
+    {
+      "label": "PCB/电路设计",
+      "priority": "high",
+      "title_pattern": "PCB.*(工程|设计|开发)|电路设计|印制电路板",
+      "requirements_pattern": "\\bPCB\\b|电路设计|印制电路板|布局布线"
+    },
+    {
+      "label": "STM32/单片机",
+      "priority": "high",
+      "title_pattern": "STM32.*(开发|工程)|单片机.*(开发|工程)|MCU.*(engineer|开发)",
+      "requirements_pattern": "\\bSTM32\\b|单片机|\\bMCU\\b"
+    },
+    {
+      "label": "FPGA",
+      "priority": "high",
+      "title_pattern": "FPGA.*(工程|开发|设计)|\\bFPGA\\b",
+      "requirements_pattern": "\\bFPGA\\b|Verilog|VHDL"
+    },
+    {
+      "label": "电子工程",
+      "priority": "high",
+      "title_pattern": "电子工程师|electronics?.*engineer",
+      "requirements_pattern": "电子电路|模拟电路|数字电路|electronics?"
+    },
+    {
+      "label": "硬件测试",
+      "priority": "high",
+      "title_pattern": "硬件测试|hardware.*test|test.*hardware",
+      "requirements_pattern": "硬件测试|电路测试|hardware.*test"
+    },
+    {
+      "label": "自动化/电气",
+      "priority": "medium",
+      "title_pattern": "自动化工程|电气工程|automation.*engineer|electrical.*engineer",
+      "requirements_pattern": "PLC|自动化|电气"
+    },
+    {
+      "label": "电子信息/设备研发",
+      "priority": "medium",
+      "title_pattern": "电子信息工程|设备研发|工业控制",
+      "requirements_pattern": "电子信息|工业控制|设备研发"
+    },
+    {
+      "label": "技术支持/通用测试",
+      "priority": "medium",
+      "title_pattern": "技术支持工程|(?<!软件)测试工程师|technical.*support",
+      "requirements_pattern": "技术支持|测试|调试"
+    }
+  ]
+}

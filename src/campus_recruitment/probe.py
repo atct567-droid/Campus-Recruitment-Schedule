@@ -1,11 +1,11 @@
 """A repeatable phase-1 probe; never writes calendars or claims collection success."""
 import argparse
-from datetime import date, datetime, timedelta
 import json
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from .client import BASE_URL, RecruitmentClient
+from .client import RecruitmentClient
 from .errors import ApiError
 
 SHANGHAI = ZoneInfo("Asia/Shanghai")

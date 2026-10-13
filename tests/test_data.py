@@ -1,6 +1,6 @@
 import copy
-from datetime import date
 import json
+from datetime import date
 from pathlib import Path
 
 import pytest

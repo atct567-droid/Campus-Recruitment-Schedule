@@ -1,0 +1,10 @@
+{
+  "priorities": {
+    "interview": 100,
+    "written_test": 90,
+    "important_talk": 80,
+    "job_fair": 60,
+    "talk": 40
+  },
+  "reminder_minutes": 60
+}

@@ -1,13 +1,13 @@
 """Explicit schema mapping. Synthetic mappings never establish a live API contract."""
+import json
+import re
 from datetime import date, datetime
 from html import unescape
-import json
 from pathlib import Path
-import re
 from urllib.parse import parse_qsl, urlsplit
 
 from .errors import ApiError
-from .models import Company, Fair, Position, SHANGHAI, now_iso
+from .models import SHANGHAI, Company, Fair, Position, now_iso
 
 
 def clean_text(value, *, max_length=12000):
@@ -21,7 +21,7 @@ def clean_text(value, *, max_length=12000):
 
 
 def public_url(value):
-    if not isinstance(value, str):
+    if not isinstance(value, str) or len(value) > 2000 or re.search(r"\s|[\x00-\x1f]", value):
         return None
     parsed = urlsplit(value)
     if parsed.scheme not in ("https", "http") or not parsed.hostname or parsed.username or parsed.password:

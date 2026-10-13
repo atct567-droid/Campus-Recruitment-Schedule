@@ -1,11 +1,11 @@
-from datetime import date
 import json
+from datetime import date
 
 import pytest
 import requests
+from conftest import response
 
 from campus_recruitment.probe import date_evidence, main, render_markdown, run_probe
-from conftest import response
 
 
 def page(rows):
