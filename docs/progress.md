@@ -13,4 +13,4 @@
 
 ## 指定 Google Calendar 服务账号扩展
 
-服务账号优先认证、GOOGLE_CALENDAR_ID 单目标绑定、只读 accessRole 预检、哈希映射持久化/迁移、企业/岗位/地点/官网预览、1440/30 分钟提醒、独立授权与默认 dry-run 的定时工作流已实现。当前 223 项离线测试通过，保留原有 103 项；缺少凭据的完整 dry-run 已实际运行。最新证据位于 evidence/service-account-calendar/，在线 CI 待本次分支推送检查。没有真实服务账号私钥、没有真实授权或写入验证；不输出或入库私钥。
+服务账号优先认证、GOOGLE_CALENDAR_ID 单目标绑定、只读 accessRole 预检、哈希映射持久化/迁移、企业/岗位/地点/官网预览、1440/30 分钟提醒、独立授权与默认 dry-run 的定时工作流已实现。当前 223 项离线测试通过，保留原有 103 项；缺少凭据的完整 dry-run 已实际运行。GitHub 本次 push/PR CI 成功，Python 3.10/3.12 实际运行均为 223 passed，ruff 与离线格式校验通过。最新证据位于 evidence/service-account-calendar/。开发环境没有真实服务账号私钥，没有实际权限或写入验证；不输出或入库私钥，写入开关未开启，main 未合并。

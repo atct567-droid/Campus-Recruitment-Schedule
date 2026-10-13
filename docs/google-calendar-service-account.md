@@ -1,6 +1,6 @@
 # Google Calendar 指定共享日历无人值守同步
 
-本功能已实现，验证范围是离线 Mock、幂等、权限/限流/异常测试与工作流静态检查。开发环境没有 GOOGLE_CREDENTIALS、没有真实 Google 权限/写入验证，不声称真实同步成功。
+本功能已实现：本地 223 项测试通过，GitHub Python 3.10/3.12 矩阵均实际通过 223 项、ruff、离线 pipeline 与格式验证。权限预检和同步逻辑仍只通过 Mock 验证；开发环境没有 GOOGLE_CREDENTIALS，没有真实 Google 权限/写入验证，不声称真实同步成功。在线 CI 证据见 [github-status.json](evidence/service-account-calendar/github-status.json)。
 
 ## 配置约定与写入边界
 

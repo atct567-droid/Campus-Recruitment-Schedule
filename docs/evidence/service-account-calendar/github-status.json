@@ -1,0 +1,186 @@
+{
+  "core_commit": "e4492cc597e15d0e27bd30a7bbe158319a89f05a",
+  "pull_request": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/pull/1",
+  "draft": true,
+  "main_merged": false,
+  "ci": "success",
+  "push_run": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38449912660",
+  "pr_run": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38449916559",
+  "matrix": [
+    {
+      "job_id": 115477849522,
+      "name": "test (3.12)",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run python -m pip install -e '.[test,calendar]'",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run ruff check src tests scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Unit, mock, fault injection and offline integration tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Offline pipeline",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Independent JSON, CSV and ICS format validation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Save synthetic evidence and test results",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19
+        }
+      ],
+      "log_evidence": [
+        "2026-10-13T18:50:01.5679962Z All checks passed!",
+        "2026-10-13T18:50:03.5499258Z 223 passed in 1.41s",
+        "2026-10-13T18:50:03.7796347Z {\"mode\": \"offline\", \"status\": \"complete\", \"provenance\": \"synthetic\", \"counts\": {\"fair\": 5, \"company\": 3, \"position\": 7}, \"requests_attempted\": 22}",
+        "2026-10-13T18:50:03.9154917Z {\"status\": \"validated\", \"fairs\": 5, \"companies\": 3, \"positions\": 7, \"ics_events\": 4, \"provenance\": [\"synthetic\"]}"
+      ]
+    },
+    {
+      "job_id": 115477849883,
+      "name": "test (3.10)",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run python -m pip install -e '.[test,calendar]'",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run ruff check src tests scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Unit, mock, fault injection and offline integration tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Offline pipeline",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Independent JSON, CSV and ICS format validation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Save synthetic evidence and test results",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19
+        }
+      ],
+      "log_evidence": [
+        "2026-10-13T18:50:01.9222316Z All checks passed!",
+        "2026-10-13T18:50:04.5351462Z 223 passed in 1.33s",
+        "2026-10-13T18:50:04.7933315Z {\"mode\": \"offline\", \"status\": \"complete\", \"provenance\": \"synthetic\", \"counts\": {\"fair\": 5, \"company\": 3, \"position\": 7}, \"requests_attempted\": 22}",
+        "2026-10-13T18:50:04.9357792Z {\"status\": \"validated\", \"fairs\": 5, \"companies\": 3, \"positions\": 7, \"ics_events\": 4, \"provenance\": [\"synthetic\"]}"
+      ]
+    }
+  ],
+  "real_calendar_access": "unverified; development environment has no service-account credentials",
+  "real_calendar_write": false,
+  "calendar_access_workflow": "implemented; actual read-only preflight not executed",
+  "unattended_calendar_workflow": "implemented; defaults dry-run, not enabled on default branch",
+  "private_key_logged_or_committed": false
+}

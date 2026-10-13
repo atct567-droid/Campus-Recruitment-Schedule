@@ -5,5 +5,10 @@
   "real_calendar_writes": false,
   "secrets_persisted": false,
   "synthetic_only": true,
-  "github_ci": "pending for service-account changes"
+  "github_ci": "success",
+  "tested_core_commit": "e4492cc597e15d0e27bd30a7bbe158319a89f05a",
+  "github_python_matrix": ["3.10", "3.12"],
+  "github_tests_per_matrix_job": 223,
+  "github_push_run": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38449912660",
+  "github_pr_run": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38449916559"
 }
