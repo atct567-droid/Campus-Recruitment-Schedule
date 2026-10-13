@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-13T17:25:57.520Z",
+  "source": "cloud_environment.environment_status plus /etc/codex/network-policy.json",
+  "environment_id": "ccarenv_b64_Y2NhcmVudl9jYTRjYzhiZWI4NzQ4MTkxYjk4OWYxZDJjOWU0OWYyZg",
+  "observations_current": true,
+  "observed_phase": "running",
+  "network_policy": {
+    "mode": "restricted",
+    "state": "unknown",
+    "school_in_effective_allowed_hosts": false
+  },
+  "startup_snapshot": {
+    "version": 1,
+    "vpn_configured": false,
+    "http_proxy": "http://proxy:8080",
+    "http_network_policy_type": "restricted",
+    "school_in_egress_rules": false,
+    "tcp_network_access": {
+      "domains": [],
+      "ip_ranges": []
+    }
+  },
+  "interpretation": "Policy state is unknown. Actual requests evidence shows proxy CONNECT returned 403; no school HTTP response was received."
+}

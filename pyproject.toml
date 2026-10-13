@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "campus-recruitment-schedule"
+version = "0.1.0"
+description = "GUAT anonymous recruitment API validation (phase 1)"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.32.3,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+campus-recruitment = "campus_recruitment.probe:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
