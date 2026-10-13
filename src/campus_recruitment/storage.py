@@ -1,6 +1,7 @@
 """SQLite upserts, revision history, run audit, and calendar mapping."""
 import hashlib
 import json
+import re
 import sqlite3
 import uuid
 from contextlib import closing
@@ -16,6 +17,14 @@ def stable_json(value):
 
 def content_hash(value):
     return hashlib.sha256(stable_json(value).encode()).hexdigest()
+
+
+def calendar_scope(calendar_id):
+    """Opaque persistent namespace; never cache a calendar's raw identity."""
+    value = str(calendar_id)
+    if re.fullmatch(r"sha256:[0-9a-f]{64}", value):
+        return value
+    return "sha256:" + hashlib.sha256(value.encode()).hexdigest()
 
 
 class Store:
@@ -44,6 +53,13 @@ class Store:
                 PRIMARY KEY(calendar_key, fair_id));
         """)
         self.db.commit()
+        with self.db:
+            for row in self.db.execute("SELECT * FROM calendar_map").fetchall():
+                scope = calendar_scope(row["calendar_key"])
+                if scope != row["calendar_key"]:
+                    self.db.execute("INSERT OR IGNORE INTO calendar_map VALUES(?,?,?,?,?,?)",
+                                    (scope, row["fair_id"], row["event_id"], row["content_hash"], row["revision"], row["status"]))
+                    self.db.execute("DELETE FROM calendar_map WHERE calendar_key=? AND fair_id=?", (row["calendar_key"], row["fair_id"]))
 
     def close(self):
         self.db.close()
@@ -150,25 +166,29 @@ class Store:
                 self.db.execute("SELECT * FROM runs ORDER BY rowid DESC LIMIT ?", (limit,))]
 
     def mapping(self, calendar_key, fair_id):
-        row = self.db.execute("SELECT * FROM calendar_map WHERE calendar_key=? AND fair_id=?", (calendar_key, fair_id)).fetchone()
+        row = self.db.execute("SELECT * FROM calendar_map WHERE calendar_key=? AND fair_id=?", (calendar_scope(calendar_key), fair_id)).fetchone()
         return dict(row) if row else None
 
     def save_mapping(self, calendar_key, fair_id, event_id, digest, revision, status):
         with self.db:
             self.db.execute("INSERT OR REPLACE INTO calendar_map VALUES(?,?,?,?,?,?)",
-                            (calendar_key, fair_id, event_id, digest, revision, status))
+                            (calendar_scope(calendar_key), fair_id, event_id, digest, revision, status))
 
-    def backup(self, destination, *, public=False):
+    def backup(self, destination, *, public=False, include_calendar_map=False):
         destination = Path(destination)
         destination.parent.mkdir(parents=True, exist_ok=True)
-        with closing(sqlite3.connect(destination)) as target, target:
-            self.db.backup(target)
+        with closing(sqlite3.connect(destination)) as target:
+            with target:
+                self.db.backup(target)
+                if public:
+                    from .reports import public_data
+                    if not include_calendar_map:
+                        target.execute("DELETE FROM calendar_map")
+                    for table, columns in (("entities", ["payload"]), ("history", ["previous", "current"]), ("runs", ["metadata"])):
+                        for column in columns:
+                            for row_id, text in target.execute(f"SELECT rowid,{column} FROM {table}").fetchall():
+                                if text:
+                                    target.execute(f"UPDATE {table} SET {column}=? WHERE rowid=?",
+                                                   (stable_json(public_data(json.loads(text))), row_id))
             if public:
-                from .reports import public_data
-                target.execute("DELETE FROM calendar_map")
-                for table, columns in (("entities", ["payload"]), ("history", ["previous", "current"]), ("runs", ["metadata"])):
-                    for column in columns:
-                        for row_id, text in target.execute(f"SELECT rowid,{column} FROM {table}").fetchall():
-                            if text:
-                                target.execute(f"UPDATE {table} SET {column}=? WHERE rowid=?",
-                                               (stable_json(public_data(json.loads(text))), row_id))
+                target.execute("VACUUM")  # Remove unsanitized values from freed pages as well.

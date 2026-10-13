@@ -6,7 +6,7 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
-from .calendar_sync import CalendarError, GoogleCalendarAPI, SyncEngine, authorize
+from .calendar_sync import CalendarError, GoogleCalendarAPI, SyncEngine, authorize, validate_calendar_id
 from .client import RecruitmentClient
 from .collector import QueryPlan, collect
 from .fixtures import fixture_client
@@ -102,7 +102,8 @@ def run(args):
                                       reminder_minutes=schedule_config.get("reminder_minutes", 60))
             (output / "recruitment.ics").write_bytes(ics.encode("utf-8"))
         if args.calendar_dry_run:
-            calendar = SyncEngine(store).sync(store.list("fair"), store.list("position"))
+            calendar = SyncEngine(store, calendar_id=os.environ.get("GOOGLE_CALENDAR_ID") or "dry-run").sync(
+                store.list("fair"), store.list("position"), store.list("company"))
             write_json(output / "calendar-dry-run.json", calendar)
         if args.personal_file:
             private_output = private_location(args.private_output_dir)
@@ -133,22 +134,45 @@ def sync(args):
     live = args.enable_real_sync and enabled("ENABLE_REAL_CALENDAR_SYNC")
     if args.enable_real_sync and not live:
         raise CalendarError("authorization", "Set ENABLE_REAL_CALENDAR_SYNC=true as well as --enable-real-sync")
+    configured = os.environ.get("GOOGLE_CALENDAR_ID")
+    if configured and args.calendar_id and configured != args.calendar_id:
+        raise CalendarError("calendar_scope", "Requested calendar differs from GOOGLE_CALENDAR_ID")
+    target = configured or args.calendar_id
+    if target:
+        validate_calendar_id(target)
     api = None
     with Store(args.db) as store:
-        if live:
-            if not args.calendar_id:
+        if live or args.check_access:
+            if not target:
                 raise CalendarError("configuration", "Real sync requires a dedicated calendar ID")
             if any(f["provenance"] != "school_api" for f in store.list("fair")):
                 raise CalendarError("provenance", "Synthetic/unverified database cannot be used for real sync")
-            api = GoogleCalendarAPI.from_environment(args.token_file)
+            api = GoogleCalendarAPI.from_environment(args.token_file, credential_file=args.credential_file, calendar_id=target)
         try:
-            result = SyncEngine(store, api, calendar_id=args.calendar_id or "dry-run", dry_run=not live, allow_real=live).sync(store.list("fair"), store.list("position"))
+            result = SyncEngine(store, api, calendar_id=target or "dry-run", dry_run=not live, allow_real=live,
+                                read_remote=args.check_access).sync(store.list("fair"), store.list("position"), store.list("company"))
             write_json(output / ("calendar-sync.json" if live else "calendar-dry-run.json"), result)
         finally:
             if api:
                 api.close()
     print("真实同步步骤已执行；请检查逐事件结果。" if live else "日历 dry-run 完成；没有读取凭据或调用 Google。")
     return 2 if result["errors"] else 0
+
+
+def calendar_check(args):
+    configured = os.environ.get("GOOGLE_CALENDAR_ID")
+    if configured and args.calendar_id and configured != args.calendar_id:
+        raise CalendarError("calendar_scope", "Requested calendar differs from GOOGLE_CALENDAR_ID")
+    target = validate_calendar_id(configured or args.calendar_id)
+    api = GoogleCalendarAPI.from_environment(args.token_file, credential_file=args.credential_file, calendar_id=target)
+    try:
+        result = api.check_access(target, require_write=True)
+        result["real_sync_performed"] = False
+        write_json(args.output_dir / "calendar-access.json", result)
+    finally:
+        api.close()
+    print("指定日历只读权限预检已完成；没有创建、修改或取消事件。")
+    return 0
 
 
 def parser():
@@ -177,7 +201,14 @@ def parser():
     calendar.add_argument("--output-dir", type=Path, default=Path("reports/calendar"))
     calendar.add_argument("--calendar-id")
     calendar.add_argument("--token-file", type=Path)
+    calendar.add_argument("--credential-file", type=Path, help="Private service-account JSON file; otherwise GOOGLE_CREDENTIALS")
+    calendar.add_argument("--check-access", action="store_true", help="Read-only permission and managed-ID inspection; still dry-run")
     calendar.add_argument("--enable-real-sync", action="store_true")
+    check = commands.add_parser("calendar-check", help="Read-only permission check for the configured calendar")
+    check.add_argument("--calendar-id")
+    check.add_argument("--credential-file", type=Path)
+    check.add_argument("--token-file", type=Path)
+    check.add_argument("--output-dir", type=Path, default=Path("reports/calendar-access"))
     auth = commands.add_parser("authorize")
     auth.add_argument("--client-file", type=Path, required=True)
     auth.add_argument("--token-file", type=Path, required=True)
@@ -191,6 +222,8 @@ def main(argv=None):
             return run(args)
         if args.command == "sync":
             return sync(args)
+        if args.command == "calendar-check":
+            return calendar_check(args)
         authorize(args.client_file, args.token_file)
         print("授权凭据已写入私有文件；不输出 Token。")
         return 0

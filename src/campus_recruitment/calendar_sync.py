@@ -16,10 +16,20 @@ import requests
 
 from .ical import eligible, summary
 from .reports import public_data
-from .storage import content_hash
+from .storage import calendar_scope, content_hash
 
 SCOPES = ["https://www.googleapis.com/auth/calendar.events"]
 OWNER = "campus-recruitment-schedule-v1"
+DEFAULT_REMINDERS = (1440, 30)
+WRITE_ROLES = {"writer", "writerWithoutPrivateAccess", "owner"}
+
+
+def validate_calendar_id(value):
+    if not isinstance(value, str) or not value or value != value.strip() or len(value) > 1024 or any(ord(c) < 33 for c in value):
+        raise CalendarError("configuration", "A nonempty explicit GOOGLE_CALENDAR_ID is required")
+    if value == "primary":
+        raise CalendarError("calendar_scope", "The primary alias is not allowed; use the explicitly shared calendar ID")
+    return value
 
 
 class CalendarError(RuntimeError):
@@ -32,13 +42,17 @@ def event_id(fair_id):
     return "guat" + base64.b32hexencode(hashlib.sha256(str(fair_id).encode()).digest()).decode().rstrip("=").lower()
 
 
-def event_body(fair, positions):
+def event_body(fair, positions, companies=(), *, reminder_minutes=DEFAULT_REMINDERS):
+    reminders = sorted(set(reminder_minutes), reverse=True)
+    if len(reminders) > 5 or any(isinstance(n, bool) or not isinstance(n, int) or not 0 <= n <= 40320 for n in reminders):
+        raise ValueError("Google reminders must contain at most 5 offsets of 0..40320 minutes")
     body = public_data({"summary": fair.get("title") or "招聘活动（名称待确认）",
                         "location": fair.get("location") or "地点待确认",
-                        "description": summary(fair, positions),
+                        "description": summary(fair, positions, companies),
                         "start": {"dateTime": fair["start_time"], "timeZone": "Asia/Shanghai"},
                         "end": {"dateTime": fair["end_time"], "timeZone": "Asia/Shanghai"},
                         "status": "cancelled" if fair["status"] == "cancelled" else "confirmed",
+                        "reminders": {"useDefault": False, "overrides": [{"method": "popup", "minutes": n} for n in reminders]},
                         "extendedProperties": {"private": {"owner": OWNER, "fairId": fair["job_fair_id"],
                                                              "provenance": fair["provenance"], "revision": str(fair.get("revision", 0))}}})
     digest = content_hash(body)
@@ -46,12 +60,42 @@ def event_body(fair, positions):
     return body, digest
 
 
+def same_event(remote, desired):
+    """Detect drift even when a manual edit leaves our content-hash marker intact."""
+    if any(remote.get(key) != desired.get(key) for key in ("summary", "location", "description", "status")):
+        return False
+    for key in ("start", "end"):
+        try:
+            a, b = remote[key], desired[key]
+            if datetime.fromisoformat(a["dateTime"].replace("Z", "+00:00")) != datetime.fromisoformat(b["dateTime"]):
+                return False
+            if a.get("timeZone") != b["timeZone"]:
+                return False
+        except (KeyError, TypeError, ValueError):
+            return False
+    observed = remote.get("reminders", {})
+    expected = desired["reminders"]
+    if observed.get("useDefault") is not False:
+        return False
+    if sorted((r.get("method"), r.get("minutes")) for r in observed.get("overrides", [])) != sorted((r["method"], r["minutes"]) for r in expected["overrides"]):
+        return False
+    return remote.get("extendedProperties", {}).get("private", {}).get("contentHash") == desired["extendedProperties"]["private"]["contentHash"]
+
+
 class MockCalendarAPI:
     is_mock = True
 
-    def __init__(self):
+    def __init__(self, *, access_role="writer"):
         self.events = {}
         self.calls = []
+        self.access_role = access_role
+
+    def check_access(self, calendar_id, *, require_write=True):
+        self.calls.append(("check_access", calendar_id, ""))
+        if require_write and self.access_role not in WRITE_ROLES:
+            raise CalendarError("calendar_permission", "指定日历没有可写权限；请检查共享权限")
+        return {"status": "verified_mock", "access_role": self.access_role, "writable": self.access_role in WRITE_ROLES,
+                "calendar_time_zone": "Asia/Shanghai", "calendar_scope": calendar_scope(calendar_id)}
 
     def get(self, calendar_id, identifier):
         self.calls.append(("get", calendar_id, identifier))
@@ -75,21 +119,34 @@ class MockCalendarAPI:
 
 
 class SyncEngine:
-    def __init__(self, store, api=None, *, calendar_id="dry-run", dry_run=True, allow_real=False):
+    def __init__(self, store, api=None, *, calendar_id="dry-run", dry_run=True, allow_real=False,
+                 read_remote=False, reminder_minutes=DEFAULT_REMINDERS):
         if not dry_run and api is None:
             raise CalendarError("credentials", "Real/mock writes require an API adapter")
         if not dry_run and not api.is_mock and not allow_real:
             raise CalendarError("authorization", "Real calendar writes are not explicitly enabled")
         self.store, self.api = store, api
         self.calendar_id, self.dry_run = calendar_id, dry_run
+        self.read_remote, self.reminder_minutes = read_remote, reminder_minutes
 
     @staticmethod
     def _owned(remote, fair):
         properties = remote.get("extendedProperties", {}).get("private", {})
         return properties.get("owner") == OWNER and properties.get("fairId") == fair["job_fair_id"] and properties.get("provenance") == fair["provenance"]
 
-    def sync(self, fairs, positions=()):
-        result = {"dry_run": self.dry_run, "real_sync_performed": False, "actions": [], "errors": []}
+    def sync(self, fairs, positions=(), companies=()):
+        result = {"dry_run": self.dry_run, "real_sync_performed": False, "actions": [], "errors": [],
+                  "calendar_scope": calendar_scope(self.calendar_id),
+                  "access_check": {"status": "not_checked", "reason": "离线计划未读取凭据或验证真实权限"}}
+        check_remote = self.api is not None and (not self.dry_run or self.read_remote)
+        allowed = [f for f in fairs if not f.get("private") and eligible(f) and
+                   (self.dry_run or self.api.is_mock or f["provenance"] == "school_api")]
+        if check_remote and allowed:
+            try:
+                result["access_check"] = self.api.check_access(self.calendar_id, require_write=True)
+            except CalendarError as exc:
+                result["errors"].append({"kind": exc.kind, "http_status": exc.status, "message": str(exc)})
+                return result
         seen = set()
         for fair in fairs:
             identifier = fair["job_fair_id"]
@@ -107,17 +164,18 @@ class SyncEngine:
                 action.update(action="skip", reason="合成/未验证数据不得写入真实日历")
                 result["actions"].append(action)
                 continue
-            body, digest = event_body(fair, positions)
+            body, digest = event_body(fair, positions, companies, reminder_minutes=self.reminder_minutes)
             cancelled = fair["status"] == "cancelled"
-            if cancelled and mapping is None:
+            if cancelled and mapping is None and not check_remote:
                 action.update(action="skip", reason="取消活动无已管理事件，不创建取消占位日程")
                 result["actions"].append(action)
                 continue
             wanted = "cancel" if cancelled else ("update" if mapping else "create")
             if mapping and mapping["content_hash"] == digest:
                 wanted = "noop"
-            if self.dry_run:
-                action.update(action=wanted, content_hash=digest, reason="仅生成计划，不读取授权、不调用 Google、不推进同步状态")
+            if self.dry_run and not check_remote:
+                action.update(action=wanted, content_hash=digest, event_preview=body,
+                              reason="仅生成计划，不读取授权、不调用 Google、不推进同步状态")
                 result["actions"].append(action)
                 continue
             try:
@@ -128,12 +186,18 @@ class SyncEngine:
                     remote = None
                 if remote and not self._owned(remote, fair):
                     raise CalendarError("ownership", "Refuse to change a calendar event owned by another source")
+                if self.dry_run:
+                    wanted = ("cancel" if remote else "skip") if cancelled else ("noop" if remote and same_event(remote, body) else "update" if remote else "create")
+                    action.update(action=wanted, content_hash=digest, event_preview=body,
+                                  reason="权限已只读预检；仅读取指定 ID，不写事件或推进映射")
+                    result["actions"].append(action)
+                    continue
                 if cancelled:
                     if remote:
                         self.api.cancel(self.calendar_id, action["event_id"])
-                    wanted = "cancel" if remote else "noop"
+                    wanted = "cancel" if remote else ("noop" if mapping else "skip")
                 elif remote:
-                    if remote.get("extendedProperties", {}).get("private", {}).get("contentHash") == digest:
+                    if same_event(remote, body):
                         wanted = "noop"
                     else:
                         self.api.patch(self.calendar_id, action["event_id"], body)
@@ -148,12 +212,13 @@ class SyncEngine:
                         recovered = self.api.get(self.calendar_id, action["event_id"])
                         if not recovered or not self._owned(recovered, fair):
                             raise CalendarError("ownership", "Conflicting event ID is not owned by this application") from None
-                        if recovered.get("extendedProperties", {}).get("private", {}).get("contentHash") != digest:
+                        if not same_event(recovered, body):
                             self.api.patch(self.calendar_id, action["event_id"], body)
                     wanted = "create"
-                self.store.save_mapping(self.calendar_id, identifier, action["event_id"], digest, fair.get("revision", 0), fair["status"])
+                if wanted != "skip":
+                    self.store.save_mapping(self.calendar_id, identifier, action["event_id"], digest, fair.get("revision", 0), fair["status"])
                 action.update(action=wanted, content_hash=digest)
-                result["real_sync_performed"] |= not self.api.is_mock and wanted != "noop"
+                result["real_sync_performed"] |= not self.api.is_mock and wanted in {"create", "update", "cancel"}
             except CalendarError as exc:
                 action.update(action="failed", reason=str(exc))
                 result["errors"].append({"job_fair_id": identifier, "kind": exc.kind, "http_status": exc.status, "message": str(exc)})
@@ -168,10 +233,13 @@ class GoogleCalendarAPI:
     is_mock = False
 
     def __init__(self, credentials, *, session=None, sleep=time.sleep, monotonic=time.monotonic,
-                 retries=2, interval=1.0, request_budget=200, max_retry_after=60):
+                 retries=2, interval=1.0, request_budget=200, max_retry_after=60,
+                 calendar_id=None, auth_kind="oauth"):
         if retries < 0 or interval < 1 or request_budget < 1:
             raise ValueError("Invalid Google request limits")
         self.credentials = credentials
+        self.calendar_id = validate_calendar_id(calendar_id) if calendar_id is not None else None
+        self.auth_kind = auth_kind
         self.session = session or requests.Session()
         if session is None:
             self.session.mount("https://", requests.adapters.HTTPAdapter(max_retries=0))
@@ -180,28 +248,68 @@ class GoogleCalendarAPI:
         self.max_retry_after, self.attempts, self.last = max_retry_after, 0, None
 
     @classmethod
-    def from_environment(cls, token_file=None, **options):
-        try:
-            from google.oauth2.credentials import Credentials
-        except ImportError:
-            raise CalendarError("dependency", "Install the calendar extra before enabling OAuth") from None
-        if token_file:
-            path = Path(token_file)
+    def from_environment(cls, token_file=None, *, credential_file=None, calendar_id=None, **options):
+        # An explicit OAuth token file remains supported. Otherwise prefer GOOGLE_CREDENTIALS.
+        source = credential_file or token_file
+        if credential_file and token_file:
+            raise CalendarError("configuration", "Choose a service credential file or an OAuth token file")
+        if source:
+            path = Path(source)
             if path.is_symlink() or os.name != "nt" and stat.S_IMODE(path.stat().st_mode) & 0o077:
-                raise CalendarError("credentials", "OAuth token file must be private (chmod 600), not a symlink")
+                raise CalendarError("credentials", "Credential file must be private (chmod 600), not a symlink")
             text = path.read_text(encoding="utf-8")
         else:
-            text = os.environ.get("GOOGLE_OAUTH_TOKEN_JSON")
+            text = os.environ.get("GOOGLE_CREDENTIALS") or os.environ.get("GOOGLE_OAUTH_TOKEN_JSON")
         if not text:
-            raise CalendarError("credentials", "Missing OAuth credentials; use dry-run or configure a private token file/GitHub Secret")
+            raise CalendarError("credentials", "Missing OAuth/service-account credentials; use dry-run or configure GOOGLE_CREDENTIALS privately")
         try:
-            info = json.loads(text)
-            if not info.get("refresh_token"):
+            if len(text) > 65536:
                 raise ValueError
-            credentials = Credentials.from_authorized_user_info(info, scopes=SCOPES)
-        except (ValueError, TypeError, AttributeError):
-            raise CalendarError("credentials", "Invalid offline OAuth credential format; values are never logged") from None
-        return cls(credentials, **options)
+            info = json.loads(text)
+            if not isinstance(info, dict):
+                raise ValueError
+            service_account = info.get("type") == "service_account" and token_file is None
+            if service_account:
+                from google.oauth2.service_account import Credentials
+                if info.get("token_uri") != "https://oauth2.googleapis.com/token":
+                    raise ValueError
+                credentials = Credentials.from_service_account_info(info, scopes=SCOPES)
+            else:
+                from google.oauth2.credentials import Credentials
+                if not info.get("refresh_token") or credential_file:
+                    raise ValueError
+                credentials = Credentials.from_authorized_user_info(info, scopes=SCOPES)
+        except ImportError:
+            raise CalendarError("dependency", "Install the calendar extra before loading credentials") from None
+        except Exception:
+            # Signer/JSON exceptions can contain private key material; never propagate them.
+            raise CalendarError("credentials", "Invalid offline OAuth/service-account credential format; values are never logged") from None
+        configured = os.environ.get("GOOGLE_CALENDAR_ID")
+        if configured and calendar_id and configured != calendar_id:
+            raise CalendarError("calendar_scope", "Requested calendar differs from configured GOOGLE_CALENDAR_ID")
+        target = validate_calendar_id(configured or calendar_id)
+        return cls(credentials, calendar_id=target, auth_kind="service_account" if service_account else "oauth", **options)
+
+    def _bind(self, calendar_id):
+        target = validate_calendar_id(calendar_id)
+        if self.calendar_id is None:
+            self.calendar_id = target
+        if target != self.calendar_id:
+            raise CalendarError("calendar_scope", "This adapter can access only its configured GOOGLE_CALENDAR_ID")
+        return target
+
+    def check_access(self, calendar_id, *, require_write=True):
+        # Events.list metadata provides accessRole even for a shared calendar that
+        # is not subscribed in the service account's CalendarList. No items requested.
+        payload = self._request("GET", calendar_id, query={"maxResults": 1, "fields": "accessRole,timeZone"})
+        role = payload.get("accessRole") if payload else None
+        if role not in {"reader", "freeBusyReader", *WRITE_ROLES}:
+            raise CalendarError("calendar_permission", "Calendar access role is missing or inaccessible")
+        if require_write and role not in WRITE_ROLES:
+            raise CalendarError("calendar_permission", "指定日历没有可写权限；请向服务账号共享“更改活动”权限")
+        return {"status": "verified", "calendar_scope": calendar_scope(self.calendar_id), "access_role": role,
+                "writable": role in WRITE_ROLES, "calendar_time_zone": payload.get("timeZone"),
+                "event_time_zone": "Asia/Shanghai", "auth_kind": self.auth_kind}
 
     def _refresh(self):
         try:
@@ -210,7 +318,8 @@ class GoogleCalendarAPI:
         except Exception:
             raise CalendarError("credentials", "OAuth refresh failed; verify grants/network privately (credential values omitted)") from None
 
-    def _request(self, method, calendar_id, identifier=None, body=None):
+    def _request(self, method, calendar_id, identifier=None, body=None, *, query=None):
+        calendar_id = self._bind(calendar_id)
         path = f"https://www.googleapis.com/calendar/v3/calendars/{quote(calendar_id, safe='')}/events"
         if identifier:
             path += "/" + quote(identifier, safe="")
@@ -226,7 +335,7 @@ class GoogleCalendarAPI:
                     self.sleep(remaining)
             self.last = self.monotonic()
             self.attempts += 1
-            prepared = requests.Request(method, path, params={"sendUpdates": "none"} if method != "GET" else None,
+            prepared = requests.Request(method, path, params=query if method == "GET" else {"sendUpdates": "none"},
                                         json=body, headers={"Authorization": "Bearer " + self.credentials.token,
                                                             "Accept": "application/json"}).prepare()
             settings = self.session.merge_environment_settings(prepared.url, {}, None, True, None)

@@ -33,12 +33,20 @@ def eligible(fair):
                 and fair.get("status_verified") is True and fair.get("status") in {"scheduled", "cancelled"})
 
 
-def summary(fair, positions):
+def summary(fair, positions, companies=()):
     selected = sorted([p for p in positions if p["job_fair_id"] == fair["job_fair_id"] and p["matching_score"] > 0],
                       key=lambda p: (-p["matching_score"], p["position_id"]))
-    details = ["来源：" + (fair.get("source_url") or "未确认"), "招聘会 ID：" + fair["job_fair_id"],
+    related = sorted([company for company in companies if fair["job_fair_id"] in company.get("related_job_fair_ids", [])],
+                     key=lambda company: company["company_id"])
+    names = {company["company_id"]: company.get("company_name") or "企业名称未确认" for company in companies}
+    details = ["官网链接：" + (fair.get("source_url") or "未确认"), "招聘会 ID：" + fair["job_fair_id"],
+               "地点：" + (fair.get("location") or "未确认"),
                "数据类型：" + fair.get("provenance", "unverified")]
-    details += [f"{p['position_name']}（{p['matching_score']}分，企业 {p['company_id']}）" for p in selected[:20]]
+    details += ["参会企业：" + ("；".join(f"{c.get('company_name') or '名称未确认'}（{c['company_id']}）" for c in related[:50]) or "未确认")]
+    if len(related) > 50:
+        details.append(f"企业摘要列出 50 家，共 {len(related)} 家；完整列表见招聘报告。")
+    details.append("匹配岗位：")
+    details += [f"{p['position_name']}（{p['matching_score']}分，{names.get(p['company_id'], '企业名称未确认')} / {p['company_id']}）" for p in selected[:20]] or ["暂无已确认匹配岗位"]
     return public_data("\n".join(details))
 
 
