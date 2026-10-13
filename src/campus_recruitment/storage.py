@@ -157,8 +157,17 @@ class Store:
             self.db.execute("INSERT OR REPLACE INTO calendar_map VALUES(?,?,?,?,?,?)",
                             (calendar_key, fair_id, event_id, digest, revision, status))
 
-    def backup(self, destination):
+    def backup(self, destination, *, public=False):
         destination = Path(destination)
         destination.parent.mkdir(parents=True, exist_ok=True)
         with sqlite3.connect(destination) as target:
             self.db.backup(target)
+            if public:
+                from .reports import public_data
+                target.execute("DELETE FROM calendar_map")
+                for table, columns in (("entities", ["payload"]), ("history", ["previous", "current"]), ("runs", ["metadata"])):
+                    for column in columns:
+                        for row_id, text in target.execute(f"SELECT rowid,{column} FROM {table}").fetchall():
+                            if text:
+                                target.execute(f"UPDATE {table} SET {column}=? WHERE rowid=?",
+                                               (stable_json(public_data(json.loads(text))), row_id))

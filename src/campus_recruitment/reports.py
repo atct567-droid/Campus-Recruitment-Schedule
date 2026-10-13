@@ -62,13 +62,13 @@ def _position_table(positions):
     return lines
 
 
-def generate_reports(store, output_dir, *, as_of, snapshot=None):
+def generate_reports(store, output_dir, *, as_of, snapshot=None, priorities=None):
     output = Path(output_dir)
     output.mkdir(parents=True, exist_ok=True)
     fairs, companies, positions = (store.list(kind) for kind in ("fair", "company", "position"))
     ranked = sorted(positions, key=lambda p: (-p["matching_score"], p["job_fair_id"], p["position_id"]))
     public_fairs = store.models("fair")
-    overlaps = conflicts(fair_activities(public_fairs))
+    overlaps = conflicts(fair_activities(public_fairs), priorities=priorities)
     history = store.history()
     runs = store.runs()
     # Serialize only fields declared in public dataclasses plus public update metadata.
@@ -125,7 +125,7 @@ def generate_reports(store, output_dir, *, as_of, snapshot=None):
     daily += [f"- {h['entity_key']}：{h['change_type']}；原时间 {_md(h['previous'].get('start_time') if h['previous'] else None)} → {_md(h['current'].get('start_time'))}" for h in today_history if h["change_type"] in {"rescheduled", "cancelled"}] or ["无已确认变更。"]
     daily += ["", "## 时间冲突与同日顺序", ""]
     daily += [f"- {_md(c['left_title'])} / {_md(c['right_title'])}：{c['overlap_start']} 至 {c['overlap_end']}；建议优先 ID {c['suggested_priority_id']}，不自动取消。" for c in overlaps] or ["无已确认冲突；未知时间未参与判断。"]
-    daily += [f"- 顺序：{_md(a.title)} / {_md(a.start)} / {_md(a.location)}" for a in daily_order(fair_activities(public_fairs))]
+    daily += [f"- 顺序：{_md(a.title)} / {_md(a.start)} / {_md(a.location)}" for a in daily_order(fair_activities(public_fairs), priorities=priorities)]
     daily += ["", "## 需要人工确认", ""]
     daily += [f"- {f['job_fair_id']}：{_md('；'.join(f['issues']))}" for f in fairs if f["issues"]] or ["当前已观察样本无额外缺失项。"]
     daily += [f"- {_md(w)}" for w in data["warnings"]]

@@ -7,7 +7,7 @@ name = "campus-recruitment-schedule"
 version = "0.1.0"
 description = "GUAT anonymous recruitment API validation (phase 1)"
 requires-python = ">=3.10"
-dependencies = ["requests>=2.32.3,<3"]
+dependencies = ["requests>=2.32.3,<3", "tzdata>=2025.1"]
 
 [project.optional-dependencies]
 test = ["pytest>=8,<10", "ruff>=0.8,<1", "icalendar>=6,<8", "PyYAML>=6,<7"]
@@ -15,6 +15,7 @@ calendar = ["google-auth>=2.35,<3", "google-auth-oauthlib>=1.2,<2"]
 
 [project.scripts]
 campus-recruitment = "campus_recruitment.probe:main"
+campus-manager = "campus_recruitment.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
