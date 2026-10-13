@@ -155,7 +155,14 @@ def sync(args):
         finally:
             if api:
                 api.close()
-    print("真实同步步骤已执行；请检查逐事件结果。" if live else "日历 dry-run 完成；没有读取凭据或调用 Google。")
+    if result["errors"]:
+        print("日历步骤失败；请检查脱敏结果，不将失败或模拟运行视为真实同步成功。")
+    elif live:
+        print("日历执行结果已保存；实际修改以 real_sync_performed 和逐事件结果为准。")
+    elif args.check_access:
+        print("只读权限预检与 dry-run 已结束；未写入日历或同步映射。")
+    else:
+        print("离线日历 dry-run 完成；没有读取凭据或调用 Google。")
     return 2 if result["errors"] else 0
 
 

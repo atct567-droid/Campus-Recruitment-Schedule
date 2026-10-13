@@ -1,5 +1,7 @@
 # 校招系统第二、第三阶段最终交付报告
 
+本页及 evidence/delivery/ 保留上一阶段 188 项测试的历史交付证据。新增指定日历服务账号同步已完成，最新实现/测试见 google-calendar-service-account.md 与 evidence/service-account-calendar/；真实 Google 权限、写入和设备提醒仍未验证。
+
 ## 实现与验证状态
 
 | 能力 | 已实现 | 离线/本地验证 | 真实在线验证 |

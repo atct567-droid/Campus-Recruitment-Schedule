@@ -1,0 +1,9 @@
+{
+  "offline_tests": 223,
+  "original_phase1_tests": 103,
+  "google_calendar_access": "unverified; no credentials or API access",
+  "real_calendar_writes": false,
+  "secrets_persisted": false,
+  "synthetic_only": true,
+  "github_ci": "pending for service-account changes"
+}

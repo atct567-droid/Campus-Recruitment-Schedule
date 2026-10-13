@@ -48,7 +48,7 @@ export ENABLE_REAL_COLLECTION=true
 | GUAT_SCHEMA_PATH | 已验证且入库的公开字段映射配置路径 |
 | ENABLE_REAL_CALENDAR_SYNC | 仅字符串 true 允许手动真实同步步骤 |
 
-Google 凭据和日历 ID 使用 Repository Secrets，具体见 calendar-setup.md。不要把真实 OAuth 内容当工作流输入或仓库文件。工作流输出仅 reports/，状态缓存删除目标日历映射并脱敏，个人日程参数没有开放给公共工作流。
+Google 服务账号 JSON 使用 GOOGLE_CREDENTIALS Repository Secret，日历 ID 使用 GOOGLE_CALENDAR_ID Repository Variable，具体见 google-calendar-service-account.md。不要把真实凭据当工作流输入或仓库文件。工作流输出仅 reports/，状态缓存保留日历 ID 哈希隔离的事件映射并脱敏，个人日程参数没有开放给公共工作流。定时实际写入另需 ENABLE_SCHEDULED_CALENDAR_SYNC=true 和 ENABLE_REAL_CALENDAR_SYNC=true，由用户确认后开启。
 
 Actions cache 并非永久存储；需要长期历史，请使用校内/本地 runner 的持久数据库，再用 SQLite backup 做一致性备份。原始数据库不应上传到公共 artifact。
 
@@ -56,7 +56,7 @@ Actions cache 并非永久存储；需要长期历史，请使用校内/本地 r
 
 在学校允许访问的可信 Linux 主机注册 runner，添加 guat-network 标签。将手动探测及定时工作流的 runs-on 改为 `[self-hosted, linux, x64, guat-network]`，只运行可信仓库代码，不向外部 PR 暴露宿主机或凭据。
 
-若要跨运行保留完整 Google 映射，将 runner 的专用私有状态目录作为 `--db`，不要被 checkout 清理；设置访问权限 700/600，并定期用 Store.backup 备份。公开缓存有意不保存目标日历映射，Google 稳定 ID 可恢复，但本地私有数据库更适合长期维护。
+跨 runner 的脱敏缓存已经保留哈希事件映射；缓存被淘汰仍可从稳定 Google ID 恢复。需要长期可靠持久化时，将 self-hosted runner 的专用私有状态目录作为 `--db`，不要被 checkout 清理；设置访问权限 700/600，并定期用 Store.backup 备份。公开缓存不保存明文日历身份、凭据或其他日程。
 
 只有学校明确允许的网络可以运行真实采集。收到学校 401/403/429、登录跳转或云代理拒绝时遵守限制，不换 IP 或关闭代理/TLS 绕过。
 

@@ -1,4 +1,6 @@
-# Apple 日历与 Google OAuth
+# 指定 Google Calendar 服务账号同步、OAuth 与 Apple 显示
+
+无人值守首选服务账号，详见 [完整服务账号配置](google-calendar-service-account.md)。GitHub **Variables** 使用 GOOGLE_CALENDAR_ID，**Secrets** 使用 GOOGLE_CREDENTIALS。默认离线 dry-run；只读授权预检是 calendar-access.yml，定时同步是 google-calendar.yml。没有真实凭据时仍能完成离线计划，不能称为已授权或同步成功。
 
 ## 无授权：先使用 ICS
 
@@ -36,12 +38,12 @@ Token 不作为命令行字符串传入、不打印。OAuth refresh 自动在授
 
 ## GitHub Secrets
 
-在 Repository Secrets 中设置 `GOOGLE_OAUTH_TOKEN_JSON`（private/google-token.json 的授权用户 JSON，包含 refresh token/client 信息）和 `GOOGLE_CALENDAR_ID`。在 GitHub UI 的私有 Secrets 表单输入，绝不提交 Token 文件或把 Token 粘贴到公开 Issue/PR。
+优先在 Repository Secrets 中设置 `GOOGLE_CREDENTIALS`（服务账号 JSON），在 Repository Variables 中设置 `GOOGLE_CALENDAR_ID`。OAuth 兼容路径仍使用 Secret `GOOGLE_OAUTH_TOKEN_JSON`。在 GitHub UI 的私有 Secrets 表单输入凭据，绝不提交文件或粘贴到公开 Issue/PR。
 
-还需设置 ENABLE_REAL_COLLECTION、ENABLE_REAL_CALENDAR_SYNC 变量为 true，字段映射有真实依据，手动工作流选择 real + enable_real_calendar_sync。定时任务没有真实日历写入入口。
+真实采集仍需 ENABLE_REAL_COLLECTION 和核实的字段映射。独立日历同步需 ENABLE_REAL_CALENDAR_SYNC=true 且手动勾选 enable_real_sync；定时真实同步还需新增 ENABLE_SCHEDULED_CALENDAR_SYNC=true。不要为了测试 dry-run 开启这两个写入开关。只读 calendar-check 不需要写入开关。
 
 ## Apple 显示 Google 日历
 
 在 macOS/iOS 的系统账户设置中添加自己的 Google 账户，启用日历，选择专用“校招”日历显示。应用写的是 Google Calendar API，Apple 显示同一 Google 日历；没有直接调用 iCloud API。设备显示是否成功需要你在授权后实际确认，本任务不声称已同步 Apple 或 Google。
 
-原始数据库含目标日历映射，存于私有状态目录。公共 Actions 缓存有意去掉 calendar_map；托管 runner 通过稳定 Google event ID 恢复，不把日历 ID 公开到 artifact。取消已有事件属于账号写操作，默认 dry-run 避免意外发生。
+数据库以日历 ID 哈希隔离映射，旧的明文键自动迁移。同步工作流的脱敏缓存保留哈希映射，失败时也保留已成功的映射；缓存丢失可从稳定事件 ID 与系统所有权标记恢复。报告不包含私钥、Token 或其他日程。取消已有事件属于账号写操作，默认 dry-run 避免意外发生。

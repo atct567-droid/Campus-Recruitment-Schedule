@@ -19,6 +19,8 @@ python -m venv .venv
 
 文档：[架构与审计](docs/architecture.md)、[第二阶段](docs/phase2.md)、[第三阶段](docs/phase3.md)、[部署](docs/deployment.md)、[日历授权](docs/calendar-setup.md)、[排障](docs/troubleshooting.md)、[进度](docs/progress.md)、[最终交付报告](docs/final-delivery-report.md)。
 
+指定 Google Calendar 无人值守同步优先支持服务账号共享日历：[完整 Google Cloud/GitHub 配置](docs/google-calendar-service-account.md)。GOOGLE_CALENDAR_ID 放 Actions Variables，GOOGLE_CREDENTIALS 放 Secrets。默认 dry-run，事件预览包含企业/岗位/地点/官网和提前 1 天、30 分钟提醒；只读权限预检与显式启用的定时写入分别有独立工作流。没有凭据也可完成离线链路。
+
 ## 本次验证结果
 
 北京时间 2026-10-14 的真实云端探测，在第一个 `jobFair/list` 请求的 HTTPS CONNECT 阶段被代理拒绝：`Tunnel connection failed: 403 Forbidden`。未收到学校接口响应，`http_status` 为 `null`，没有可验证的业务 code 或 JSON。此结果不能证明学校接口拒绝匿名访问。
@@ -61,4 +63,4 @@ python -m venv .venv
 - 有分页元数据时读至声明的末页或总数；无元数据时读到明确空页，不因短页提前停止。默认单次验证预算 200 次请求、单个列表上限 1000 页；触及上限标为未完成，可在明确了解数据规模后调整。
 - 日志不记录请求认证头或响应 Cookie；异常中的代理 URL 凭据会脱敏。业务样本可能包含学校公开的联系信息，`reports/` 默认不入库。
 
-GitHub Actions 包含测试矩阵、手动第一阶段探测和北京时间 06:00/12:00/18:00 定时框架。真实采集默认关闭；定时任务没有真实日历写入口。手动真实同步还需要双重启用开关、专用日历及 Secrets。在线工作流的实际验证状态见最终交付报告，不能仅由配置文件推断成功。
+GitHub Actions 包含测试矩阵、手动第一阶段探测、只读日历授权预检和北京时间 06:00/12:00/18:00 定时框架。真实采集默认关闭；独立日历定时任务默认 dry-run，真实自动写入需用户明确开启两个 Variables。手动写入仍需显式选择、专用日历和 Secrets。在线工作流的实际验证状态见交付证据，不能仅由配置文件推断成功。

@@ -1,0 +1,158 @@
+{
+  "dry_run": true,
+  "real_sync_performed": false,
+  "actions": [
+    {
+      "job_fair_id": "666",
+      "event_id": "guatovj1d0hf6pnr3df0ellf966c279c11heripip9iogbr25vpprodg",
+      "provenance": "synthetic",
+      "action": "create",
+      "content_hash": "1068252e5b85c5290c60e2ac09719a36651c4073867915709c9c4f6229d78edf",
+      "event_preview": {
+        "summary": "综合双选会（合成）",
+        "location": "合成教学楼 A, B; 一号\\会场",
+        "description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：666\n地点：合成教学楼 A, B; 一号\\会场\n数据类型：synthetic\n参会企业：合成电子科技（c1）；合成电子科技（c2）；合成自动化（c3）\n匹配岗位：\n嵌入式软件开发（95分，合成电子科技 / c1）\nPCB工程师（95分，合成电子科技 / c2）\n助理硬件工程师（95分，合成电子科技 / c2）\n自动化工程师（65分，合成自动化 / c3）",
+        "start": {
+          "dateTime": "2026-10-15T09:00:00+08:00",
+          "timeZone": "Asia/Shanghai"
+        },
+        "end": {
+          "dateTime": "2026-10-15T12:00:00+08:00",
+          "timeZone": "Asia/Shanghai"
+        },
+        "status": "confirmed",
+        "reminders": {
+          "useDefault": false,
+          "overrides": [
+            {
+              "method": "popup",
+              "minutes": 1440
+            },
+            {
+              "method": "popup",
+              "minutes": 30
+            }
+          ]
+        },
+        "extendedProperties": {
+          "private": {
+            "owner": "campus-recruitment-schedule-v1",
+            "fairId": "666",
+            "provenance": "synthetic",
+            "revision": "0",
+            "contentHash": "1068252e5b85c5290c60e2ac09719a36651c4073867915709c9c4f6229d78edf"
+          }
+        }
+      },
+      "reason": "仅生成计划，不读取授权、不调用 Google、不推进同步状态"
+    },
+    {
+      "job_fair_id": "667",
+      "event_id": "guathdal3qki5n94c9e4a18scimra3uvv4fupnqj4ug2ouobse9jipf0",
+      "provenance": "synthetic",
+      "action": "create",
+      "content_hash": "6b5062a61fb263db005dfbc7fe0be2ea803df35fb34b9facb78ccda6b44ee30b",
+      "event_preview": {
+        "summary": "嵌入式专场宣讲（合成）",
+        "location": "合成教学楼 A, B; 一号\\会场",
+        "description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：667\n地点：合成教学楼 A, B; 一号\\会场\n数据类型：synthetic\n参会企业：合成电子科技（c1）\n匹配岗位：\nEmbedded Engineer（95分，合成电子科技 / c1）",
+        "start": {
+          "dateTime": "2026-10-15T11:00:00+08:00",
+          "timeZone": "Asia/Shanghai"
+        },
+        "end": {
+          "dateTime": "2026-10-15T13:00:00+08:00",
+          "timeZone": "Asia/Shanghai"
+        },
+        "status": "confirmed",
+        "reminders": {
+          "useDefault": false,
+          "overrides": [
+            {
+              "method": "popup",
+              "minutes": 1440
+            },
+            {
+              "method": "popup",
+              "minutes": 30
+            }
+          ]
+        },
+        "extendedProperties": {
+          "private": {
+            "owner": "campus-recruitment-schedule-v1",
+            "fairId": "667",
+            "provenance": "synthetic",
+            "revision": "0",
+            "contentHash": "6b5062a61fb263db005dfbc7fe0be2ea803df35fb34b9facb78ccda6b44ee30b"
+          }
+        }
+      },
+      "reason": "仅生成计划，不读取授权、不调用 Google、不推进同步状态"
+    },
+    {
+      "job_fair_id": "668",
+      "event_id": "guatdu0ggatdvk076l5cdqtnhbda0ivurud1ved0344nh2td8sg0hqhg",
+      "provenance": "synthetic",
+      "action": "skip",
+      "reason": "取消活动无已管理事件，不创建取消占位日程"
+    },
+    {
+      "job_fair_id": "669",
+      "event_id": "guatnsouc4k3079hnd019unmm7gf0npqn23npdassf8qmchgqbl8k8g0",
+      "provenance": "synthetic",
+      "action": "skip",
+      "reason": "时间或状态不明确，或属于私人记录"
+    },
+    {
+      "job_fair_id": "670",
+      "event_id": "guat2sn1ctndkhoerobujl4hal5snqbrkhkhv4k801ichip9tgqq8pv0",
+      "provenance": "synthetic",
+      "action": "create",
+      "content_hash": "25cb9696ccb44c66da451a23a8dfd22fefb73e096c09bc107a0d8ad7f82657e4",
+      "event_preview": {
+        "summary": "跨天活动（合成）",
+        "location": "合成教学楼 A, B; 一号\\会场",
+        "description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：670\n地点：合成教学楼 A, B; 一号\\会场\n数据类型：synthetic\n参会企业：未确认\n匹配岗位：\n暂无已确认匹配岗位",
+        "start": {
+          "dateTime": "2026-10-15T23:30:00+08:00",
+          "timeZone": "Asia/Shanghai"
+        },
+        "end": {
+          "dateTime": "2026-10-16T01:00:00+08:00",
+          "timeZone": "Asia/Shanghai"
+        },
+        "status": "confirmed",
+        "reminders": {
+          "useDefault": false,
+          "overrides": [
+            {
+              "method": "popup",
+              "minutes": 1440
+            },
+            {
+              "method": "popup",
+              "minutes": 30
+            }
+          ]
+        },
+        "extendedProperties": {
+          "private": {
+            "owner": "campus-recruitment-schedule-v1",
+            "fairId": "670",
+            "provenance": "synthetic",
+            "revision": "0",
+            "contentHash": "25cb9696ccb44c66da451a23a8dfd22fefb73e096c09bc107a0d8ad7f82657e4"
+          }
+        }
+      },
+      "reason": "仅生成计划，不读取授权、不调用 Google、不推进同步状态"
+    }
+  ],
+  "errors": [],
+  "calendar_scope": "sha256:25d33183d01ca7827df2eac040cbc6b605e44890bb878b56993f3d08e432c551",
+  "access_check": {
+    "status": "not_checked",
+    "reason": "离线计划未读取凭据或验证真实权限"
+  }
+}

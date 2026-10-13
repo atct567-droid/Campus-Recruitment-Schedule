@@ -14,7 +14,7 @@
 
 HTTP 请求有限次重试，尊重 429 Retry-After，代理/TLS/权限错误停止。成功远端操作后才写本地映射。创建成功但连接中断时，通过稳定 ID 查询恢复；POST 冲突 409 也核对所有权再恢复，避免重复创建。数据库丢失后同样可发现已有应用事件，禁止覆盖同 ID 的他人事件。
 
-当前只通过模拟 API 和脚本化 HTTP 测试，没有 Google 授权，也没有真实同步成功的证据。
+当前只通过模拟 API 和脚本化 HTTP 测试，没有 Google 授权，也没有真实同步成功的证据。后续已加入服务账号、只读权限预检、企业摘要和 1440/30 分钟提醒；指定日历的配置和无人值守流程见 google-calendar-service-account.md。
 
 ## Actions
 
@@ -24,6 +24,6 @@ HTTP 请求有限次重试，尊重 429 Retry-After，代理/TLS/权限错误停
 
 定时任务使用真实模式，但 `ENABLE_REAL_COLLECTION` 默认为 false，因此只留下清晰 skip 原因。手动触发默认 offline，支持窗口、指定 ID、报告开关、日历 dry-run。启用真实采集还需已核实的映射文件。定时任务始终不会触发真实 Google 写入；只有手动明确选择真实同步并满足额外开关/Secrets，才进入 Google 步骤。
 
-状态使用独立 offline/real cache。缓存备份仅保存经过脱敏的公开招聘模型/历史，不含 calendar_map、私人日程或 OAuth；原始运行数据库位于 work/，不上传 artifact。Google 映射在本地/self-hosted 数据库完整持久化；托管 runner 使用稳定远端 ID 恢复映射。Actions cache 会被淘汰，不能当作永久备份，需长期历史时使用 self-hosted 持久存储并备份。
+状态使用独立 offline/real cache。缓存备份保存经过脱敏的公开招聘模型/历史及日历 ID 哈希隔离的 calendar_map，不含私人日程或凭据；原始运行数据库位于 work/，不上传 artifact。Google 映射可跨 runner 持久化，也可使用稳定远端 ID 恢复。Actions cache 会被淘汰，不能当作永久备份，需长期历史时使用 self-hosted 持久存储并备份。
 
-工作流只读仓库权限；输入经环境变量传入 Python 参数列表，没有拼接到 shell。OAuth Secrets 只绑定手动真实同步步骤。采集失败停止当前操作并保留失败摘要；没有无限重试和代理绕过。
+工作流只读仓库权限；输入经环境变量传入 Python 参数列表，没有拼接到 shell。新增 calendar-access.yml 只读检查、google-calendar.yml 默认 dry-run；后者仅在用户开启 ENABLE_REAL_CALENDAR_SYNC 和 ENABLE_SCHEDULED_CALENDAR_SYNC 后定时写入。凭据来自 GOOGLE_CREDENTIALS Secret，ID 来自 GOOGLE_CALENDAR_ID Variable。采集失败停止当前操作并保留失败摘要；没有无限重试和代理绕过。

@@ -145,6 +145,7 @@ class SyncEngine:
             try:
                 result["access_check"] = self.api.check_access(self.calendar_id, require_write=True)
             except CalendarError as exc:
+                result["access_check"] = {"status": "failed", "kind": exc.kind, "http_status": exc.status}
                 result["errors"].append({"kind": exc.kind, "http_status": exc.status, "message": str(exc)})
                 return result
         seen = set()

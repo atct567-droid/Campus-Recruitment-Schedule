@@ -34,7 +34,7 @@ def run():
     outcome = json.loads(result.read_text()) if result.exists() else {"status": "failed"}
     if Path("work/run.db").exists() and outcome["status"] not in {"skipped", "blocked"}:
         with Store("work/run.db") as store:
-            store.backup(cached, public=True)
+            store.backup(cached, public=True, include_calendar_map=True)
     return code
 
 

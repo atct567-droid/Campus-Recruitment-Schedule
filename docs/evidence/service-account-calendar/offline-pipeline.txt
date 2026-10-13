@@ -1,0 +1,1 @@
+{"mode": "offline", "status": "complete", "provenance": "synthetic", "counts": {"fair": 5, "company": 3, "position": 7}, "requests_attempted": 22}

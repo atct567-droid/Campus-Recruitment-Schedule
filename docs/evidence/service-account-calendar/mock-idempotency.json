@@ -1,0 +1,106 @@
+{
+  "provenance": "synthetic",
+  "transport": "MockCalendarAPI; no Google requests",
+  "real_authorization_verified": false,
+  "first": {
+    "dry_run": false,
+    "real_sync_performed": false,
+    "actions": [
+      {
+        "job_fair_id": "666",
+        "event_id": "guatovj1d0hf6pnr3df0ellf966c279c11heripip9iogbr25vpprodg",
+        "provenance": "synthetic",
+        "action": "create",
+        "content_hash": "1068252e5b85c5290c60e2ac09719a36651c4073867915709c9c4f6229d78edf"
+      },
+      {
+        "job_fair_id": "667",
+        "event_id": "guathdal3qki5n94c9e4a18scimra3uvv4fupnqj4ug2ouobse9jipf0",
+        "provenance": "synthetic",
+        "action": "create",
+        "content_hash": "6b5062a61fb263db005dfbc7fe0be2ea803df35fb34b9facb78ccda6b44ee30b"
+      },
+      {
+        "job_fair_id": "668",
+        "event_id": "guatdu0ggatdvk076l5cdqtnhbda0ivurud1ved0344nh2td8sg0hqhg",
+        "provenance": "synthetic",
+        "action": "skip",
+        "content_hash": "e56daa4e00d4953aec1280fe39210b9cc29fbe1b98e41c89c36033f0b8e17126"
+      },
+      {
+        "job_fair_id": "669",
+        "event_id": "guatnsouc4k3079hnd019unmm7gf0npqn23npdassf8qmchgqbl8k8g0",
+        "provenance": "synthetic",
+        "action": "skip",
+        "reason": "时间或状态不明确，或属于私人记录"
+      },
+      {
+        "job_fair_id": "670",
+        "event_id": "guat2sn1ctndkhoerobujl4hal5snqbrkhkhv4k801ichip9tgqq8pv0",
+        "provenance": "synthetic",
+        "action": "create",
+        "content_hash": "25cb9696ccb44c66da451a23a8dfd22fefb73e096c09bc107a0d8ad7f82657e4"
+      }
+    ],
+    "errors": [],
+    "calendar_scope": "sha256:2f687c3e885be39619d2339971210f215c6c1709b694fbac85b5f2050f3e7ffd",
+    "access_check": {
+      "status": "verified_mock",
+      "access_role": "writer",
+      "writable": true,
+      "calendar_time_zone": "Asia/Shanghai",
+      "calendar_scope": "sha256:2f687c3e885be39619d2339971210f215c6c1709b694fbac85b5f2050f3e7ffd"
+    }
+  },
+  "second": {
+    "dry_run": false,
+    "real_sync_performed": false,
+    "actions": [
+      {
+        "job_fair_id": "666",
+        "event_id": "guatovj1d0hf6pnr3df0ellf966c279c11heripip9iogbr25vpprodg",
+        "provenance": "synthetic",
+        "action": "noop",
+        "content_hash": "1068252e5b85c5290c60e2ac09719a36651c4073867915709c9c4f6229d78edf"
+      },
+      {
+        "job_fair_id": "667",
+        "event_id": "guathdal3qki5n94c9e4a18scimra3uvv4fupnqj4ug2ouobse9jipf0",
+        "provenance": "synthetic",
+        "action": "noop",
+        "content_hash": "6b5062a61fb263db005dfbc7fe0be2ea803df35fb34b9facb78ccda6b44ee30b"
+      },
+      {
+        "job_fair_id": "668",
+        "event_id": "guatdu0ggatdvk076l5cdqtnhbda0ivurud1ved0344nh2td8sg0hqhg",
+        "provenance": "synthetic",
+        "action": "skip",
+        "content_hash": "e56daa4e00d4953aec1280fe39210b9cc29fbe1b98e41c89c36033f0b8e17126"
+      },
+      {
+        "job_fair_id": "669",
+        "event_id": "guatnsouc4k3079hnd019unmm7gf0npqn23npdassf8qmchgqbl8k8g0",
+        "provenance": "synthetic",
+        "action": "skip",
+        "reason": "时间或状态不明确，或属于私人记录"
+      },
+      {
+        "job_fair_id": "670",
+        "event_id": "guat2sn1ctndkhoerobujl4hal5snqbrkhkhv4k801ichip9tgqq8pv0",
+        "provenance": "synthetic",
+        "action": "noop",
+        "content_hash": "25cb9696ccb44c66da451a23a8dfd22fefb73e096c09bc107a0d8ad7f82657e4"
+      }
+    ],
+    "errors": [],
+    "calendar_scope": "sha256:2f687c3e885be39619d2339971210f215c6c1709b694fbac85b5f2050f3e7ffd",
+    "access_check": {
+      "status": "verified_mock",
+      "access_role": "writer",
+      "writable": true,
+      "calendar_time_zone": "Asia/Shanghai",
+      "calendar_scope": "sha256:2f687c3e885be39619d2339971210f215c6c1709b694fbac85b5f2050f3e7ffd"
+    }
+  },
+  "mock_event_count": 3
+}

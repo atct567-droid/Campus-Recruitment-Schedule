@@ -56,7 +56,8 @@ def test_prefer_service_account_without_oauth_login(monkeypatch):
     loaded.close()
 
 
-@pytest.mark.parametrize("credential", ["not JSON", "[]", '{"type":"service_account","private_key":"SYNTHETIC-KEY-MUST-NEVER-BE-LOGGED"}'])
+@pytest.mark.parametrize("credential", ["not JSON", "[]", '{"type":"service_account","private_key":"SYNTHETIC-KEY-MUST-NEVER-BE-LOGGED"}'],
+                         ids=["invalid-json", "wrong-json-root", "missing-service-fields"])
 def test_bad_credentials_do_not_echo_private_material(monkeypatch, tmp_path, capsys, credential):
     monkeypatch.setenv("GOOGLE_CREDENTIALS", credential)
     monkeypatch.setenv("GOOGLE_CALENDAR_ID", TARGET)
@@ -185,3 +186,30 @@ def test_existing_raw_calendar_keys_migrate_to_hashes(tmp_path):
         assert migrated.mapping(TARGET, "666")["event_id"] == "event"
         row = migrated.db.execute("SELECT calendar_key FROM calendar_map").fetchone()
         assert row[0] == calendar_scope(TARGET)
+
+
+def test_cancel_refuses_unrelated_owned_calendar_event(tmp_path):
+    remote = MockCalendarAPI()
+    remote.events[TARGET, event_id("666")] = {"id": event_id("666"), "summary": "合成的他人日程"}
+    with Store(tmp_path / "db") as store:
+        result = SyncEngine(store, remote, calendar_id=TARGET, dry_run=False).sync([{**fair(), "status": "cancelled"}])
+        assert result["errors"][0]["kind"] == "ownership"
+        assert not any(call[0] == "cancel" for call in remote.calls)
+
+
+def test_readonly_cli_preflight_never_claims_no_network(tmp_path, monkeypatch, capsys):
+    # The source contract and adapter are synthetic; the trusted-source label only
+    # exercises the production gate. No actual school/Google request is made.
+    import campus_recruitment.models as models
+    event = models.Fair("666", title="合成活动", start_time=fair()["start_time"], end_time=fair()["end_time"],
+                        status="scheduled", status_verified=True, provenance="school_api")
+    with Store(tmp_path / "db") as store:
+        store.apply(models.Snapshot(fairs=[event], checked_at="2026-10-14T08:00:00+08:00"))
+    mocked = MockCalendarAPI()
+    mocked.close = lambda: None
+    monkeypatch.setenv("GOOGLE_CALENDAR_ID", TARGET)
+    monkeypatch.setattr("campus_recruitment.cli.GoogleCalendarAPI.from_environment", lambda *a, **kw: mocked)
+    assert main(["sync", "--db", str(tmp_path / "db"), "--output-dir", str(tmp_path / "out"), "--check-access"]) == 0
+    console = capsys.readouterr().out
+    assert "只读" in console and "没有读取凭据" not in console
+    assert all(call[0] in {"check_access", "get"} for call in mocked.calls)
