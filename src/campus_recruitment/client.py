@@ -43,7 +43,8 @@ class RecruitmentClient:
     def __init__(self, *, base_url=BASE_URL, success_codes=(200,), interval=2.0,
                  timeout=(5.0, 20.0), retries=2, max_pages=1000, request_budget=200,
                  max_retry_after=60.0, session=None, sleep=time.sleep,
-                 monotonic=time.monotonic, emit=None, max_records=10000):
+                 monotonic=time.monotonic, emit=None, max_records=10000,
+                 public_referer=None):
         parsed = urlsplit(base_url)
         if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password:
             raise ValueError("base_url must be an HTTPS origin without credentials")
@@ -56,6 +57,13 @@ class RecruitmentClient:
         if not math.isfinite(max_retry_after) or max_retry_after < 0:
             raise ValueError("Invalid Retry-After limit")
         self.base_url = base_url.rstrip("/")
+        if public_referer is not None:
+            referer = urlsplit(public_referer)
+            if (referer.scheme != "https" or referer.netloc != parsed.netloc
+                    or referer.username or referer.password or referer.query or referer.fragment
+                    or referer.path not in {"/index", "/jobfairSearch", "/positionSearch"}):
+                raise ValueError("public_referer must be a same-origin public recruitment page")
+        self.public_referer = public_referer
         self.success_codes = {str(code) for code in success_codes}
         if not self.success_codes:
             raise ValueError("At least one explicitly accepted business code is required")
@@ -114,10 +122,13 @@ class RecruitmentClient:
             response = None
             try:
                 # Request.prepare avoids Session/netrc auth and Session cookies.
-                prepared = requests.Request("GET", url, params=params, headers={
+                headers = {
                     "Accept": "application/json",
                     "User-Agent": "Campus-Recruitment-Schedule/0.1 (anonymous API validation)",
-                }).prepare()
+                }
+                if self.public_referer:
+                    headers["Referer"] = self.public_referer
+                prepared = requests.Request("GET", url, params=params, headers=headers).prepare()
                 settings = self.session.merge_environment_settings(prepared.url, {}, None, True, None)
                 response = self.session.send(prepared, timeout=self.timeout, allow_redirects=False, **settings)
             except requests.exceptions.RequestException as exc:

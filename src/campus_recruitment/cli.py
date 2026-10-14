@@ -80,6 +80,8 @@ def run(args):
     options = {"request_budget": args.request_budget, "max_pages": args.max_pages,
                "max_records": args.max_records, "interval": args.interval, "retries": args.retries,
                "success_codes": normalizer.config.get("success_codes", [200])}
+    if args.mode == "real":
+        options["public_referer"] = normalizer.config.get("public_referer")
     request_events = []
     options["emit"] = request_events.append
     client = fixture_client(fixture_path, **options) if args.mode == "offline" else RecruitmentClient(**options)
