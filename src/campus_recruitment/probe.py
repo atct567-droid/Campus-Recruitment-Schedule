@@ -225,6 +225,8 @@ def main(argv=None):
     parser.add_argument("--job-fair-id", help="Real known fair ID, otherwise use a returned row")
     parser.add_argument("--id-field", default="jobFairId")
     parser.add_argument("--date-field", help="Actual start-date field after inspecting a real response")
+    parser.add_argument("--public-page", choices=["index", "jobfairSearch", "positionSearch"],
+                        help="Same-origin public page Referer observed from an anonymous browser")
     args = parser.parse_args(argv)
     if not 1 <= args.page_size <= 100:
         parser.error("--page-size must be between 1 and 100")
@@ -233,7 +235,8 @@ def main(argv=None):
             RecruitmentClient._fair_id(args.job_fair_id)
         client = RecruitmentClient(success_codes=args.success_code or (200,), interval=args.interval,
                                    timeout=(args.connect_timeout, args.read_timeout), retries=args.retries,
-                                   max_pages=args.max_pages, request_budget=args.request_budget)
+                                   max_pages=args.max_pages, request_budget=args.request_budget,
+                                   public_referer=("https://bysjyw.guat.edu.cn/" + args.public_page) if args.public_page else None)
     except ValueError as exc:
         parser.error(str(exc))
     args.output_dir.mkdir(parents=True, exist_ok=True)
