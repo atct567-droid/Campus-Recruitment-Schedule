@@ -47,13 +47,25 @@ async def browsers():
             await target.wait_for_timeout(8000)
             record = {"url_requested": label, "url_final": target.url,
                       "http_status": response.status if response else None,
-                      "text": (await target.locator("body").inner_text())[:2200]}
+                      "text": (await target.locator("body").inner_text())[:2200],
+                      "public_fair_anchors": await target.locator('a').evaluate_all(
+                          "elements => elements.filter(e => /jobfair/i.test(e.href)).map(e => ({href:e.href,text:e.innerText})).slice(0,20)")}
             report["browser"].append(record)
             save()
             return record
         await capture(ORIGIN + "/index", page)
+        for url in await page.evaluate("Array.from(document.scripts).map(s => s.src)"):
+            if urlsplit(url).netloc != urlsplit(ORIGIN).netloc or "/static/js/app" not in url:
+                continue
+            response = read(requests.Session(), url)
+            if response.status_code == 200:
+                for term in ['jobfairDetail', 'jobfairSearch', 'mode:"history"', 'mode:"hash"']:
+                    for occurrence in list(re.finditer(re.escape(term), response.text))[:8]:
+                        report["route_snippets"].append({"source": url, "term": term,
+                                                         "snippet": response.text[max(0, occurrence.start()-200):occurrence.end()+350]})
+            save()
         try:
-            await page.get_by_text("深圳市一博科技股份有限公司", exact=True).first.click(timeout=10000)
+            await page.get_by_text("深圳市一博科技股份有限公司").filter(visible=True).first.click(timeout=10000)
             await page.wait_for_timeout(5000)
             route = page.url
             report["browser"].append({"navigation": "click_public_fair_from_home", "url_final": route,
@@ -70,6 +82,12 @@ async def browsers():
             report["browser"].append({"navigation_error": type(error).__name__})
             save()
         await capture(ORIGIN + "/jobfairSearch", page)
+        mobile = await browser.new_context(**p.devices["iPhone 13"], locale="zh-CN", timezone_id="Asia/Shanghai")
+        mobile_page = await mobile.new_page()
+        report["mobile_emulation"] = "Chromium with iPhone viewport and user agent; not an actual Apple device"
+        await capture(ORIGIN + "/jobfairSearch", mobile_page)
+        await capture(ORIGIN + "/index", mobile_page)
+        await mobile.close()
         await browser.close()
 
 
