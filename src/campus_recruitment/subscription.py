@@ -183,7 +183,7 @@ def collect_public_snapshot(client, normalizer, matcher, *, start, days=30):
     return normalize_snapshot(records, normalizer), diagnostics
 
 
-def build_feed(snapshot, previous=None):
+def build_feed(snapshot, previous=None, *, published_at=None):
     """Merge changed observed events; absence is never evidence of cancellation."""
     if (snapshot.get("provenance") != "school_api" or snapshot.get("listing_complete") is not True
             or snapshot.get("query_semantics_verified") is not True):
@@ -197,6 +197,9 @@ def build_feed(snapshot, previous=None):
     stamp = datetime.fromisoformat(snapshot["generated_at"])
     if stamp.tzinfo is None:
         raise ValueError("Snapshot timestamp must include timezone")
+    publication = datetime.fromisoformat(published_at) if published_at else stamp
+    if publication.tzinfo is None or publication < stamp:
+        raise ValueError("Publication timestamp must include timezone and not predate the source")
     for row in snapshot["companies"] + snapshot["positions"]:
         if row.get("private") or row.get("provenance") != "school_api":
             raise ValueError("Unsafe company or position in subscription")
@@ -223,7 +226,7 @@ def build_feed(snapshot, previous=None):
         same = old and old["hash"] == digest
         state[identifier] = {"fair": record, "hash": digest,
                              "revision": old["revision"] if same else (old["revision"] + 1 if old else 0),
-                             "updated_at": old["updated_at"] if same else snapshot["generated_at"]}
+                             "updated_at": old["updated_at"] if same else publication.isoformat(timespec="seconds")}
     cutoff = (stamp.astimezone(SHANGHAI) - timedelta(days=90)).date()
     for identifier, old in previous["events"].items():
         if identifier in state:
@@ -242,7 +245,8 @@ def build_feed(snapshot, previous=None):
                                            allow_observed=True, calendar_name="桂航校招", include_all_positions=True)
     if unexpected_skips:
         raise ValueError("Stored subscription events failed ICS eligibility")
-    metadata = {"generated_at": snapshot["generated_at"], "provenance": "school_api", "timezone": "Asia/Shanghai",
+    metadata = {"generated_at": snapshot["generated_at"], "published_at": publication.isoformat(timespec="seconds"),
+                "provenance": "school_api", "timezone": "Asia/Shanghai",
                 "events": len(state), "observed_fairs": len(snapshot["fairs"]), "skipped": skipped,
                 "collection_complete": snapshot.get("collection_complete") is True,
                 "incomplete_fair_ids": snapshot.get("incomplete_fair_ids", []),

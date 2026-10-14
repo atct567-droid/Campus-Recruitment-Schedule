@@ -1,0 +1,10 @@
+{
+  "http_status": 200,
+  "bytes": 74558,
+  "events": 46,
+  "all_urls_corrected": true,
+  "sha256": "56d9da07f67c53c1736786f1f19d1095d9248d057ef4270055fa1b085da748f8",
+  "source_data_as_of": "2026-10-14T12:34:02+08:00",
+  "feed_published_at": "2026-10-14T18:06:29+08:00",
+  "apple_device_refresh_verified": false
+}

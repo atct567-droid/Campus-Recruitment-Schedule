@@ -42,7 +42,7 @@ def summary(fair, positions, companies=(), *, include_all_positions=False):
     related = sorted([company for company in companies if fair["job_fair_id"] in company.get("related_job_fair_ids", [])],
                      key=lambda company: company["company_id"])
     names = {company["company_id"]: company.get("company_name") or "企业名称未确认" for company in companies}
-    details = ["官网链接：" + (fair.get("source_url") or "未确认"), "招聘会 ID：" + fair["job_fair_id"],
+    details = ["官网链接：", fair.get("source_url") or "未确认", "", "招聘会 ID：" + fair["job_fair_id"],
                "地点：" + (fair.get("location") or "未确认"),
                "数据类型：" + fair.get("provenance", "unverified")]
     details += ["参会企业：" + ("；".join(f"{c.get('company_name') or '名称未确认'}（{c['company_id']}）" for c in related[:50]) or "未确认")]

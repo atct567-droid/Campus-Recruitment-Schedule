@@ -53,7 +53,7 @@ def test_preview_preserves_observed_rows_and_truthful_completeness(tmp_path, mon
     assert len(normalized["fairs"]) == (0 if fail_second_page else 1)
     if not fail_second_page:
         assert normalized["fairs"][0]["status"] == "unknown"
-        assert normalized["fairs"][0]["source_url"] == "https://bysjyw.guat.edu.cn/jobfairSearch"
+        assert normalized["fairs"][0]["source_url"] == "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=991"
 
 
 def test_real_cli_uses_public_page_size_budget_and_truthful_access_flag_with_mock(tmp_path, monkeypatch):

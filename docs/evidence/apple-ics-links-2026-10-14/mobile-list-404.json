@@ -1,0 +1,141 @@
+{
+  "checked_at": "2026-10-14T17:57:56+08:00",
+  "login_performed": false,
+  "account_writes": false,
+  "http": [
+    {
+      "url": "https://bysjyw.guat.edu.cn/index",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirect_location": null,
+      "authorization_or_user_cookies": false
+    },
+    {
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "http_status": 200,
+      "content_type": "text/html",
+      "redirect_location": null,
+      "authorization_or_user_cookies": false
+    },
+    {
+      "url": "https://bysjyw.guat.edu.cn/static/js/app~d0ae3f07.9b8d37a1.js",
+      "http_status": 200,
+      "content_type": "application/javascript",
+      "redirect_location": null,
+      "authorization_or_user_cookies": false
+    },
+    {
+      "url": "https://bysjyw.guat.edu.cn/static/js/app~7274e1de.f0ea6a92.js",
+      "http_status": 200,
+      "content_type": "application/javascript",
+      "redirect_location": null,
+      "authorization_or_user_cookies": false
+    },
+    {
+      "url": "https://bysjyw.guat.edu.cn/static/js/app~06837ae4.e5d10faf.js",
+      "http_status": 200,
+      "content_type": "application/javascript",
+      "redirect_location": null,
+      "authorization_or_user_cookies": false
+    },
+    {
+      "url": "https://bysjyw.guat.edu.cn/static/js/app~fc5381e6.ec2797f1.js",
+      "http_status": 200,
+      "content_type": "application/javascript",
+      "redirect_location": null,
+      "authorization_or_user_cookies": false
+    }
+  ],
+  "route_snippets": [
+    {
+      "source": "https://bysjyw.guat.edu.cn/static/js/app~06837ae4.e5d10faf.js",
+      "term": "jobfairDetail",
+      "snippet": "ta:{title:\"中心简介\",auth:!1}},{path:\"jobfairSearch\",component:function(){return n.e(\"jobfairSearch~f71cff67\").then(n.bind(null,\"3b71\"))},hidden:!0,name:\"JobfairSearch\",meta:{title:\"招聘会\",auth:!1}},{path:\"jobfairDetail/:id(\\\\d+)\",component:function(){return Promise.all([n.e(\"chunk-0a6fd08c\"),n.e(\"chunk-e004454c\"),n.e(\"jobfairDetail~9fa72942\")]).then(n.bind(null,\"1a25\"))},hidden:!0,name:\"JobfairDetail\",meta:{title:\"招聘会详情\",auth:!1}},{path:\"articleList\",component:function(){return n.e(\"articleList~f71cff67\").then(n.bind(null,\"3c55\"))},hidden:!0,name:\"ArticleList\",m"
+    },
+    {
+      "source": "https://bysjyw.guat.edu.cn/static/js/app~06837ae4.e5d10faf.js",
+      "term": "jobfairDetail",
+      "snippet": "ind(null,\"3b71\"))},hidden:!0,name:\"JobfairSearch\",meta:{title:\"招聘会\",auth:!1}},{path:\"jobfairDetail/:id(\\\\d+)\",component:function(){return Promise.all([n.e(\"chunk-0a6fd08c\"),n.e(\"chunk-e004454c\"),n.e(\"jobfairDetail~9fa72942\")]).then(n.bind(null,\"1a25\"))},hidden:!0,name:\"JobfairDetail\",meta:{title:\"招聘会详情\",auth:!1}},{path:\"articleList\",component:function(){return n.e(\"articleList~f71cff67\").then(n.bind(null,\"3c55\"))},hidden:!0,name:\"ArticleList\",meta:{title:\"新闻公告\",auth:!1}},{path:\"articleListCrep\",component:function(){return Promise.all([n.e(\"chunk-0d567038\"),"
+    },
+    {
+      "source": "https://bysjyw.guat.edu.cn/static/js/app~06837ae4.e5d10faf.js",
+      "term": "jobfairSearch",
+      "snippet": ",name:\"\",path:\"\",redirect:\"noRedirect\",meta:{title:\"招聘会\",icon:\"system\",auth:!0,layout:!0,noCache:!1,link:null},children:[{component:\"user/web-user/jobfair-search\",hidden:!1,name:\"JobfairSearch\",path:\"jobfairSearch\",meta:{title:\"招聘会\",icon:\"system\",auth:!0,layout:!0,noCache:!1,link:null}}]},{alwaysShow:!1,component:\"Layout\",hidden:!1,name:\"\",path:\"\",redirect:\"noRedirect\",meta:{title:\"投递管理\",icon:\"system\",auth:!0,layout:!0,noCache:!1,link:null},children:[{component:\"user/web-user/my-delivery\",hidden:!1,name:\"MyDelivery\",path:\"myDelivery\",meta:{title:\"我的投递\",icon"
+    },
+    {
+      "source": "https://bysjyw.guat.edu.cn/static/js/app~06837ae4.e5d10faf.js",
+      "term": "jobfairSearch",
+      "snippet": "e:\"SchoolInfo\",meta:{title:\"学校简介\",auth:!1}},{path:\"jycInfo\",component:function(){return n.e(\"jycInfo~f71cff67\").then(n.bind(null,\"9ca5\"))},hidden:!0,name:\"JycInfo\",meta:{title:\"中心简介\",auth:!1}},{path:\"jobfairSearch\",component:function(){return n.e(\"jobfairSearch~f71cff67\").then(n.bind(null,\"3b71\"))},hidden:!0,name:\"JobfairSearch\",meta:{title:\"招聘会\",auth:!1}},{path:\"jobfairDetail/:id(\\\\d+)\",component:function(){return Promise.all([n.e(\"chunk-0a6fd08c\"),n.e(\"chunk-e004454c\"),n.e(\"jobfairDetail~9fa72942\")]).then(n.bind(null,\"1a25\"))},hidden:!0,name:\"JobfairDetai"
+    },
+    {
+      "source": "https://bysjyw.guat.edu.cn/static/js/app~06837ae4.e5d10faf.js",
+      "term": "jobfairSearch",
+      "snippet": "h:\"jycInfo\",component:function(){return n.e(\"jycInfo~f71cff67\").then(n.bind(null,\"9ca5\"))},hidden:!0,name:\"JycInfo\",meta:{title:\"中心简介\",auth:!1}},{path:\"jobfairSearch\",component:function(){return n.e(\"jobfairSearch~f71cff67\").then(n.bind(null,\"3b71\"))},hidden:!0,name:\"JobfairSearch\",meta:{title:\"招聘会\",auth:!1}},{path:\"jobfairDetail/:id(\\\\d+)\",component:function(){return Promise.all([n.e(\"chunk-0a6fd08c\"),n.e(\"chunk-e004454c\"),n.e(\"jobfairDetail~9fa72942\")]).then(n.bind(null,\"1a25\"))},hidden:!0,name:\"JobfairDetail\",meta:{title:\"招聘会详情\",auth:!1}},{path:\"articleL"
+    },
+    {
+      "source": "https://bysjyw.guat.edu.cn/static/js/app~06837ae4.e5d10faf.js",
+      "term": "jobfairSearch",
+      "snippet": ",name:\"\",path:\"\",redirect:\"noRedirect\",meta:{title:\"招聘会\",icon:\"system\",auth:!0,layout:!0,noCache:!1,link:null},children:[{component:\"user/web-user/jobfair-search\",hidden:!1,name:\"JobfairSearch\",path:\"jobfairSearch\",meta:{title:\"招聘会\",icon:\"system\",auth:!0,layout:!0,noCache:!1,link:null}}]},{alwaysShow:!1,component:\"Layout\",hidden:!1,name:\"\",path:\"\",redirect:\"noRedirect\",meta:{title:\"投递管理\",icon:\"system\",auth:!0,layout:!0,noCache:!1,link:null},children:[{component:\"user/web-user/my-delivery\",hidden:!1,name:\"MyDelivery\",path:\"myDelivery\",meta:{title:\"我的投递\",icon"
+    },
+    {
+      "source": "https://bysjyw.guat.edu.cn/static/js/app~06837ae4.e5d10faf.js",
+      "term": "mode:\"history\"",
+      "snippet": "e:\"GenEdit\",meta:{title:\"修改生成配置\",activeMenu:\"/tool/gen\",auth:!0}}]}],r=a[\"a\"].prototype.push;a[\"a\"].prototype.push=function(e){return r.call(this,e).catch((function(e){return e}))},t[\"b\"]=new a[\"a\"]({mode:\"history\",scrollBehavior:function(){return{y:0}},routes:c})},a1ac:function(e,t,n){\"use strict\";n.r(t);var i=n(\"e017\"),a=n.n(i),o=n(\"21a1\"),c=n.n(o),s=new a.a({id:\"icon-number\",use:\"icon-number-usage\",viewBox:\"0 0 1024 1024\",content:'<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id="
+    }
+  ],
+  "browser": [
+    {
+      "url_requested": "https://bysjyw.guat.edu.cn/index",
+      "url_final": "https://bysjyw.guat.edu.cn/index",
+      "http_status": 200,
+      "text": "搜索\n首页\n学校首页\n学校简介\n招聘信息\n就业相关\n中心简介\n招聘会\n文件下载\n校友天地\n毕信网\n生源信息\n单位登录/注册\n学生登录\n管理员登录\n留桂就业社群\n新闻动态\n更多 \n03-24\n学校党委书记韩峻峰带队赴钦州开展定向访企拓岗工作\n03-31\n校长孙山林带队在桂林开展定向访企拓岗\n09-30\n校领导带队赴广东三地开展企业走访调研\n09-22\n校领导出席指导昆山人社组团校政企合作\n最新通知宣传视频\n08-28\n【重要通知】桂林航天工业学院2027届毕业生招聘服务指南\n10-10\n关于开展2026届毕业生就业质量评价&用人单位评价的通知\n09-22\n广西壮族自治区信息中心2026年重点领域急需紧缺高层次人才招聘公告\n09-15\n【青春筑梦 || 学生篇】|| 杨秀君：到祖国最需要的地方去\n更多 \n校内招聘会网络招聘会招聘信息招聘简章招聘岗位招聘企业\n 2027届毕业生校园综合双选会邀请函\n2026-10-17\n 深圳市雷迪奥视觉技术有限公司 2027届校园招聘简章—Beyond Expectation\n2026-10-14\n 广东丰明电子科技有限公司2027届校园招聘宣讲会\n2026-10-14\n 广东世运电路科技股份有限公司2027届校园招聘-桂林航天工业学院站\n2026-10-14\n “与菱一起，点亮未来”广东申菱环境系统股份有限公司2027校招宣讲会\n2026-10-14\n 深圳市一博科技股份有限公司\n2026-10-14\n 欣旺达动力27届秋招\n2026-10-14\n 广东集创秋招\n2026-10-14\n更多 \n招聘会日历\n2026 年 10 月\n上个月\n今天\n下个月\n一\t二\t三\t四\t五\t六\t日\n\n28\n\n\t\n\n29\n\n\t\n\n30\n\n\t\n\n01\n\n\t\n\n02\n\n\t\n\n03\n\n\t\n\n04\n\n\n\n\n05\n\n\t\n\n06\n\n\t\n\n07\n\n\t\n\n08\n\n\t\n\n09\n\n\t\n\n10\n\n\t\n\n11\n\n\n\n\n12\n\n\t\n\n13\n\n\t\n\n14\n\n\t\n\n15\n\n\t\n\n16\n\n\t\n\n17\n\n\t\n\n18\n\n\n\n\n19\n\n\t\n\n20\n\n\t\n\n21\n\n\t\n\n22\n\n\t\n\n23\n\n\t\n\n24\n\n\t\n\n25\n\n\n\n\n26\n\n\t\n\n27\n\n\t\n\n28\n\n\t\n\n29\n\n\t\n\n30\n\n\t\n\n31\n\n\t\n\n01\n\n\n\n\n02\n\n\t\n\n03\n\n\t\n\n04\n\n\t\n\n05\n\n\t\n\n06\n\n\t\n\n07\n\n\t\n\n08\n\n*红体字表示当日有招聘会举办，点击「数字」查看详情\n公务员/选调生政府/事业机构航天航空单位国有企业应征入伍三支一扶西部计划教师招聘\n关于划定2026年广西高校毕业生“三支一扶”计划招募笔试合格分数线的通告\n2026-07-22\n2026公务员考试公告发布！3月18日报名！\n2026-03-11\n2026年基层公务员招录367人（附岗位表）\n2026-01-31\n2026年乡镇公务员招录8650人（附岗位表）大专及以上！\n2026-01-31\n2026年省考招5360人公告，3月14日笔试！\n2026-01-20\n笔试时间已出！2026年广西公职类考试公告即将发布！\n2026-01-16\n2026年公务员考试招录5926人公告，1月16日报名！\n2026-01-16\n3月14日笔试！2026年省考公告！明日报名！\n2026-01-05\n更多 \n2027届毕业生信息\n管理学院航空服务与旅游管理学院机电工程学院人工智能学院汽车工程学院能源与建筑环境学院计算机科学与工程学院外语外贸学院传媒与艺术设计学院理学院航空宇航学院\n学院介绍招聘网站友情链接\n管理学院航空服务与旅游管理学院机电工程学院电子信息与自动化学院汽车工程学院能源与建筑环境学院计算机科学与工程学院外语外贸学院传媒与艺术设计学院理学院航空宇航学院\n联系我们\nservice contact\n0773-6796706\n[邮箱已隐藏]\n学校地址：中国 广西 广西壮族自治区桂林市金鸡路2号\n编　　号：桂JS201111-001\n今日访问量：51594网站总访问量：1360674\n主办单位：桂林航天工业学院桂ICP备05001198号\n技术支持：炎翼大数据\nCopyright © 2019 guat.edu.cn All Rights Reserved\n学校就业指导与服务中心\n微信公众号\n单位招聘服务qq群\n群号:186460695",
+      "public_fair_anchors": [
+        {
+          "href": "https://glut.ncss.cn/student/jobfair/joint.html",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "navigation": "click_public_fair_from_home",
+      "url_final": "https://bysjyw.guat.edu.cn/jobfairDetail/709?id=709",
+      "text": "搜索\n首页\n学校首页\n学校简介\n招聘信息\n就业相关\n中心简介\n招聘会\n文件下载\n校友天地\n毕信网\n深圳市一博科技股份有限公司\n 招聘会报名\n1家\n参会企业\n9个\n招聘职位\n9人\n招聘人数\n搜索\n举办时间\n2026-10-14 15:00~2026-10-14 18:00\n举办地点\n南校区飞天楼108\n招聘会介绍招聘岗位 (9)参会企业 (1)邀请函\n活动详情\n深圳市一博科技股份有限公司\n联系我们\nservice contact\n0773-6796706\n[邮箱已隐藏]\n学校地址：中国 广西 广西壮族自治区桂林市金鸡路2号\n编　　号：桂JS201111-001\n今日访问量：51594网站总访问量：1360674\n主办单位：桂林航天工业学院桂ICP备05001198号\n技术支持：炎翼大数据\nCopyright © 2019 guat.edu.cn All Rights Reserved\n学校就业指导与服务中心\n微信公众号\n单位招聘服务qq群\n群号:186460695"
+    },
+    {
+      "url_requested": "https://bysjyw.guat.edu.cn/jobfairDetail/709?id=709",
+      "url_final": "https://bysjyw.guat.edu.cn/jobfairDetail/709?id=709",
+      "http_status": 200,
+      "text": "搜索\n首页\n学校首页\n学校简介\n招聘信息\n就业相关\n中心简介\n招聘会\n文件下载\n校友天地\n毕信网\n深圳市一博科技股份有限公司\n 招聘会报名\n1家\n参会企业\n9个\n招聘职位\n9人\n招聘人数\n搜索\n举办时间\n2026-10-14 15:00~2026-10-14 18:00\n举办地点\n南校区飞天楼108\n招聘会介绍招聘岗位 (9)参会企业 (1)邀请函\n活动详情\n深圳市一博科技股份有限公司\n联系我们\nservice contact\n0773-6796706\n[邮箱已隐藏]\n学校地址：中国 广西 广西壮族自治区桂林市金鸡路2号\n编　　号：桂JS201111-001\n今日访问量：51623网站总访问量：1360703\n主办单位：桂林航天工业学院桂ICP备05001198号\n技术支持：炎翼大数据\nCopyright © 2019 guat.edu.cn All Rights Reserved\n学校就业指导与服务中心\n微信公众号\n单位招聘服务qq群\n群号:186460695",
+      "public_fair_anchors": []
+    },
+    {
+      "url_requested": "https://bysjyw.guat.edu.cn/jobfairDetail/709?id=709",
+      "url_final": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=709%3FjobFairId%3D709",
+      "http_status": 200,
+      "text": "深圳市一博科技股份有限公司\n1\n时间/地点\n时间：2026-10-14 15:00~2026-10-14 18:00\n地址：南校区飞天楼108\n2\n招聘会简介\n深圳市一博科技股份有限公司\n3\n企业招聘岗位\n研发工程师\n6000-8000元/月|电子工程师/技术员|10 人\n广东省-珠海市-金湾区\n深圳市一博科技股份有限公司\n计划工程师\n6000-8000元/月|工程/设备工程师|3 人\n广东省-珠海市-金湾区\n深圳市一博科技股份有限公司\n工艺工程师\n6000-8000元/月|产品工艺/制程工程师|8 人\n广东省-珠海市-金湾区\n深圳市一博科技股份有限公司\n质量工程师\n6000-8000元/月|化工技术应用/化工工程师|8 人\n广东省-珠海市-金湾区\n深圳市一博科技股份有限公司\n管培生（生产管理）\n6000-8000元/月|工业工程师|5 人\n广东省-珠海市-金湾区\n深圳市一博科技股份有限公司\n工程设计\n6000-8000元/月|其他|44 人\n广东省-深圳市-南山区\n深圳市一博科技股份有限公司\nSI仿真工程师\n6000-9000元/月|硬件工程师|30 人\n广东省-深圳市-南山区\n深圳市一博科技股份有限公司\nPCB设计工程师\n6000-9000元/月|电子工程师/技术员|35 人\n广东省-深圳市-南山区\n深圳市一博科技股份有限公司\nPCB设计工程师\n6000-9000元/月|电子工程师/技术员|40 人\n广东省-深圳市-南山区\n深圳市一博科技股份有限公司\n查看更多岗位",
+      "public_fair_anchors": []
+    },
+    {
+      "url_requested": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "url_final": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "http_status": 200,
+      "text": "搜索\n首页\n学校首页\n学校简介\n招聘信息\n就业相关\n中心简介\n招聘会\n文件下载\n校友天地\n毕信网\n招聘会名称举办日期\n至\n搜索重置\n共 544 条数据\n2027届毕业生校园综合双选会邀请函\n 2026-10-17 南校区田径场 参会企业206 家 招聘岗位924 个\n深圳市雷迪奥视觉技术有限公司 2027届校园招聘简章—Beyond Expectation\n 2026-10-14 北校区招聘大厅\n广东丰明电子科技有限公司2027届校园招聘宣讲会\n 2026-10-14 南校区飞天楼313\n广东世运电路科技股份有限公司2027届校园招聘-桂林航天工业学院站\n 2026-10-14 南校区飞天楼206\n“与菱一起，点亮未来”广东申菱环境系统股份有限公司2027校招宣讲会\n 2026-10-14 北校区明志楼324\n深圳市一博科技股份有限公司\n 2026-10-14 南校区飞天楼108\n欣旺达动力27届秋招\n 2026-10-14 南校区探天楼B102\n广东集创秋招\n 2026-10-14 南校区飞天楼207\n“双向奔赴，相互成就”广东气派科技有限公司2027届线下校园宣讲会\n 2026-10-15 南校区飞天楼313\n向光·耀未来——铭普光磁2027届校园招聘\n 2026-10-15 南校区飞天楼307\n共 544 条\n12345655\n前往页\n联系我们\nservice contact\n0773-6796706\n[邮箱已隐藏]\n学校地址：中国 广西 广西壮族自治区桂林市金鸡路2号\n编　　号：桂JS201111-001\n今日访问量：51645网站总访问量：1360725\n主办单位：桂林航天工业学院桂ICP备05001198号\n技术支持：炎翼大数据\nCopyright © 2019 guat.edu.cn All Rights Reserved\n学校就业指导与服务中心\n微信公众号\n单位招聘服务qq群\n群号:186460695",
+      "public_fair_anchors": []
+    },
+    {
+      "url_requested": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "url_final": "https://bysjyw.guat.edu.cn/m/pages/public/404",
+      "http_status": 200,
+      "text": "返回首页",
+      "public_fair_anchors": []
+    },
+    {
+      "url_requested": "https://bysjyw.guat.edu.cn/index",
+      "url_final": "https://bysjyw.guat.edu.cn/m/pages/public/404",
+      "http_status": 200,
+      "text": "返回首页",
+      "public_fair_anchors": []
+    }
+  ],
+  "mobile_emulation": "Chromium with iPhone viewport and user agent; not an actual Apple device"
+}

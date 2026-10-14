@@ -63,6 +63,12 @@ class Normalizer:
         states = config.get("status_values", {})
         if any(value not in {"scheduled", "cancelled", "postponed", "unknown"} for value in states.values()):
             raise ValueError("Unsupported normalized status")
+        template = config.get("fair_source_url_template")
+        if template is not None:
+            if (not isinstance(template, str) or template.count("{job_fair_id}") != 1
+                    or re.search(r"[{}]", template.replace("{job_fair_id}", ""))
+                    or not public_url(template.replace("{job_fair_id}", "1"))):
+                raise ValueError("Invalid reviewed fair source URL template")
 
     @classmethod
     def from_file(cls, path):
@@ -105,7 +111,17 @@ class Normalizer:
             raise ApiError("normalization", f"Missing or invalid {kind}.{name}; stable IDs are required")
         return str(value)
 
+    def source_url(self, row, kind, fair_id):
+        mapped = public_url(self.get(row, kind, "source_url"))
+        if mapped:
+            return mapped
+        template = self.config.get("fair_source_url_template")
+        if template:
+            return public_url(template.replace("{job_fair_id}", fair_id))
+        return public_url(self.config.get("source_page"))
+
     def fair(self, row, checked_at=None):
+        identifier = self.identifier(row, "fair", "job_fair_id")
         values = {name: clean_text(self.get(row, "fair", name)) for name in
                   ("title", "event_type", "location", "organizer")}
         start, day = parse_time(self.get(row, "fair", "start_time"))
@@ -123,10 +139,10 @@ class Normalizer:
             issues.append("结束时间不晚于开始时间，需人工确认")
         if status == "unknown" or not self.verified:
             issues.append("活动状态或字段契约未验证")
-        return Fair(self.identifier(row, "fair", "job_fair_id"), **values,
+        return Fair(identifier, **values,
                     start_time=start, end_time=end, start_date=day,
                     announcement_date=announced or announced_day,
-                    source_url=public_url(self.get(row, "fair", "source_url")) or public_url(self.config.get("source_page")),
+                    source_url=self.source_url(row, "fair", identifier),
                     status=status, status_verified=self.verified and status != "unknown",
                     last_checked_at=checked_at or now_iso(), provenance=self.provenance, issues=issues)
 
@@ -148,5 +164,5 @@ class Normalizer:
                         self.identifier(row, "position", "company_id"), fair_id,
                         clean_text(self.get(row, "position", "position_name")),
                         clean_text(self.get(row, "position", "requirements")), count,
-                        public_url(self.get(row, "position", "source_url")) or public_url(self.config.get("source_page")),
+                        self.source_url(row, "position", fair_id),
                         last_checked_at=checked_at or now_iso(), provenance=self.provenance, issues=issues)

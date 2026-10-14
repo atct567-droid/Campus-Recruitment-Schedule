@@ -54,3 +54,24 @@ def test_changed_daily_query_semantics_cannot_claim_complete_coverage():
     snapshot = collect(ChangedAPI(), schema, QueryPlan(date(2026, 10, 14), date(2026, 10, 15), "daily", verified=True))
     assert snapshot.complete is False and not snapshot.fairs
     assert snapshot.errors[0]["kind"] == "query_semantics"
+
+
+def test_reviewed_detail_template_uses_stable_fair_id_for_fair_and_position():
+    config = Normalizer.from_file(Path(__file__).resolve().parents[1] / "configs/school-public-schema.json").config
+    config["fair_source_url_template"] = BASE_URL + "/jobfairDetail/{job_fair_id}"
+    schema = Normalizer(config)
+    expected = BASE_URL + "/jobfairDetail/675"
+    assert schema.fair({"jobFairId": 675}).source_url == expected
+    assert schema.position({"positionId": 1, "companyId": 2}, "675").source_url == expected
+
+
+@pytest.mark.parametrize("template", [
+    BASE_URL + "/jobfairDetail/{unknown}", BASE_URL + "/jobfairDetail/{job_fair_id}/{job_fair_id}",
+    BASE_URL + "/jobfairDetail/{job_fair_id}?token=private", "https://user:secret@example.com/{job_fair_id}",
+    "javascript:alert({job_fair_id})", BASE_URL + "/jobfairDetail/{job_fair_id}\ninvalid",
+])
+def test_invalid_source_templates_rejected(template):
+    config = Normalizer.from_file(Path(__file__).resolve().parents[1] / "configs/school-public-schema.json").config
+    config["fair_source_url_template"] = template
+    with pytest.raises(ValueError, match="source URL template"):
+        Normalizer(config)

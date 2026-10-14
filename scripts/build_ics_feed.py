@@ -8,7 +8,7 @@ from pathlib import Path
 
 from campus_recruitment.client import RecruitmentClient
 from campus_recruitment.matcher import JobMatcher
-from campus_recruitment.models import SHANGHAI
+from campus_recruitment.models import SHANGHAI, now_iso
 from campus_recruitment.normalizer import Normalizer
 from campus_recruitment.subscription import build_feed, collect_public_snapshot, normalize_snapshot
 
@@ -48,7 +48,7 @@ def main(argv=None):
         snapshot = normalize_snapshot(records, normalizer, listing=listing)
     state_file = args.output / "state.json"
     previous = json.loads(state_file.read_text(encoding="utf-8")) if state_file.exists() else None
-    calendar, state, metadata = build_feed(snapshot, previous)
+    calendar, state, metadata = build_feed(snapshot, previous, published_at=now_iso())
     # All validation above precedes replacement; failed collection preserves the published branch.
     args.output.mkdir(parents=True, exist_ok=True)
     (args.output / "recruitment.ics").write_bytes(calendar.encode("utf-8"))

@@ -34,6 +34,8 @@ def validate(folder):
             raise ValueError("Event revision mismatch")
         if str(event["DESCRIPTION"]) != fair["calendar_description"]:
             raise ValueError("Event description mismatch")
+        if str(event.get("URL", "")) != (fair.get("source_url") or ""):
+            raise ValueError("Event source URL mismatch")
         status = str(event["STATUS"])
         if fair["status"] == "unknown" and status != "TENTATIVE":
             raise ValueError("Unknown source status cannot be confirmed/cancelled")

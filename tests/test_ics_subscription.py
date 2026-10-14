@@ -44,6 +44,11 @@ def test_actual_public_snapshot_exports_all_46_and_oct15(snapshot):
     for event in events:
         assert event.decoded("DTSTART").utcoffset() == timedelta(hours=8)
         assert sorted(alarm.decoded("TRIGGER") for alarm in event.subcomponents) == [timedelta(days=-1), timedelta(minutes=-30)]
+    for item in state["events"].values():
+        fair = item["fair"]
+        expected = "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=" + fair["job_fair_id"]
+        assert fair["source_url"] == expected
+        assert fair["calendar_description"].splitlines()[:3] == ["官网链接：", expected, ""]
     raw = ics.encode()
     assert all(len(line) <= 75 for line in raw.split(b"\r\n"))
     assert b"\n" not in raw.replace(b"\r\n", b"")
@@ -89,6 +94,32 @@ def test_unchanged_content_does_not_bump_revision_for_new_check_time(snapshot):
     snapshot["generated_at"] = "2026-10-14T14:00:00+08:00"
     _, new, _ = build_feed(snapshot, old)
     assert old == new
+
+
+def test_link_correction_keeps_uid_and_time_but_advances_modified_stamp(snapshot):
+    first, old, _ = build_feed(snapshot)
+    before = {str(event["UID"]): event for event in Calendar.from_ical(first).walk("VEVENT")}
+    for fair in snapshot["fairs"]:
+        fair["source_url"] = "https://bysjyw.guat.edu.cn/index"
+    updated, state, metadata = build_feed(snapshot, old, published_at="2026-10-14T18:00:00+08:00")
+    after = {str(event["UID"]): event for event in Calendar.from_ical(updated).walk("VEVENT")}
+    assert before.keys() == after.keys()
+    assert metadata["generated_at"] == snapshot["generated_at"]
+    assert metadata["published_at"] == "2026-10-14T18:00:00+08:00"
+    for identifier, event in after.items():
+        assert event.decoded("DTSTART") == before[identifier].decoded("DTSTART")
+        assert event.decoded("DTEND") == before[identifier].decoded("DTEND")
+        assert int(event["SEQUENCE"]) == 1
+        assert event.decoded("LAST-MODIFIED").isoformat() == "2026-10-14T10:00:00+00:00"
+        assert str(event["URL"]) == "https://bysjyw.guat.edu.cn/index"
+    repeated, state2, _ = build_feed(snapshot, state, published_at="2026-10-14T19:00:00+08:00")
+    assert updated == repeated and state == state2
+
+
+@pytest.mark.parametrize("timestamp", ["2026-10-14T12:00:00+08:00", "2026-10-14T18:00:00"])
+def test_publication_time_must_be_explicit_and_not_older_than_source(snapshot, timestamp):
+    with pytest.raises(ValueError, match="Publication timestamp"):
+        build_feed(snapshot, published_at=timestamp)
 
 
 @pytest.mark.parametrize("unsafe", ["synthetic", "private", "listing", "query", "position", "company"])
@@ -141,6 +172,16 @@ def test_build_script_and_independent_validation(tmp_path):
     with pytest.raises(ValueError):
         main(args)
     assert raw == (tmp_path / "recruitment.ics").read_bytes()
+
+
+def test_independent_validation_rejects_link_to_a_different_fair(tmp_path):
+    main(["--snapshot", str(EVIDENCE / "recruitment.json"), "--listing", str(EVIDENCE / "listing.json"), "--output", str(tmp_path)])
+    path = tmp_path / "recruitment.ics"
+    calendar = Calendar.from_ical(path.read_bytes())
+    calendar.walk("VEVENT")[0]["URL"] = "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=999999"
+    path.write_bytes(calendar.to_ical())
+    with pytest.raises(ValueError, match="source URL mismatch"):
+        validate(tmp_path)
 
 
 def test_partial_public_pages_stop_before_page_6():

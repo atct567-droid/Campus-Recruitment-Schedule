@@ -8,6 +8,22 @@ https://raw.githubusercontent.com/atct567-droid/Campus-Recruitment-Schedule/ics-
 
 无需 Google 服务账号、Google Calendar ID、Apple 密码或任何账户密钥。这个地址公开提供学校招聘活动，不包含个人日程。初始数据来自北京时间 2026-10-14 12:34:02 的已验证快照：46 场活动，其中 10 月 15 日有 9 场；综合双选会企业/岗位明细为部分，描述已标注。所有活动开始和结束时间都来自接口，未推测时间。
 
+## 手机官网链接修正
+
+2026-10-14 用户反馈点击事件链接进入404。已用 Chromium 的 iPhone 视口及 User-Agent 模拟复现：学校 `/jobfairSearch` 和 `/index` 返回HTTP200，但手机端实际跳转到 `/m/pages/public/404`。这说明仅检查HTTP状态不能确认页面有效。
+
+当前事件改为对应活动的直接移动详情页，例如铭普光磁：
+
+```text
+https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=675
+```
+
+已验证675、709、666三场的直接移动详情页，在桌面与iPhone模拟浏览器中均HTTP200，显示对应活动标题、时间、地点及正文，没有进入404。桌面 `/jobfairDetail/675` 未附query时虽然200但内容为空，因此不使用这类未完整加载的地址。真实Apple设备上的点击仍需用户核对，模拟浏览器不冒充真实设备验证。
+
+同一订阅地址的46场活动已经修订官网链接，并将地址单独一行显示。原UID和时间保持一致，SEQUENCE由0增为1，LAST-MODIFIED更新到实际发布时间。`metadata.json` 的generated_at仍为招聘数据采集时间，published_at为文件发布时间，不把修复链接说成重新采集。设备尚显示旧地址时，可在日历App的日历列表尝试下拉刷新，或等待系统刷新；刷新节奏由Apple客户端决定。
+
+路由证据：[移动404复现](https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38546130186)、[详情页验证](https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38546684564)，持久记录见 `docs/evidence/apple-ics-links-2026-10-14/`。
+
 ## 添加订阅
 
 **iPhone/iPad：**打开“日历”App → 底部“日历”列表 → “添加日历” → “添加订阅日历”，粘贴上面的完整 HTTPS 地址，预览后选择“订阅”。系统版本不同可从设置中的日历账户找到“添加订阅日历”。可选订阅账户以设备实际显示为准。将日历命名为“桂航校招”。
