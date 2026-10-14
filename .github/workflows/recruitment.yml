@@ -62,7 +62,7 @@ jobs:
           RUN_START: ${{ inputs.start_date }}
           RUN_END: ${{ inputs.end_date }}
           RUN_FAIR_ID: ${{ inputs.job_fair_id }}
-          RUN_SCHEMA: ${{ env.RUN_MODE == 'real' && (vars.GUAT_SCHEMA_PATH || 'configs/school-schema.example.json') || '' }}
+          RUN_SCHEMA: ${{ env.RUN_MODE == 'real' && (vars.GUAT_SCHEMA_PATH || 'configs/school-public-schema.json') || '' }}
           RUN_REPORTS: ${{ github.event_name == 'schedule' && 'true' || inputs.reports && 'true' || 'false' }}
           RUN_CALENDAR_DRY_RUN: ${{ github.event_name == 'schedule' && 'true' || inputs.calendar_dry_run && 'true' || 'false' }}
         run: python scripts/run_workflow.py

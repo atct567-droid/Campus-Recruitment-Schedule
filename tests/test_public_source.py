@@ -1,9 +1,14 @@
 """Public page context must preserve anonymous preparation and network controls."""
 
+from datetime import date
+from pathlib import Path
+
 import pytest
 from conftest import response
 
-from campus_recruitment.client import BASE_URL, LIST_PATH, RecruitmentClient
+from campus_recruitment.client import BASE_URL, LIST_PATH, Collection, RecruitmentClient
+from campus_recruitment.collector import QueryPlan, collect
+from campus_recruitment.normalizer import Normalizer
 
 
 def test_public_referer_does_not_import_session_credentials(make_client):
@@ -35,3 +40,17 @@ def test_default_transport_keeps_no_referer(make_client):
     client, session, _, _ = make_client([response({"code": 200, "rows": []})])
     client.get_json(LIST_PATH)
     assert "Referer" not in session.sent[0][0].headers
+
+
+def test_changed_daily_query_semantics_cannot_claim_complete_coverage():
+    class ChangedAPI:
+        def list_fairs(self, query, page_size):
+            return Collection([{"jobFairId": 991, "startTime": "2026-10-15 09:00:00"}], 1, 1, 1, ["rows"])
+
+        def fair_detail(self, identifier):
+            raise AssertionError("Must stop before details when the date contract changed")
+
+    schema = Normalizer.from_file(Path(__file__).resolve().parents[1] / "configs/school-public-schema.json")
+    snapshot = collect(ChangedAPI(), schema, QueryPlan(date(2026, 10, 14), date(2026, 10, 15), "daily", verified=True))
+    assert snapshot.complete is False and not snapshot.fairs
+    assert snapshot.errors[0]["kind"] == "query_semantics"

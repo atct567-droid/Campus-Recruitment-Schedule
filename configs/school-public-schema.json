@@ -5,6 +5,7 @@
   "verification_url": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38509364071",
   "public_referer": "https://bysjyw.guat.edu.cn/jobfairSearch",
   "public_page_size": 10,
+  "public_request_budget": 420,
   "source_page": "https://bysjyw.guat.edu.cn/jobfairSearch",
   "fields": {
     "fair": {
@@ -30,5 +31,11 @@
     }
   },
   "status_values": {},
-  "query": {"strategy": "daily", "verified": false}
+  "query": {
+    "strategy": "daily",
+    "verified": true,
+    "observed_semantics": "day_equals",
+    "verification_url": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38510083248",
+    "verification_scope": "2026-10-01, 2026-10-13, all days 2026-10-14 through 2026-11-12, and exclusive end 2026-11-13; every dated result paginated"
+  }
 }

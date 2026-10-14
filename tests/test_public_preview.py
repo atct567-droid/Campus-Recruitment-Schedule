@@ -8,6 +8,7 @@ import pytest
 
 from campus_recruitment.client import COMPANY_PATH, POSITION_PATH, RecruitmentClient
 from campus_recruitment.errors import ApiError
+from campus_recruitment.models import Snapshot
 from campus_recruitment.normalizer import Normalizer
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -53,3 +54,33 @@ def test_preview_preserves_observed_rows_and_truthful_completeness(tmp_path, mon
     if not fail_second_page:
         assert normalized["fairs"][0]["status"] == "unknown"
         assert normalized["fairs"][0]["source_url"] == "https://bysjyw.guat.edu.cn/jobfairSearch"
+
+
+def test_real_cli_uses_public_page_size_budget_and_truthful_access_flag_with_mock(tmp_path, monkeypatch):
+    from campus_recruitment import cli
+    observed = []
+
+    class MockClient:
+        attempts = 1
+
+        def __init__(self, **options):
+            observed.append(options)
+            options["emit"]({"outcome": "json_verified"})
+
+        def close(self):
+            pass
+
+    def empty_mock_collection(client, normalizer, plan, **options):
+        assert options["page_size"] == 10
+        return Snapshot(mode="real", complete=True, query_verified=True)
+
+    monkeypatch.setenv("ENABLE_REAL_COLLECTION", "true")
+    monkeypatch.setattr(cli, "RecruitmentClient", MockClient)
+    monkeypatch.setattr(cli, "collect", empty_mock_collection)
+    args = ["run", "--mode", "real", "--schema", str(ROOT / "configs/school-public-schema.json"),
+            "--db", str(tmp_path / "mock.db"), "--output-dir", str(tmp_path / "reports")]
+    assert cli.main(args) == 0
+    assert observed[-1]["request_budget"] == 420
+    assert json.loads((tmp_path / "reports/run.json").read_text())["real_school_access_verified"] is True
+    assert cli.main(args + ["--request-budget", "42"]) == 0
+    assert observed[-1]["request_budget"] == 42
