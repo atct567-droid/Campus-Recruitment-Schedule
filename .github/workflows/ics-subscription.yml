@@ -1,0 +1,59 @@
+name: Apple ICS subscription update
+
+on:
+  schedule:
+    # Shanghai 06:00/12:00/18:00. Schedules activate only on the default branch.
+    - cron: '0 4,10,22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: guat-ics-subscription
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e '.[test]'
+      - name: Checkout only the public subscription branch
+        uses: actions/checkout@v4
+        with:
+          ref: ics-feed
+          path: work/feed
+      - name: Collect bounded anonymous data and build calendar
+        env:
+          ENABLE_REAL_COLLECTION: 'true'
+        run: python scripts/build_ics_feed.py --collect --output work/feed
+      - name: Independently validate times, stable IDs, descriptions and reminders
+        run: python scripts/validate_ics_feed.py work/feed
+      - name: Publish validated public files; a failed run leaves the old feed intact
+        working-directory: work/feed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- recruitment.ics state.json metadata.json collection-log.json README.md .nojekyll
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update verified public recruitment subscription'
+            git push origin HEAD:ics-feed
+          fi
+      - name: Keep public validation metadata
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ics-subscription-${{ github.run_id }}
+          path: |
+            work/feed/recruitment.ics
+            work/feed/metadata.json
+            work/feed/collection-log.json
+          if-no-files-found: warn
+          retention-days: 14

@@ -2,6 +2,8 @@
 
 桂林航天工业学院校招信息系统，数据入口：<https://bysjyw.guat.edu.cn/index>。
 
+Apple 日历可使用无需 Google Cloud 的 [ICS 订阅](docs/apple-ics-subscription.md)。固定地址：<https://raw.githubusercontent.com/atct567-droid/Campus-Recruitment-Schedule/ics-feed/recruitment.ics>。初始文件包含真实46场活动，自动更新工作流须合并到默认分支才生效。
+
 已实现匿名客户端 → 配置标准化 → SQLite 去重与历史 → 岗位筛选 → 时间冲突 → 中文日报/周报和 JSON/CSV → ICS → Google Calendar dry-run/受控同步。学校四接口匿名访问已实际验证，未来30天目录取得46场；部分深分页受限，明细完整性单独标注。真实 Google 授权/写入仍未验证，定时采集和同步开关保持关闭。
 
 ## 完整离线运行
