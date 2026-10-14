@@ -13,7 +13,11 @@ from campus_recruitment.normalizer import Normalizer, clean_text
 from campus_recruitment.parsing import parse_page
 from campus_recruitment.reports import generate_reports, public_data
 from campus_recruitment.storage import Store
-from scripts import collect_public_preview as preview
+
+if __package__:
+    from . import collect_public_preview as preview
+else:
+    import collect_public_preview as preview
 
 POSITION_KEYS = ("positionId", "companyId", "companyName", "positionName", "positionDesc", "personsNum",
                  "salaryDesc", "needDegreeDesc", "workPlace")
