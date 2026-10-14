@@ -1,0 +1,1658 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Campus Recruitment Schedule//GUAT//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Asia/Shanghai
+X-WR-CALNAME:桂航校招
+X-PUBLISHED-TTL:PT6H
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+BEGIN:VTIMEZONE
+TZID:Asia/Shanghai
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:CST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:guat-fc4fb94d36f45aa9d13358022455e55db4b6f0eb536a1b2897c90dfd3df9eb9b@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261014T150000
+DTEND;TZID=Asia/Shanghai:20261014T180000
+SUMMARY:广东丰明电子科技有限公司2027届校园招聘宣讲会
+LOCATION:南校区飞天楼313
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：689\n地点：南校区飞天楼313\n数据类型：school_api\n
+ 参会企业：广东丰明电子科技有限公司（3693）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n电性工程师（0分，广
+ 东丰明电子科技有限公司 / 3693）\n结构工程师（0分，广
+ 东丰明电子科技有限公司 / 3693）\n制程工艺工程师（0分
+ ，广东丰明电子科技有限公司 / 3693）\n市场专员（0分，
+ 广东丰明电子科技有限公司 / 3693）\n销售工程师（0分，
+ 广东丰明电子科技有限公司 / 3693）\n质量工程师（0分，
+ 广东丰明电子科技有限公司 / 3693）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-4cc3d9cba4633096fadf09ea1106b4b321ab81b1d461c3d6994f0e303f631249@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261014T150000
+DTEND;TZID=Asia/Shanghai:20261014T180000
+SUMMARY:广东世运电路科技股份有限公司2027届校园招聘-桂
+ 林航天工业学院站
+LOCATION:南校区飞天楼206
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：692\n地点：南校区飞天楼206\n数据类型：school_api\n
+ 参会企业：广东世运电路科技股份有限公司（3958）\n活
+ 动时间来自学校公开接口，请以学校最新公告为准。\n取
+ 消状态尚未核实，日历标为暂定，不依据列表缺失推断
+ 取消。\n公开岗位（匹配分数优先）：\n储干（技术类）
+ （0分，广东世运电路科技股份有限公司 / 3958）\n储干（
+ 市场营销类）（0分，广东世运电路科技股份有限公司 / 3
+ 958）\n储干（品质保证类）（0分，广东世运电路科技股
+ 份有限公司 / 3958）\n储干（生产管理类）（0分，广东世
+ 运电路科技股份有限公司 / 3958）\n储干（设备维修类）
+ （0分，广东世运电路科技股份有限公司 / 3958）\n储干（
+ 职能类）（0分，广东世运电路科技股份有限公司 / 3958）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-1706be6c293444756e72b05e4afa9eb1038e552ac6ce058309451ef7ddad7748@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261014T150000
+DTEND;TZID=Asia/Shanghai:20261014T180000
+SUMMARY:“与菱一起，点亮未来”广东申菱环境系统股份有
+ 限公司2027校招宣讲会
+LOCATION:北校区明志楼324
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：708\n地点：北校区明志楼324\n数据类型：school_api\n
+ 参会企业：广东申菱环境系统股份有限公司（3650）\n活
+ 动时间来自学校公开接口，请以学校最新公告为准。\n取
+ 消状态尚未核实，日历标为暂定，不依据列表缺失推断
+ 取消。\n公开岗位（匹配分数优先）：\n售后技术支持工
+ 程师（65分，广东申菱环境系统股份有限公司 / 3650）\n暖
+ 通机电工程师（0分，广东申菱环境系统股份有限公司 / 3
+ 650）\n合同项目管理岗（0分，广东申菱环境系统股份有
+ 限公司 / 3650）\n结构工程师（0分，广东申菱环境系统股
+ 份有限公司 / 3650）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-92c5fd0421c1d619cbf1bdba83a207261f2c5f764aed46db9b4d2de03b72b654@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261014T150000
+DTEND;TZID=Asia/Shanghai:20261014T180000
+SUMMARY:深圳市一博科技股份有限公司
+LOCATION:南校区飞天楼108
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：709\n地点：南校区飞天楼108\n数据类型：school_api\n
+ 参会企业：深圳市一博科技股份有限公司（3609）\n活动
+ 时间来自学校公开接口，请以学校最新公告为准。\n取消
+ 状态尚未核实，日历标为暂定，不依据列表缺失推断取
+ 消。\n公开岗位（匹配分数优先）：\nPCB设计工程师（95
+ 分，深圳市一博科技股份有限公司 / 3609）\nPCB设计工程
+ 师（75分，深圳市一博科技股份有限公司 / 3609）\n工程设
+ 计（50分，深圳市一博科技股份有限公司 / 3609）\n质量工
+ 程师（50分，深圳市一博科技股份有限公司 / 3609）\n工艺
+ 工程师（50分，深圳市一博科技股份有限公司 / 3609）\n计
+ 划工程师（50分，深圳市一博科技股份有限公司 / 3609）\n
+ 研发工程师（50分，深圳市一博科技股份有限公司 / 3609
+ ）\nSI仿真工程师（0分，深圳市一博科技股份有限公司 / 
+ 3609）\n管培生（生产管理）（0分，深圳市一博科技股份
+ 有限公司 / 3609）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-2e00b312b0a9681bef09f9085a4e918b8fceb0c0b1c043dc17c90beef5fa446c@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261014T150000
+DTEND;TZID=Asia/Shanghai:20261014T180000
+SUMMARY:广东集创秋招
+LOCATION:南校区飞天楼207
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：716\n地点：南校区飞天楼207\n数据类型：school_api\n
+ 参会企业：广东集创科技有限公司（5396）\n活动时间来
+ 自学校公开接口，请以学校最新公告为准。\n取消状态尚
+ 未核实，日历标为暂定，不依据列表缺失推断取消。\n公
+ 开岗位（匹配分数优先）：\n销售储备（0分，广东集创
+ 科技有限公司 / 5396）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-fc9e91cc78e1817d80b4ba8c2dc9a638d0c57959825ee34f5e3d7688ad80dfb9@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261014T190000
+DTEND;TZID=Asia/Shanghai:20261014T210000
+SUMMARY:深圳市雷迪奥视觉技术有限公司  2027届校园招聘简
+ 章—Beyond Expectation
+LOCATION:北校区招聘大厅
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：660\n地点：北校区招聘大厅\n数据类型：school_api\n
+ 参会企业：深圳市雷迪奥视觉技术有限公司（3586）\n活
+ 动时间来自学校公开接口，请以学校最新公告为准。\n取
+ 消状态尚未核实，日历标为暂定，不依据列表缺失推断
+ 取消。\n公开岗位（匹配分数优先）：\n电子工程师（75
+ 分，深圳市雷迪奥视觉技术有限公司 / 3586）\n电子测试
+ 工程师（65分，深圳市雷迪奥视觉技术有限公司 / 3586）\n
+ 海外技术支持工程师（45分，深圳市雷迪奥视觉技术有限
+ 公司 / 3586）\nTE工程师（0分，深圳市雷迪奥视觉技术有
+ 限公司 / 3586）\nIE工程师（0分，深圳市雷迪奥视觉技术
+ 有限公司 / 3586）\n品质工程师（0分，深圳市雷迪奥视觉
+ 技术有限公司 / 3586）\nPMC工程师（0分，深圳市雷迪奥视
+ 觉技术有限公司 / 3586）\n采购工程师（0分，深圳市雷迪
+ 奥视觉技术有限公司 / 3586）\n人力资源专员（0分，深圳
+ 市雷迪奥视觉技术有限公司 / 3586）\n海外销售（0分，深
+ 圳市雷迪奥视觉技术有限公司 / 3586）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-2499d690642faa4da2a67b078236d1c031217f3c31cf2da2142c8e84e3d617f1@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261014T190000
+DTEND;TZID=Asia/Shanghai:20261014T210000
+SUMMARY:欣旺达动力27届秋招
+LOCATION:南校区探天楼B102
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：711\n地点：南校区探天楼B102\n数据类型：school_api\n
+ 参会企业：欣旺达动力科技股份有限公司（4807）\n活动
+ 时间来自学校公开接口，请以学校最新公告为准。\n取消
+ 状态尚未核实，日历标为暂定，不依据列表缺失推断取
+ 消。\n公开岗位（匹配分数优先）：\n工艺工程师（25分
+ ，欣旺达动力科技股份有限公司 / 4807）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-a440868cf4311953cb45c7ded9360009e1bb77775b6395a3e13aa9ef831794b1@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T100000
+DTEND;TZID=Asia/Shanghai:20261015T120000
+SUMMARY:向光·耀未来——铭普光磁2027届校园招聘
+LOCATION:南校区飞天楼307
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：675\n地点：南校区飞天楼307\n数据类型：school_api\n
+ 参会企业：东莞铭普光磁股份有限公司（4055）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n电源研发储干（25分
+ ，东莞铭普光磁股份有限公司 / 4055）\n磁器件研发储干
+ （0分，东莞铭普光磁股份有限公司 / 4055）\n光电研发储
+ 干（0分，东莞铭普光磁股份有限公司 / 4055）\nFAE技术应
+ 用储干（0分，东莞铭普光磁股份有限公司 / 4055）\n生产
+ 管理储干（0分，东莞铭普光磁股份有限公司 / 4055）\n质
+ 量储干（0分，东莞铭普光磁股份有限公司 / 4055）\n设备
+ 管理储干（0分，东莞铭普光磁股份有限公司 / 4055）\n工
+ 业工程储干（0分，东莞铭普光磁股份有限公司 / 4055）\n
+ 工艺工程储干（0分，东莞铭普光磁股份有限公司 / 4055）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-10ba045e9ee40807e57f6093280b9fa9eaf640ba4955e340ae4c749382ad96fc@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T100000
+DTEND;TZID=Asia/Shanghai:20261015T120000
+SUMMARY:长城电源技术（广西）有限公司2027届校园招聘宣讲
+ 会
+LOCATION:南校区飞天楼206
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：684\n地点：南校区飞天楼206\n数据类型：school_api\n
+ 参会企业：长城电源技术(广西)有限公司（3521）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n运维助理工程师（25
+ 分，长城电源技术(广西)有限公司 / 3521）\nTE/IE/PE/ME/波峰
+ 焊工程师（0分，长城电源技术(广西)有限公司 / 3521）\n
+ 质量助理工程师（0分，长城电源技术(广西)有限公司 / 35
+ 21）\n测试助理工程师（0分，长城电源技术(广西)有限公
+ 司 / 3521）\nIE助理工程师（0分，长城电源技术(广西)有限
+ 公司 / 3521）\nPMC助理工程师（0分，长城电源技术(广西)
+ 有限公司 / 3521）\n成本核算（0分，长城电源技术(广西)
+ 有限公司 / 3521）\n质量助理工程师（0分，长城电源技术(
+ 广西)有限公司 / 3521）\n管理储备（0分，长城电源技术(
+ 广西)有限公司 / 3521）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-bf31e6128301d31bb4014faf6b1e0f05f3ab8877cb55ce3d1ab3230d2ea8a220@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T150000
+DTEND;TZID=Asia/Shanghai:20261015T180000
+SUMMARY:“双向奔赴，相互成就”广东气派科技有限公司2027
+ 届线下校园宣讲会
+LOCATION:南校区飞天楼313
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：669\n地点：南校区飞天楼313\n数据类型：school_api\n
+ 参会企业：广东气派科技有限公司（3620）\n活动时间来
+ 自学校公开接口，请以学校最新公告为准。\n取消状态尚
+ 未核实，日历标为暂定，不依据列表缺失推断取消。\n公
+ 开岗位（匹配分数优先）：\n工艺工程（25分，广东气派
+ 科技有限公司 / 3620）\n程序开发（25分，广东气派科技有
+ 限公司 / 3620）\n品质工程（25分，广东气派科技有限公司
+  / 3620）\n设备工程（0分，广东气派科技有限公司 / 3620）
+ \n生产管理（0分，广东气派科技有限公司 / 3620）\n电镀
+ 工程（0分，广东气派科技有限公司 / 3620）\n大客户销售
+ （0分，广东气派科技有限公司 / 3620）\n职能管理（0分，
+ 广东气派科技有限公司 / 3620）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-8b7fb6aee1c63e17f44f935a6b64e05920ddad65327de1cb5e6994a6a3f0b618@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T150000
+DTEND;TZID=Asia/Shanghai:20261015T180000
+SUMMARY:广东恒兴校园宣讲会
+LOCATION:南校区飞天楼107
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：693\n地点：南校区飞天楼107\n数据类型：school_api\n
+ 参会企业：广东恒兴饲料实业股份有限公司（3711）\n活
+ 动时间来自学校公开接口，请以学校最新公告为准。\n取
+ 消状态尚未核实，日历标为暂定，不依据列表缺失推断
+ 取消。\n公开岗位（匹配分数优先）：\n品管部储备干部
+ （0分，广东恒兴饲料实业股份有限公司 / 3711）\n营销储
+ 备干部（0分，广东恒兴饲料实业股份有限公司 / 3711）\n
+ 财务储备干部（0分，广东恒兴饲料实业股份有限公司 / 3
+ 711）\n行政 人事储备干部（0分，广东恒兴饲料实业股份
+ 有限公司 / 3711）\n生产储备干 部（0分，广东恒兴饲料实
+ 业股份有限公司 / 3711）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-d6723fa996ced47773f2dea29cce9b11f951e6dafe321a84ac7d32791c3b4660@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T150000
+DTEND;TZID=Asia/Shanghai:20261015T180000
+SUMMARY:玖龙纸业27届校园招聘
+LOCATION:南校区飞天楼204
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：697\n地点：南校区飞天楼204\n数据类型：school_api\n
+ 参会企业：玖龙纸业（北海）有限公司（4153）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n设备培训生（0分，玖
+ 龙纸业（北海）有限公司 / 4153）\n生产培训生（0分，玖
+ 龙纸业（北海）有限公司 / 4153）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-35254aa9a21444e50349cebb5465b9b42cb4a625ebcbffe24504b178c35bcb85@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T150000
+DTEND;TZID=Asia/Shanghai:20261015T180000
+SUMMARY:中国能源建设集团湖南火电建设有限公司
+LOCATION:北校区明志楼324
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：706\n地点：北校区明志楼324\n数据类型：school_api\n
+ 参会企业：中国能源建设集团湖南火电建设有限公司（40
+ 17）\n活动时间来自学校公开接口，请以学校最新公告为
+ 准。\n取消状态尚未核实，日历标为暂定，不依据列表缺
+ 失推断取消。\n公开岗位（匹配分数优先）：\n项目工程
+ 技术岗（0分，中国能源建设集团湖南火电建设有限公司 
+ / 4017）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-30e4c02268d49ca010e3c62fcc2615da2fad4cf0c359eb8fedc0366739b34205@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T150000
+DTEND;TZID=Asia/Shanghai:20261015T180000
+SUMMARY:恒力天27届校园专场宣讲会
+LOCATION:南校区飞天楼212
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：727\n地点：南校区飞天楼212\n数据类型：school_api\n
+ 参会企业：深圳市恒力天科技有限公司（4370）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n机械助理工程师（0分
+ ，深圳市恒力天科技有限公司 / 4370）\n电气助理工程师
+ （0分，深圳市恒力天科技有限公司 / 4370）\n软件工助理
+ 工程师（0分，深圳市恒力天科技有限公司 / 4370）\nPM助
+ 理（0分，深圳市恒力天科技有限公司 / 4370）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-11f8e31ccbdbb7d91589ecf40713d3a8a5d17a7ec0cebf641f975af50a1eba8d@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T190000
+DTEND;TZID=Asia/Shanghai:20261015T210000
+SUMMARY:中鹏数电集团2027校园招聘会
+LOCATION:南校区飞天楼204
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：695\n地点：南校区飞天楼204\n数据类型：school_api\n
+ 参会企业：广东中鹏电气有限公司（4385）\n活动时间来
+ 自学校公开接口，请以学校最新公告为准。\n取消状态尚
+ 未核实，日历标为暂定，不依据列表缺失推断取消。\n公
+ 开岗位（匹配分数优先）：\n售后岗（0分，广东中鹏电
+ 气有限公司 / 4385）\n销售岗（0分，广东中鹏电气有限公
+ 司 / 4385）\n仓储岗（0分，广东中鹏电气有限公司 / 4385）
+ \n计划物流岗（0分，广东中鹏电气有限公司 / 4385）\n制
+ 造储干（0分，广东中鹏电气有限公司 / 4385）\n海外销售
+ 支持岗（0分，广东中鹏电气有限公司 / 4385）\n海外营销
+ 岗（0分，广东中鹏电气有限公司 / 4385）\n国内营销岗（0
+ 分，广东中鹏电气有限公司 / 4385）\n采购岗（0分，广东
+ 中鹏电气有限公司 / 4385）\n设备管理岗（0分，广东中鹏
+ 电气有限公司 / 4385）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-9b09d7f65345fc85aaa8814b69f3c933ce5eda41786f0c1df1b1ab2b1fdd2ecc@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T190000
+DTEND;TZID=Asia/Shanghai:20261015T210000
+SUMMARY:好利来&黑天鹅招聘
+LOCATION:南校区探天楼B101
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：712\n地点：南校区探天楼B101\n数据类型：school_api\n
+ 参会企业：成都黑天鹅餐饮管理有限公司新希望路分店
+ （3856）\n活动时间来自学校公开接口，请以学校最新公
+ 告为准。\n取消状态尚未核实，日历标为暂定，不依据列
+ 表缺失推断取消。\n公开岗位（匹配分数优先）：\n黑天
+ 鹅服务顾问（0分，成都黑天鹅餐饮管理有限公司新希望
+ 路分店 / 3856）\n好利来储备干部（0分，成都黑天鹅餐饮
+ 管理有限公司新希望路分店 / 3856）\n好利来品牌配送专
+ 员（0分，成都黑天鹅餐饮管理有限公司新希望路分店 / 3
+ 856）\n好利来分店出纳（0分，成都黑天鹅餐饮管理有限
+ 公司新希望路分店 / 3856）\n好利来技术制作（0分，成都
+ 黑天鹅餐饮管理有限公司新希望路分店 / 3856）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-5b60f221d4a1852afd0194ad0857fae9c558608e35621dce43301e8c771b7877@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261016T100000
+DTEND;TZID=Asia/Shanghai:20261016T120000
+SUMMARY:2027珠海金智维人工智能股份有限公司专场
+LOCATION:南校区飞天楼212
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：707\n地点：南校区飞天楼212\n数据类型：school_api\n
+ 参会企业：珠海金智维人工智能股份有限公司（5377）\n
+ 活动时间来自学校公开接口，请以学校最新公告为准。\n
+ 取消状态尚未核实，日历标为暂定，不依据列表缺失推
+ 断取消。\n公开岗位（匹配分数优先）：\n助理开发工程
+ 师（0分，珠海金智维人工智能股份有限公司 / 5377）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-9f6cb78c09b22a1a10564f6be4a1784327a42ff11a10a31d355435db59f44710@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261016T150000
+DTEND;TZID=Asia/Shanghai:20261016T180000
+SUMMARY:大族激光集团2027届校园招聘宣讲会
+LOCATION:南校区飞天楼110
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：655\n地点：南校区飞天楼110\n数据类型：school_api\n
+ 参会企业：大族激光科技产业集团股份有限公司（4053）\
+ n活动时间来自学校公开接口，请以学校最新公告为准。\
+ n取消状态尚未核实，日历标为暂定，不依据列表缺失推
+ 断取消。\n公开岗位（匹配分数优先）：\n技术支持工程
+ 师（校招1021）（65分，大族激光科技产业集团股份有限
+ 公司 / 4053）\n电气工程师（校招025）（65分，大族激光科
+ 技产业集团股份有限公司 / 4053）\n技术支持工程师（校
+ 招015）（65分，大族激光科技产业集团股份有限公司 / 405
+ 3）\n技术员（校招1013）（0分，大族激光科技产业集团股
+ 份有限公司 / 4053）\n营销管培生（校招1014）（0分，大族
+ 激光科技产业集团股份有限公司 / 4053）\n机械工程师（
+ 校招024）（0分，大族激光科技产业集团股份有限公司 / 4
+ 053）\n工艺工程师（校招027）（0分，大族激光科技产业
+ 集团股份有限公司 / 4053）\n应用工程师（校招017）（0分
+ ，大族激光科技产业集团股份有限公司 / 4053）\n制冷助
+ 理工程师（校招018）（0分，大族激光科技产业集团股份
+ 有限公司 / 4053）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-12f26af0dcdfae8fe4331d6a4c369edd549220cdeb119b3b1831b2a2cf77f281@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261016T150000
+DTEND;TZID=Asia/Shanghai:20261016T180000
+SUMMARY:桂林深科技2027届校园招聘线下宣讲会—桂林航天工
+ 业学院场
+LOCATION:南校区飞天楼212
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：672\n地点：南校区飞天楼212\n数据类型：school_api\n
+ 参会企业：桂林深科技有限公司（3631）\n活动时间来自
+ 学校公开接口，请以学校最新公告为准。\n取消状态尚未
+ 核实，日历标为暂定，不依据列表缺失推断取消。\n公开
+ 岗位（匹配分数优先）：\n测试工程（0分，桂林深科技
+ 有限公司 / 3631）\n工艺工程（0分，桂林深科技有限公司 
+ / 3631）\n项目管理（0分，桂林深科技有限公司 / 3631）\nIE
+ 工程（0分，桂林深科技有限公司 / 3631）\n品质管理（0分
+ ，桂林深科技有限公司 / 3631）\n暖通工程（0分，桂林深
+ 科技有限公司 / 3631）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-8ef532f440c91b5dfa24570e53d6bded96c4064a45e6d18a61c5e08b172b9814@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261016T150000
+DTEND;TZID=Asia/Shanghai:20261016T180000
+SUMMARY:安徽星河动力装备科技有限公司宣讲会
+LOCATION:南校区飞天楼111
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：674\n地点：南校区飞天楼111\n数据类型：school_api\n
+ 参会企业：安徽星河动力装备科技有限公司（4715）\n活
+ 动时间来自学校公开接口，请以学校最新公告为准。\n取
+ 消状态尚未核实，日历标为暂定，不依据列表缺失推断
+ 取消。\n公开岗位（匹配分数优先）：\n装配岗（0分，安
+ 徽星河动力装备科技有限公司 / 4715）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-07bed92aab16ecdd9c886a79e44f0c0b02d70c746c593eaa3b8acf24e687bcd8@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261016T150000
+DTEND;TZID=Asia/Shanghai:20261016T180000
+SUMMARY:迅得机械（东莞）有限公司
+LOCATION:南校区飞天楼204
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：683\n地点：南校区飞天楼204\n数据类型：school_api\n
+ 参会企业：迅得机械（东莞）有限公司（3378）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n电气工程师/PLC编程人
+ 员（65分，迅得机械（东莞）有限公司 / 3378）\n机械工程
+ 师（0分，迅得机械（东莞）有限公司 / 3378）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-1c63ed9164d61acfd1f4f3a7b6dfacbd98d1dc01e755b7b558c6af0491154a2e@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261016T150000
+DTEND;TZID=Asia/Shanghai:20261016T180000
+SUMMARY:东莞市德普特电子有限公司2027届校招
+LOCATION:南校区飞天楼208
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：688\n地点：南校区飞天楼208\n数据类型：school_api\n
+ 参会企业：东莞市德普特电子有限公司（3621）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n管培生（生产管理岗
+ ）（0分，东莞市德普特电子有限公司 / 3621）\n管培生（
+ 设备技术岗）（0分，东莞市德普特电子有限公司 / 3621）
+ \n管培生（工艺技术岗）（0分，东莞市德普特电子有限
+ 公司 / 3621）\n管培生（品质技术岗）（0分，东莞市德普
+ 特电子有限公司 / 3621）\n管培生（研发技术岗）（0分，
+ 东莞市德普特电子有限公司 / 3621）\n管培生（职能岗）
+ （0分，东莞市德普特电子有限公司 / 3621）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-4ec24a2d7f1dfae1f98882eabf0400cd9483dd2de78b926b625c46e8787f3816@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261016T150000
+DTEND;TZID=Asia/Shanghai:20261016T180000
+SUMMARY:桂林航天工业学院2027届毕业生秋季“小精专优”专
+ 场招聘会邀请函
+LOCATION:南校区启天楼B座小广场
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：710\n地点：南校区启天楼B座小广场\n数据类型：sch
+ ool_api\n参会企业：桂林风得控科技有限公司（3406）；桂
+ 林星云电子科技有限公司（3413）；桂林市朗谷科技有限
+ 公司（3428）；中国核工业华兴建设有限公司（3613）；广
+ 东派捷智能装备有限公司（3995）；中国核工业第五建设
+ 有限公司（4504）；亚波光子（深圳）科技有限公司（5427
+ ）；苏州迈时光电股份有限公司（5506）\n活动时间来自
+ 学校公开接口，请以学校最新公告为准。\n取消状态尚未
+ 核实，日历标为暂定，不依据列表缺失推断取消。\n公开
+ 岗位（匹配分数优先）：\n嵌入式软件工程师（95分，桂
+ 林风得控科技有限公司 / 3406）\nFPGA软件 工程师（95分，
+ 桂林星云电子科技有限公司 / 3413）\n硬件工程师（75分，
+ 桂林星云电子科技有限公司 / 3413）\nPCB助理工程师（75分
+ ，桂林市朗谷科技有限公司 / 3428）\n硬件研发类（功能
+ 板卡·仪器开发）（75分，广东派捷智能装备有限公司 / 3
+ 995）\n技术支持工程师（65分，桂林星云电子科技有限公
+ 司 / 3413）\n系统控制软件工程师（50分，桂林星云电子科
+ 技有限公司 / 3413）\n数字控制器软件工程师（50分，桂林
+ 星云电子科技有限公司 / 3413）\n电子电路工程师（50分，
+ 亚波光子（深圳）科技有限公司 / 5427）\n软件研发类（
+ 测试软件·程序开发维护）（25分，广东派捷智能装备有
+ 限公司 / 3995）\n工程技术类岗位（0分，中国核工业第五
+ 建设有限公司 / 4504）\nQT系统软件工程师（0分，桂林星
+ 云电子科技有限公司 / 3413）\n结构设计 工程师（0分，桂
+ 林星云电子科技有限公司 / 3413）\n机电工程师（0分，桂
+ 林星云电子科技有限公司 / 3413）\n工艺工程师（0分，桂
+ 林星云电子科技有限公司 / 3413）\n检验工程师（0分，桂
+ 林星云电子科技有限公司 / 3413）\n材料检测技术（0分，
+ 中国核工业华兴建设有限公司 / 3613）\n销售与应用工程
+ 师（0分，亚波光子（深圳）科技有限公司 / 5427）\n会计
+ （0分，亚波光子（深圳）科技有限公司 / 5427）\n综合管
+ 理岗（0分，广东派捷智能装备有限公司 / 3995）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-d536a8c1664fec0bc85615cf3cb2645871e8b2935c9642c534c67ac85315cd35@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261016T150000
+DTEND;TZID=Asia/Shanghai:20261016T180000
+SUMMARY:桂林东衡光通讯技术有限公司专场
+LOCATION:南校区飞天楼213
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：717\n地点：南校区飞天楼213\n数据类型：school_api\n
+ 参会企业：桂林东衡光通讯技术有限公司（4416）\n活动
+ 时间来自学校公开接口，请以学校最新公告为准。\n取消
+ 状态尚未核实，日历标为暂定，不依据列表缺失推断取
+ 消。\n公开岗位（匹配分数优先）：\n质量管理储干（0分
+ ，桂林东衡光通讯技术有限公司 / 4416）\n生产储备干部
+ （0分，桂林东衡光通讯技术有限公司 / 4416）\n工艺储备
+ 干部（0分，桂林东衡光通讯技术有限公司 / 4416）\n技术
+ 支持储备干部（0分，桂林东衡光通讯技术有限公司 / 4416
+ ）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-ec1c7d93ba051204e4fea7e167f540c2136769c82329c53f5b7a0770bb237987@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261016T190000
+DTEND;TZID=Asia/Shanghai:20261016T210000
+SUMMARY:【与光同行·追光筑梦】-杰普特2027届校招简章
+LOCATION:南校区飞天楼208
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：682\n地点：南校区飞天楼208\n数据类型：school_api\n
+ 参会企业：深圳市杰普特光电股份有限公司（4060）\n活
+ 动时间来自学校公开接口，请以学校最新公告为准。\n取
+ 消状态尚未核实，日历标为暂定，不依据列表缺失推断
+ 取消。\n公开岗位（匹配分数优先）：\n校园大使（0分，
+ 深圳市杰普特光电股份有限公司 / 4060）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-c7e616822f366fb1b5e0756af498cc11d2c0862edcb32ca65882f622ff39de1b@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261017T090000
+DTEND;TZID=Asia/Shanghai:20261017T180000
+SUMMARY:2027届毕业生校园综合双选会邀请函
+LOCATION:南校区田径场
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：666\n地点：南校区田径场\n数据类型：school_api\n参
+ 会企业：广东中泰工业科技股份有限公司（3375）；迅得
+ 机械（东莞）有限公司（3378）；桂林力源粮油食品集团
+ 有限公司（3385）；桂林风得控科技有限公司（3406）；广
+ 州青木电子商务有限公司桂林分公司（3411）；安美微客
+ （上海）互联网科技有限公司桂林分公司（3430）；东莞
+ 市欧蒙家居用品有限公司（3503）；桂林福达股份有限公
+ 司（3518）；佛山冰火电子商务有限公司（3526）；广东保
+ 伦电子股份有限公司（3600）；深圳市崧盛电子股份有限
+ 公司（3606）；桂林深科技有限公司（3631）；深圳市兆兴
+ 博拓科技股份有限公司（3644）；广西桂林志公教育咨询
+ 有限公司（3664）；广东海大集团股份有限公司（广西大
+ 区）（3674）；宁波中嘉科贸有限公司（3696）；东莞市天
+ 辉五金制品有限公司（3723）；广西顺丰速运有限公司（3
+ 750）；广西桂康新材料有限公司（3754）；深圳市鸿荣源
+ 物业服务有限公司（3761）；广东纳特康电子股份有限公
+ 司（3770）；广东壹号食品股份有限公司（3794）；成都黑
+ 天鹅餐饮管理有限公司新希望路分店（3856）；桂林市桂
+ 海旅游开发有限公司（3998）；华图教育科技有限公司桂
+ 林分公司（4131）；广西京东信成供应链科技有限公司（4
+ 146）；龙涛供应链管理（广州）有限公司（4165）；华安
+ 财产保险股份有限公司广西分公司（4288）；海目星激光
+ 科技集团股份有限公司（4390）；桂林东衡光通讯技术有
+ 限公司（4416）；广东开尔文智能科技有限公司（4429）；
+ 广西愿腾汽车销售服务有限责任公司（4430）；鹏城通达
+ （深圳）交通轨道有限公司（4435）；东莞市万科酒店管
+ 理有限公司（4477）；桂林腾亿传媒有限公司（4484）；广
+ 东力科新能源股份有限公司（4490）；中国太平洋财产保
+ 险股份有限公司广西分公司（4622）；安徽星河动力装备
+ 科技有限公司（4715）；深圳大中华喜来登酒店有限公司
+ （5179）；广西桂林市勤学教育咨询有限公司（5241）；爱
+ 柯迪股份有限公司（5244）；方盛车桥（柳州）有限公司
+ （5296）；广西桂路通新能源汽车销售有限公司（5311）；
+ 云伍航空装备（河北）有限公司（5353）；西安摩尔石油
+ 工程实验室股份有限公司（5356）；深圳绿威科技有限公
+ 司（5357）；深圳朗特智能控制股份有限公司（5358）；中
+ 科宇航（广州）装备工业有限公司（5359）；深圳壹连科
+ 技股份有限公司（5361）；广西漓源水产饲料有限公司（5
+ 364）\n企业摘要列出 50 家，共 71 家；完整列表见招聘报
+ 告。\n活动时间来自学校公开接口，请以学校最新公告为
+ 准。\n取消状态尚未核实，日历标为暂定，不依据列表缺
+ 失推断取消。\n企业与岗位明细为已取得的公开部分，未
+ 收齐；不代表全部参会企业和岗位。\n公开岗位（匹配分
+ 数优先）：\n嵌入式软件工程师（95分，桂林风得控科技
+ 有限公司 / 3406）\n硬件工程师（95分，深圳绿威科技有限
+ 公司 / 5357）\nNPI工程师（实习）（75分，深圳市崧盛电子
+ 股份有限公司 / 3606）\n嵌入式软件工程师（75分，江苏意
+ 优机器人科技有限公司 / 5503）\n电气工程师（65分，广东
+ 开尔文智能科技有限公司 / 4429）\n电气工程师/PLC编程人
+ 员（65分，迅得机械（东莞）有限公司 / 3378）\n电气工程
+ 岗（65分，广西漓源水产饲料有限公司 / 5364）\n电气工程
+ 岗（65分，桂林力源粮油食品集团有限公司 / 3385）\n研发
+ 储干（50分，广东保伦电子股份有限公司 / 3600）\n电源工
+ 程师（深圳/中山）（50分，深圳市崧盛电子股份有限公
+ 司 / 3606）\n软件开发工程师（50分，深圳市崧盛电子股份
+ 有限公司 / 3606）\n量产维护工程师（实习）（50分，深圳
+ 市崧盛电子股份有限公司 / 3606）\nPBC工程师（实习）（50
+ 分，深圳市崧盛电子股份有限公司 / 3606）\n电气工程师
+ （45分，拉普拉斯（无锡）半导体科技有限公司 / 5497）\n
+ 研发验证工程师（25分，宁波中嘉科贸有限公司 / 3696）\n
+ 显示器验证 工程师（25分，宁波中嘉科贸有限公司 / 3696
+ ）\n外贸业务员（0分，广东纳特康电子股份有限公司 / 37
+ 70）\n内贸业务员（0分，广东纳特康电子股份有限公司 / 
+ 3770）\n研发工程师（0分，广东中泰工业科技股份有限公
+ 司 / 3375）\n销售工程师（0分，广东保伦电子股份有限公
+ 司 / 3600）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-f6103ca1e01bd200a9258a366b7e8c22a542e771bf11a0679967a5bb47ef3688@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261017T150000
+DTEND;TZID=Asia/Shanghai:20261017T180000
+SUMMARY:爱柯迪股份有限公司2027校园招聘
+LOCATION:南校区飞天楼204
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：690\n地点：南校区飞天楼204\n数据类型：school_api\n
+ 参会企业：爱柯迪股份有限公司（5244）\n活动时间来自
+ 学校公开接口，请以学校最新公告为准。\n取消状态尚未
+ 核实，日历标为暂定，不依据列表缺失推断取消。\n公开
+ 岗位（匹配分数优先）：\n加工工艺工程师（0分，爱柯
+ 迪股份有限公司 / 5244）\n压铸工艺工程师（0分，爱柯迪
+ 股份有限公司 / 5244）\n项目工程师（0分，爱柯迪股份有
+ 限公司 / 5244）\n质量工程师（0分，爱柯迪股份有限公司 
+ / 5244）\n物控工程师（0分，爱柯迪股份有限公司 / 5244）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-bd94717d91260895035088525e817ea10375454f03aa3bd8b28b355a4cee22c5@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261017T150000
+DTEND;TZID=Asia/Shanghai:20261017T180000
+SUMMARY:桂林力源粮油食品集团有限公司招聘会
+LOCATION:南校区飞天楼207
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：705\n地点：南校区飞天楼207\n数据类型：school_api\n
+ 参会企业：桂林力源粮油食品集团有限公司（3385）\n活
+ 动时间来自学校公开接口，请以学校最新公告为准。\n取
+ 消状态尚未核实，日历标为暂定，不依据列表缺失推断
+ 取消。\n公开岗位（匹配分数优先）：\n电气工程岗（65
+ 分，桂林力源粮油食品集团有限公司 / 3385）\n设备管理
+ 岗（0分，桂林力源粮油食品集团有限公司 / 3385）\n生产
+ 管理储备岗（0分，桂林力源粮油食品集团有限公司 / 3385
+ ）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-02837c1944876b4fa860432c13f2d9b11a7fd94dae707c4143d1217dee66fc43@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261017T150000
+DTEND;TZID=Asia/Shanghai:20261017T180000
+SUMMARY:东莞市硅翔绝缘材料有限公司
+LOCATION:南校区飞天楼212
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：719\n地点：南校区飞天楼212\n数据类型：school_api\n
+ 参会企业：东莞市硅翔绝缘材料有限公司（3801）\n活动
+ 时间来自学校公开接口，请以学校最新公告为准。\n取消
+ 状态尚未核实，日历标为暂定，不依据列表缺失推断取
+ 消。\n公开岗位（匹配分数优先）：\n嵌入式软件工程师
+ （75分，东莞市硅翔绝缘材料有限公司 / 3801）\n嵌入式软
+ 件工程师（75分，东莞市硅翔绝缘材料有限公司 / 3801）\n
+ 自动化工程师（65分，东莞市硅翔绝缘材料有限公司 / 380
+ 1）\n电气工程师（65分，东莞市硅翔绝缘材料有限公司 / 
+ 3801）\n品质/SQE工程师（0分，东莞市硅翔绝缘材料有限公
+ 司 / 3801）\nIE/工艺工程师（0分，东莞市硅翔绝缘材料有
+ 限公司 / 3801）\nSMT工程师（0分，东莞市硅翔绝缘材料有
+ 限公司 / 3801）\nPIE工程师（0分，东莞市硅翔绝缘材料有
+ 限公司 / 3801）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-68c6c6e9ad314d1a5c4d647cfb6ed84265e47cbc2a05a54fb58ae74c0085ef29@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261017T150000
+DTEND;TZID=Asia/Shanghai:20261017T180000
+SUMMARY:双胞胎集团&桂林航工2027届校园宣讲会
+LOCATION:南校区飞天楼203
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：724\n地点：南校区飞天楼203\n数据类型：school_api\n
+ 参会企业：双胞胎（集团）股份有限公司（3907）\n活动
+ 时间来自学校公开接口，请以学校最新公告为准。\n取消
+ 状态尚未核实，日历标为暂定，不依据列表缺失推断取
+ 消。\n公开岗位（匹配分数优先）：\n饲料生产储备干部
+ （0分，双胞胎（集团）股份有限公司 / 3907）\n机电工程
+ 师（0分，双胞胎（集团）股份有限公司 / 3907）\n饲料生
+ 产技术岗（0分，双胞胎（集团）股份有限公司 / 3907）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-a6c2a2325dfd588f202a240a06ccb2b037854e7097a303fc8991ecc15501528c@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261019T150000
+DTEND;TZID=Asia/Shanghai:20261019T180000
+SUMMARY:深圳市星特科技股份有限公司
+LOCATION:南校区飞天楼207
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：694\n地点：南校区飞天楼207\n数据类型：school_api\n
+ 参会企业：深圳市星特科技有限公司（4027）\n活动时间
+ 来自学校公开接口，请以学校最新公告为准。\n取消状态
+ 尚未核实，日历标为暂定，不依据列表缺失推断取消。\n
+ 公开岗位（匹配分数优先）：\n机械助理工程师（0分，
+ 深圳市星特科技有限公司 / 4027）\n电气助理工程师（0分
+ ，深圳市星特科技有限公司 / 4027）\n视觉助理工程师（0
+ 分，深圳市星特科技有限公司 / 4027）\n项目助理工程师
+ （0分，深圳市星特科技有限公司 / 4027）\n外贸专员（0分
+ ，深圳市星特科技有限公司 / 4027）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-769e881d85fc5d27cb4cbc8382200d95b179cfdeb56e0b439da737069eaf8a5a@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261019T150000
+DTEND;TZID=Asia/Shanghai:20261019T180000
+SUMMARY:熵基科技股份有限公司 2027届校园招聘
+LOCATION:南校区飞天楼206
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：703\n地点：南校区飞天楼206\n数据类型：school_api\n
+ 参会企业：熵基科技股份有限公司（3740）\n活动时间来
+ 自学校公开接口，请以学校最新公告为准。\n取消状态尚
+ 未核实，日历标为暂定，不依据列表缺失推断取消。\n公
+ 开岗位（匹配分数优先）：\n海外技术支持工程师（全球
+ 技术服务管培生）（65分，熵基科技股份有限公司 / 3740
+ ）\n海外销售工程师（全球营销管培生）（0分，熵基科
+ 技股份有限公司 / 3740）\n产品专员（0分，熵基科技股份
+ 有限公司 / 3740）\n国际商务代表/订单员（0分，熵基科技
+ 股份有限公司 / 3740）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-290a0b92873bdf4e47986dc5208037bad7527653bff700dc53c1e57eb98103c1@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261020T150000
+DTEND;TZID=Asia/Shanghai:20261020T180000
+SUMMARY:中国电建集团山东电力建设第一工程有限公司
+LOCATION:北校区明志楼323
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：701\n地点：北校区明志楼323\n数据类型：school_api\n
+ 参会企业：中国电建集团山东电力建设第一工程有限公
+ 司（4491）\n活动时间来自学校公开接口，请以学校最新
+ 公告为准。\n取消状态尚未核实，日历标为暂定，不依据
+ 列表缺失推断取消。\n公开岗位（匹配分数优先）：\n热
+ 动工程师（0分，中国电建集团山东电力建设第一工程有
+ 限公司 / 4491）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-162753c27c8b32975a0edf5e89ab4ed8e2f06f02a182e0f181481cc050fdcc72@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261020T190000
+DTEND;TZID=Asia/Shanghai:20261020T210000
+SUMMARY:“四海而来，目及星光”——海目星2027届校园招聘
+LOCATION:南校区飞天楼204
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：686\n地点：南校区飞天楼204\n数据类型：school_api\n
+ 参会企业：海目星激光科技集团股份有限公司（4390）\n
+ 活动时间来自学校公开接口，请以学校最新公告为准。\n
+ 取消状态尚未核实，日历标为暂定，不依据列表缺失推
+ 断取消。\n公开岗位（匹配分数优先）：\n海目星27届校
+ 招生（0分，海目星激光科技集团股份有限公司 / 4390）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-809e63d5c8aa03af112d17361058d0d8955f6d8e1e7591487d593dad276f9757@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261022T150000
+DTEND;TZID=Asia/Shanghai:20261022T180000
+SUMMARY:赛腾股份27届校园招聘专场宣讲会
+LOCATION:南校区飞天楼204
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：691\n地点：南校区飞天楼204\n数据类型：school_api\n
+ 参会企业：苏州赛腾精密电子股份有限公司（4381）\n活
+ 动时间来自学校公开接口，请以学校最新公告为准。\n取
+ 消状态尚未核实，日历标为暂定，不依据列表缺失推断
+ 取消。\n公开岗位（匹配分数优先）：\n电气工程师（65
+ 分，苏州赛腾精密电子股份有限公司 / 4381）\n机械工程
+ 师（0分，苏州赛腾精密电子股份有限公司 / 4381）\n软件
+ 工程师（0分，苏州赛腾精密电子股份有限公司 / 4381）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-6c0f3412848008d49d186d5fad7fd1482656cfb62ad3c060a14e41c3fb3f1b43@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261022T150000
+DTEND;TZID=Asia/Shanghai:20261022T180000
+SUMMARY:燕京啤酒（桂林漓泉）2027届校园招聘
+LOCATION:南校区飞天楼107
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：718\n地点：南校区飞天楼107\n数据类型：school_api\n
+ 参会企业：燕京啤酒（桂林漓泉）股份有限公司（3432）\
+ n活动时间来自学校公开接口，请以学校最新公告为准。\
+ n取消状态尚未核实，日历标为暂定，不依据列表缺失推
+ 断取消。\n公开岗位（匹配分数优先）：\n营销管培生（0
+ 分，燕京啤酒（桂林漓泉）股份有限公司 / 3432）\n倒班
+ 班长储备（0分，燕京啤酒（桂林漓泉）股份有限公司 / 3
+ 432）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-5c3e9040008c91509e2d28e5308034b677d4e2cc0b386863d4883bdb747eba1c@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261023T090000
+DTEND;TZID=Asia/Shanghai:20261023T130000
+SUMMARY:2026年七星区高校毕业生等青年就业服务攻坚行动暨
+ 桂林航天工业学院专场招聘会
+LOCATION:北校区青春广场
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：725\n地点：北校区青春广场\n数据类型：school_api\n
+ 参会企业：未确认\n活动时间来自学校公开接口，请以学
+ 校最新公告为准。\n取消状态尚未核实，日历标为暂定，
+ 不依据列表缺失推断取消。\n公开岗位（匹配分数优先）
+ ：\n暂无已确认匹配岗位
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-1c8dcc518b9942ef52885666bfb82260c287afbbeebb71e741b1262099424f11@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261023T100000
+DTEND;TZID=Asia/Shanghai:20261023T120000
+SUMMARY:深圳壹连科技股份有限公司2027届校园招聘会
+LOCATION:南校区飞天楼212
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：681\n地点：南校区飞天楼212\n数据类型：school_api\n
+ 参会企业：深圳壹连科技股份有限公司（5361）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n设备技术类（0分，深
+ 圳壹连科技股份有限公司 / 5361）\nIT（0分，深圳壹连科
+ 技股份有限公司 / 5361）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-677fe64a8ea7e98a420d129f1cf3d4d23a9f107e9fbe8d83efe95f093001cd54@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261023T150000
+DTEND;TZID=Asia/Shanghai:20261023T180000
+SUMMARY:东莞市科翰教育科技有限公司2027校园招聘
+LOCATION:南校区探天楼A410
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：696\n地点：南校区探天楼A410\n数据类型：school_api\n
+ 参会企业：东莞市科翰教育科技有限公司（5379）\n活动
+ 时间来自学校公开接口，请以学校最新公告为准。\n取消
+ 状态尚未核实，日历标为暂定，不依据列表缺失推断取
+ 消。\n公开岗位（匹配分数优先）：\n教育咨询师（0分，
+ 东莞市科翰教育科技有限公司 / 5379）\n语文班课老师（0
+ 分，东莞市科翰教育科技有限公司 / 5379）\n数学班课老
+ 师（0分，东莞市科翰教育科技有限公司 / 5379）\n英语班
+ 课老师（0分，东莞市科翰教育科技有限公司 / 5379）\n初
+ 中理化班课老师（0分，东莞市科翰教育科技有限公司 / 5
+ 379）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-34e2ad7b31cd9ee87c038c10fd6fbe310314ba67abb73a686f0d1087267d7a1d@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261028T150000
+DTEND;TZID=Asia/Shanghai:20261028T180000
+SUMMARY:崇达技术2027届校园招聘
+LOCATION:南校区飞天楼110
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：679\n地点：南校区飞天楼110\n数据类型：school_api\n
+ 参会企业：崇达技术股份有限公司（3394）\n活动时间来
+ 自学校公开接口，请以学校最新公告为准。\n取消状态尚
+ 未核实，日历标为暂定，不依据列表缺失推断取消。\n公
+ 开岗位（匹配分数优先）：\n技术/职能储备干部（0分，
+ 崇达技术股份有限公司 / 3394）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-99ee50221221864d50c60baea6f14d8ac2e235cc6e78be6088cd40cc97fca394@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261028T150000
+DTEND;TZID=Asia/Shanghai:20261028T180000
+SUMMARY:东莞泰合复合材料有限公司2027届校园招聘
+LOCATION:南校区飞天楼204
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：700\n地点：南校区飞天楼204\n数据类型：school_api\n
+ 参会企业：东莞泰合复合材料有限公司（3588）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n质量工程师（0分，东
+ 莞泰合复合材料有限公司 / 3588）\n研发工程师（0分，东
+ 莞泰合复合材料有限公司 / 3588）\n生产组长（或技术员
+ ）（0分，东莞泰合复合材料有限公司 / 3588）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-7c3d90003d7d645be0b5f3782533c198a5d5dee06870420b4d594976ed857fc3@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261029T100000
+DTEND;TZID=Asia/Shanghai:20261029T120000
+SUMMARY:信泰光学（深圳）有限公司2027届校园宣讲会
+LOCATION:南校区飞天楼207
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：728\n地点：南校区飞天楼207\n数据类型：school_api\n
+ 参会企业：信泰光学（深圳）有限公司（4510）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n机械工程师（0分，信
+ 泰光学（深圳）有限公司 / 4510）\n研发工程师（0分，信
+ 泰光学（深圳）有限公司 / 4510）\n模具设计师（0分，信
+ 泰光学（深圳）有限公司 / 4510）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-9dcbe7e30f0bd60827341113108a55f86b604f921e0792418a9810075dbf3d22@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261029T150000
+DTEND;TZID=Asia/Shanghai:20261029T180000
+SUMMARY:讯强电子2027届校园招聘专场宣讲会
+LOCATION:南校区飞天楼204
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：726\n地点：南校区飞天楼204\n数据类型：school_api\n
+ 参会企业：讯强电子（惠州）有限公司（5426）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n生产技术员（0分，讯
+ 强电子（惠州）有限公司 / 5426）\nPD技术员（0分，讯强
+ 电子（惠州）有限公司 / 5426）\n自动化技术员（0分，讯
+ 强电子（惠州）有限公司 / 5426）\nIE技术员（0分，讯强
+ 电子（惠州）有限公司 / 5426）\nPQE技术员（0分，讯强电
+ 子（惠州）有限公司 / 5426）\nIT技术员（0分，讯强电子
+ （惠州）有限公司 / 5426）\nNPI技术员（0分，讯强电子（
+ 惠州）有限公司 / 5426）\n制造组长（0分，讯强电子（惠
+ 州）有限公司 / 5426）\n设备技术员（0分，讯强电子（惠
+ 州）有限公司 / 5426）\n品质技术员（0分，讯强电子（惠
+ 州）有限公司 / 5426）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-00bebc5be79d19e1b8b3f250dc39aebfa9a054baf5f8d61380438d92394c476a@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261103T150000
+DTEND;TZID=Asia/Shanghai:20261103T180000
+SUMMARY:鹏鼎控股（深圳）股份有限公司2027届秋季校园宣讲
+ 会
+LOCATION:南校区探天楼B101
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：671\n地点：南校区探天楼B101\n数据类型：school_api\n
+ 参会企业：鹏鼎控股(深圳)股份有限公司（3753）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n工程师（0分，鹏鼎控
+ 股(深圳)股份有限公司 / 3753）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-24be8ee76308afb924abfaf26212411f2b66e53b9ce2534e5c9f88354c88cc39@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261103T190000
+DTEND;TZID=Asia/Shanghai:20261103T210000
+SUMMARY:2027届美团食杂零售门店储备管理岗校园招聘
+LOCATION:南校区探天楼B101
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：657\n地点：南校区探天楼B101\n数据类型：school_api\n
+ 参会企业：北京三快在线科技有限公司（4356）\n活动时
+ 间来自学校公开接口，请以学校最新公告为准。\n取消状
+ 态尚未核实，日历标为暂定，不依据列表缺失推断取消
+ 。\n公开岗位（匹配分数优先）：\n门店管理储备岗（0分
+ ，北京三快在线科技有限公司 / 4356）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-e4e549408422875958476160732390defefcac7c2bd8353d918fe452d20de2a6@c
+ ampus-recruitment-schedule
+DTSTAMP:20261014T043402Z
+LAST-MODIFIED:20261014T043402Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261112T150000
+DTEND;TZID=Asia/Shanghai:20261112T180000
+SUMMARY:五洋启航 · 洋帆2027
+LOCATION:南校区飞天楼211
+DESCRIPTION:官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘
+ 会 ID：704\n地点：南校区飞天楼211\n数据类型：school_api\n
+ 参会企业：江苏五洋自控技术股份有限公司（5368）\n活
+ 动时间来自学校公开接口，请以学校最新公告为准。\n取
+ 消状态尚未核实，日历标为暂定，不依据列表缺失推断
+ 取消。\n公开岗位（匹配分数优先）：\n电气工程师（65
+ 分，江苏五洋自控技术股份有限公司 / 5368）\n营销管培
+ 生（0分，江苏五洋自控技术股份有限公司 / 5368）\n技术
+ 管培生（0分，江苏五洋自控技术股份有限公司 / 5368）\n
+ 助理工程师（0分，江苏五洋自控技术股份有限公司 / 5368
+ ）\n助理工程师（0分，江苏五洋自控技术股份有限公司 /
+  5368）\n业务储干（0分，江苏五洋自控技术股份有限公司
+  / 5368）\n机械液压工程师（0分，江苏五洋自控技术股份
+ 有限公司 / 5368）\n市场技术工程师（0分，江苏五洋自控
+ 技术股份有限公司 / 5368）\n采购助理（0分，江苏五洋自
+ 控技术股份有限公司 / 5368）
+STATUS:TENTATIVE
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT1440M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

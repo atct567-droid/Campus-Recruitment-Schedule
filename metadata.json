@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-10-14T12:34:02+08:00",
+  "provenance": "school_api",
+  "timezone": "Asia/Shanghai",
+  "events": 46,
+  "observed_fairs": 46,
+  "skipped": [],
+  "collection_complete": false,
+  "incomplete_fair_ids": [
+    "666"
+  ],
+  "retained_unobserved_events": [],
+  "status_note": "取消状态未核实的活动标为 TENTATIVE；列表缺失不推断取消。",
+  "real_account_calendar_write": false
+}
