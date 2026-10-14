@@ -5,7 +5,7 @@ import json
 import re
 import time
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import urlsplit
 
 import requests
 from playwright.async_api import async_playwright
@@ -92,29 +92,33 @@ async def browsers():
 
 
 def main():
-    session = requests.Session()
-    try:
-        home = read(session, ORIGIN + "/index")
-        read(session, ORIGIN + "/jobfairSearch")
-        if home.status_code == 200:
-            sources = re.findall(r'<script[^>]+src=["\']([^"\']+)', home.text)
-            for source in sources:
-                url = urljoin(ORIGIN, source)
-                if urlsplit(url).netloc != urlsplit(ORIGIN).netloc or "/static/js/app" not in url:
-                    continue
-                response = read(session, url)
-                if response.status_code != 200:
-                    continue
-                for term in ['jobfairDetail', 'jobfairSearch', 'mode:"history"', 'mode:"hash"']:
-                    for occurrence in list(re.finditer(re.escape(term), response.text))[:8]:
-                        report["route_snippets"].append({"source": url, "term": term,
-                                                         "snippet": response.text[max(0, occurrence.start()-200):occurrence.end()+350]})
-                save()
-        asyncio.run(browsers())
-    finally:
-        session.close()
-        save()
+    asyncio.run(details())
+    save()
     print(json.dumps(public_data(report), ensure_ascii=False))
+
+
+async def details():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch()
+        expected = {"675": "铭普", "709": "一博", "666": "双选会"}
+        for profile, options in [("desktop", {}), ("iPhone_emulation", p.devices["iPhone 13"])]:
+            context = await browser.new_context(**options, locale="zh-CN", timezone_id="Asia/Shanghai")
+            page = await context.new_page()
+            for identifier, name in expected.items():
+                for candidate in ["/jobfairDetail/" + identifier,
+                                  "/m/pages/jobfair/jobfair-detail?jobFairId=" + identifier]:
+                    url = ORIGIN + candidate
+                    response = await page.goto(url, wait_until="domcontentloaded", timeout=45000)
+                    await page.wait_for_timeout(8000)
+                    text = await page.locator("body").inner_text()
+                    report["browser"].append({"profile": profile, "fair_id": identifier, "url_requested": url,
+                                              "url_final": page.url, "http_status": response.status if response else None,
+                                              "expected_title_visible": name in text,
+                                              "landed_on_404": "/404" in page.url,
+                                              "text": text[:2200]})
+                    save()
+            await context.close()
+        await browser.close()
 
 
 if __name__ == "__main__":
