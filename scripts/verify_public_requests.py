@@ -19,14 +19,10 @@ def main():
         def __init__(self):
             super().__init__()
             self.use_referer = True
-            self.use_guest_cookies = False
 
         def send(self, prepared, **kwargs):
             if self.use_referer:
                 prepared.headers["Referer"] = BASE_URL + "/jobfairSearch"
-                prepared.headers["Accept"] = "application/json, text/plain, */*"
-            if self.use_guest_cookies:
-                requests.cookies.add_cookie_header(prepared, self.cookies)
             response = super().send(prepared, **kwargs)
             entry = {"url": prepared.url, "http_status": response.status_code,
                      "referer_sent": self.use_referer, "guest_cookies_sent": "Cookie" in prepared.headers,
@@ -46,13 +42,6 @@ def main():
             client.get_json(LIST_PATH, {"pageNum": 1, "pageSize": 10})
         except ApiError:
             pass
-        bootstrap = requests.Request("GET", BASE_URL + "/api/system/config/getSysCode", headers={
-            "Accept": "application/json, text/plain, */*"}).prepare()
-        client._limit()
-        settings = session.merge_environment_settings(bootstrap.url, {}, None, True, None)
-        response = session.send(bootstrap, timeout=client.timeout, allow_redirects=False, **settings)
-        response.close()
-        session.use_guest_cookies = True
         try:
             collection = client.list_fairs("2026-10-14", page_size=50)
             report["dated_collection"] = collection.as_dict()
@@ -75,6 +64,8 @@ def main():
             {**entry, "response_json": {**entry["response_json"], "rows": entry["response_json"]["rows"][:2]}}
             if isinstance(entry.get("response_json"), dict) and "rows" in entry["response_json"] else entry
             for entry in report["comparisons"]]}
+        if "dated_collection" in preview:
+            preview["dated_collection"] = {**preview["dated_collection"], "rows": preview["dated_collection"]["rows"][:5]}
         if "sample_companies" in preview:
             preview["sample_companies"] = {**preview["sample_companies"], "rows": preview["sample_companies"]["rows"][:3]}
         if "sample_positions_page1" in preview:
