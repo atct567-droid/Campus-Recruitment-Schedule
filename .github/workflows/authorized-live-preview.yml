@@ -1,9 +1,9 @@
-name: GUAT authorized anonymous API preview
+name: GUAT authorized public source discovery
 
 on:
   push:
     branches: ['preview/guat-live-20261014']
-    paths: ['.github/workflows/authorized-live-preview.yml']
+    paths: ['.github/workflows/authorized-live-preview.yml', 'scripts/discover_public_source.py']
   workflow_dispatch:
 
 permissions:
@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  live-probe:
+  public-discovery:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -23,88 +23,13 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -e .
-      - name: User-authorized anonymous API verification
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          from datetime import datetime
-          from zoneinfo import ZoneInfo
-          import requests
-          from campus_recruitment.client import RecruitmentClient, BASE_URL
-          from campus_recruitment.errors import ApiError
-          from campus_recruitment.probe import render_markdown
-          output = Path('reports/live-preview')
-          output.mkdir(parents=True, exist_ok=True)
-          responses = []
-          class CaptureSession(requests.Session):
-              def send(self, prepared, **kwargs):
-                  response = super().send(prepared, **kwargs)
-                  responses.append({'url': prepared.url, 'http_status': response.status_code,
-                                    'content_type': response.headers.get('Content-Type'),
-                                    'body_sample': response.text[:32768]})
-                  return response
-          now = lambda: datetime.now(ZoneInfo('Asia/Shanghai')).isoformat()
-          report = {'started_at': now(), 'base_url': BASE_URL, 'anonymous': True,
-                    'api_validation': 'incomplete', 'phase1_complete': False,
-                    'endpoints': {}, 'queries': [], 'failures': [],
-                    'date_semantics': {'status': 'unverified', 'reason': 'Diagnostic request only; no completeness claim'}}
-          with (output / 'requests.jsonl').open('w', encoding='utf-8') as log:
-              def emit(entry):
-                  log.write(json.dumps(entry, ensure_ascii=False) + '\n')
-                  log.flush()
-              client = RecruitmentClient(session=CaptureSession(), interval=2, request_budget=200, emit=emit)
-              try:
-                  collection = client.list_fairs('2026-10-14')
-                  report['queries'].append({'calendarStartDate': '2026-10-14', 'collection': collection.as_dict()})
-                  report['endpoints']['jobFair/list'] = {'status': 'verified', 'anonymous_json': True}
-                  chosen = next((row['jobFairId'] for row in collection.rows if row.get('jobFairId') is not None), None)
-                  if chosen is not None:
-                      for name, operation in [('getJobFair', client.fair_detail), ('jobFair/positionList', client.positions), ('position/companyGroupList', client.companies)]:
-                          value = operation(chosen)
-                          report['endpoints'][name] = {'status': 'verified', 'sample': value.as_dict() if hasattr(value, 'as_dict') else value}
-              except ApiError as exc:
-                  report['failures'].append({'operation': 'diagnostic', **exc.as_dict()})
-                  if not report['endpoints']:
-                      report['endpoints']['jobFair/list'] = {'status': 'failed', 'error': exc.as_dict()}
-                  if exc.status == 400:
-                      client._limit()
-                      prepared = requests.Request('GET', BASE_URL + '/index', headers={'User-Agent': 'Campus-Recruitment-Schedule/0.1 (anonymous API validation)'}).prepare()
-                      settings = client.session.merge_environment_settings(prepared.url, {}, None, True, None)
-                      response = client.session.send(prepared, timeout=client.timeout, allow_redirects=False, **settings)
-                      response.close()
-              finally:
-                  client.close()
-                  report['requests_attempted'] = client.attempts
-                  report['finished_at'] = now()
-                  report['http_response_samples'] = responses
-                  (output / 'verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
-                  (output / 'verification.md').write_text(render_markdown(report))
-          raise SystemExit(0 if report['queries'] else 2)
-          PY
-      - name: Show actual verification summary and response field samples
-        if: always()
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          path = Path('reports/live-preview/verification.json')
-          if not path.exists():
-              raise SystemExit('No verification report was produced')
-          report = json.loads(path.read_text())
-          preview = {key: report[key] for key in ('started_at', 'finished_at', 'api_validation', 'phase1_complete', 'requests_attempted', 'date_semantics', 'failures')}
-          preview['endpoints'] = report['endpoints']
-          preview['queries'] = [{**query, 'collection': {**query['collection'], 'rows': query['collection']['rows'][:3]}} for query in report['queries']]
-          preview['http_response_samples'] = report.get('http_response_samples', [])
-          print('BEGIN_ACTUAL_API_PREVIEW_JSON')
-          print(json.dumps(preview, ensure_ascii=False, indent=2))
-          print('END_ACTUAL_API_PREVIEW_JSON')
-          PY
-      - name: Save actual responses and request logs, including failures
+      - name: Inspect publicly served frontend configuration
+        run: python scripts/discover_public_source.py
+      - name: Save public route discovery evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: guat-live-preview-${{ github.run_id }}
-          path: reports/live-preview/
+          name: guat-public-discovery-${{ github.run_id }}
+          path: reports/public-discovery/
           retention-days: 14
           if-no-files-found: warn
