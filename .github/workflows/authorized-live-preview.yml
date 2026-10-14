@@ -1,20 +1,21 @@
-name: GUAT authorized 30-day public recruitment preview
+name: GUAT authorized public recruitment resume
 
 on:
   push:
     branches: ['preview/guat-live-20261014']
-    paths: ['.github/workflows/authorized-live-preview.yml', 'scripts/collect_public_preview.py']
+    paths: ['.github/workflows/authorized-live-preview.yml', 'scripts/resume_public_preview.py']
   workflow_dispatch:
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: guat-authorized-live-preview
   cancel-in-progress: false
 
 jobs:
-  public-listing:
+  public-resume:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
@@ -25,40 +26,19 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -e .
-      - name: Verify daily-query boundaries and collect all future event pages
-        run: python scripts/collect_public_preview.py --stage listing
-      - name: Save actual listing and date-query evidence
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: guat-public-listing-${{ github.run_id }}
-          path: reports/live-public/
-          retention-days: 14
-          if-no-files-found: warn
-
-  public-details:
-    needs: public-listing
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    env:
-      ENABLE_REAL_COLLECTION: 'true'
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: python -m pip install -e .
       - uses: actions/download-artifact@v4
         with:
-          name: guat-public-listing-${{ github.run_id }}
+          name: guat-public-recruitment-38510083248
+          run-id: 38510083248
+          github-token: ${{ github.token }}
           path: reports/live-public/
-      - name: Collect every public company and position page with pageSize 10
-        run: python scripts/collect_public_preview.py --stage details
-      - name: Save real reports and explicit partial-result evidence
+      - name: Resume remaining public fairs and stop before restricted large-fair pages
+        run: python -m scripts.resume_public_preview
+      - name: Save actual publicly readable recruitment records and scope limits
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: guat-public-recruitment-${{ github.run_id }}
+          name: guat-public-readable-recruitment-${{ github.run_id }}
           path: reports/live-public/
           retention-days: 14
           if-no-files-found: warn
