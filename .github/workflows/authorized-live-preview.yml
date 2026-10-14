@@ -3,7 +3,7 @@ name: GUAT authorized public source discovery
 on:
   push:
     branches: ['preview/guat-live-20261014']
-    paths: ['.github/workflows/authorized-live-preview.yml', 'scripts/discover_public_source.py']
+    paths: ['.github/workflows/authorized-live-preview.yml', 'scripts/discover_public_source.py', 'scripts/observe_public_browser.py']
   workflow_dispatch:
 
 permissions:
@@ -22,14 +22,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install -e .
+      - run: python -m pip install -e . 'playwright>=1.55,<2'
       - name: Inspect publicly served frontend configuration
         run: python scripts/discover_public_source.py
+      - name: Observe a fresh logged-out browser visiting public recruitment pages
+        run: python scripts/observe_public_browser.py
       - name: Save public route discovery evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: guat-public-discovery-${{ github.run_id }}
-          path: reports/public-discovery/
+          path: |
+            reports/public-discovery/
+            reports/public-browser/
           retention-days: 14
           if-no-files-found: warn

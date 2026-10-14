@@ -73,6 +73,10 @@ def main():
         for path in report["public_script_paths"][:12]:
             source = get_public(path)
             snippets = []
+            if path.startswith("/static/js/app~06837"):
+                match = re.search(r'"?b775"?:function', source)
+                if match:
+                    snippets.append({"term": "public axios wrapper", "snippet": source[match.start():match.start()+11000]})
             for term in terms:
                 for match in list(re.finditer(re.escape(term), source))[:3]:
                     snippets.append({"term": term, "snippet": source[max(0, match.start()-260):match.end()+420]})
