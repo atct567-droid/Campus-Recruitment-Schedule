@@ -85,8 +85,9 @@ def run(args):
     request_events = []
     options["emit"] = request_events.append
     client = fixture_client(fixture_path, **options) if args.mode == "offline" else RecruitmentClient(**options)
+    page_size = min(args.page_size, int(normalizer.config.get("public_page_size", args.page_size))) if args.mode == "real" else args.page_size
     try:
-        snapshot = collect(client, normalizer, plan, fair_ids=args.fair_id, page_size=args.page_size,
+        snapshot = collect(client, normalizer, plan, fair_ids=args.fair_id, page_size=page_size,
                            max_fairs=args.max_fairs, max_records=args.max_records)
     finally:
         client.close()

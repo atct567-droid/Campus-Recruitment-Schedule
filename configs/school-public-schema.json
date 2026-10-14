@@ -1,0 +1,34 @@
+{
+  "synthetic": false,
+  "verified": true,
+  "contract_note": "Field paths reviewed against actual anonymous JSON from GitHub Actions run 38509364071; public pageSize 10, no Authorization or Cookie. Cancellation semantics are unverified.",
+  "verification_url": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38509364071",
+  "public_referer": "https://bysjyw.guat.edu.cn/jobfairSearch",
+  "public_page_size": 10,
+  "source_page": "https://bysjyw.guat.edu.cn/jobfairSearch",
+  "fields": {
+    "fair": {
+      "job_fair_id": "jobFairId",
+      "title": "jobFairName",
+      "event_type": "jobFairTypeDesc",
+      "start_time": "startTime",
+      "end_time": "endTime",
+      "location": "jobFairAddress",
+      "organizer": "mainUnit",
+      "source_url": null,
+      "announcement_date": "addTime",
+      "status": null
+    },
+    "company": {"company_id": "companyId", "company_name": "companyName"},
+    "position": {
+      "position_id": "positionId",
+      "company_id": "companyId",
+      "position_name": "positionName",
+      "requirements": "positionDesc",
+      "recruitment_count": "personsNum",
+      "source_url": null
+    }
+  },
+  "status_values": {},
+  "query": {"strategy": "daily", "verified": false}
+}

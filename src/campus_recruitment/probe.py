@@ -214,7 +214,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description="Verify GUAT public APIs anonymously; no calendar writes")
     parser.add_argument("--output-dir", type=Path, default=Path("reports/phase1"))
     parser.add_argument("--anchor-date", type=date_argument, default=today_shanghai())
-    parser.add_argument("--page-size", type=int, default=50)
+    parser.add_argument("--page-size", type=int, default=10)
     parser.add_argument("--interval", type=float, default=2.0)
     parser.add_argument("--connect-timeout", type=float, default=5.0)
     parser.add_argument("--read-timeout", type=float, default=20.0)
