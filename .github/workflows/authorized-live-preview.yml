@@ -1,0 +1,53 @@
+name: GUAT authorized anonymous API preview
+
+on:
+  push:
+    branches: ['preview/guat-live-20261014']
+    paths: ['.github/workflows/authorized-live-preview.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: guat-authorized-live-preview
+  cancel-in-progress: false
+
+jobs:
+  live-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e .
+      - name: User-authorized anonymous API verification
+        run: |
+          python -m campus_recruitment.probe --anchor-date 2026-10-14 --output-dir reports/live-preview --interval 2 --request-budget 200
+      - name: Show actual verification summary and response field samples
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path('reports/live-preview/verification.json')
+          if not path.exists():
+              raise SystemExit('No verification report was produced')
+          report = json.loads(path.read_text())
+          preview = {key: report[key] for key in ('started_at', 'finished_at', 'api_validation', 'phase1_complete', 'requests_attempted', 'date_semantics', 'failures')}
+          preview['endpoints'] = report['endpoints']
+          preview['queries'] = [{**query, 'collection': {**query['collection'], 'rows': query['collection']['rows'][:3]}} for query in report['queries']]
+          print('BEGIN_ACTUAL_API_PREVIEW_JSON')
+          print(json.dumps(preview, ensure_ascii=False, indent=2))
+          print('END_ACTUAL_API_PREVIEW_JSON')
+          PY
+      - name: Save actual responses and request logs, including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: guat-live-preview-${{ github.run_id }}
+          path: reports/live-preview/
+          retention-days: 14
+          if-no-files-found: warn
