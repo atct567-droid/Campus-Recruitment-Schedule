@@ -5,7 +5,7 @@ from pathlib import Path
 
 import requests
 
-from campus_recruitment.client import BASE_URL, LIST_PATH, RecruitmentClient
+from campus_recruitment.client import BASE_URL, COMPANY_PATH, LIST_PATH, RecruitmentClient
 from campus_recruitment.errors import ApiError
 from campus_recruitment.models import now_iso
 
@@ -18,7 +18,7 @@ def main():
     class Session(requests.Session):
         def __init__(self):
             super().__init__()
-            self.use_referer = True
+            self.use_referer = False
 
         def send(self, prepared, **kwargs):
             if self.use_referer:
@@ -42,16 +42,17 @@ def main():
             client.get_json(LIST_PATH, {"pageNum": 1, "pageSize": 10})
         except ApiError:
             pass
+        session.use_referer = True
         try:
-            collection = client.list_fairs("2026-10-14", page_size=50)
+            collection = client.list_fairs("2026-10-14", page_size=10)
             report["dated_collection"] = collection.as_dict()
         except ApiError as error:
             report["dated_error"] = error.as_dict()
         try:
             detail = client.fair_detail(666)
             report["sample_detail"] = detail
-            report["sample_companies"] = client.companies(666, page_size=100).as_dict()
-            report["sample_positions_page1"] = client.get_json("/api/view/jobFair/positionList", {"jobFairId": 666, "pageNum": 1, "pageSize": 50})
+            report["sample_companies_page1"] = client.get_json(COMPANY_PATH, {"jobFairId": 666, "pageNum": 1, "pageSize": 10})
+            report["sample_positions_page1"] = client.get_json("/api/view/jobFair/positionList", {"jobFairId": 666, "pageNum": 1, "pageSize": 10})
         except ApiError as error:
             report["sample_error"] = error.as_dict()
     finally:
@@ -66,8 +67,14 @@ def main():
             for entry in report["comparisons"]]}
         if "dated_collection" in preview:
             preview["dated_collection"] = {**preview["dated_collection"], "rows": preview["dated_collection"]["rows"][:5]}
-        if "sample_companies" in preview:
-            preview["sample_companies"] = {**preview["sample_companies"], "rows": preview["sample_companies"]["rows"][:3]}
+        if "sample_detail" in preview:
+            detail = preview["sample_detail"]
+            preview["sample_detail"] = {key: value for key, value in detail.items()
+                                        if key in {"jobFairId", "jobFairName", "startTime", "endTime", "jobFairAddress", "state", "stateDesc", "companyCount", "positionCount"}}
+        if "sample_companies_page1" in preview:
+            page = preview["sample_companies_page1"]
+            if isinstance(page.get("rows"), list):
+                preview["sample_companies_page1"] = {**page, "rows": page["rows"][:2]}
         if "sample_positions_page1" in preview:
             page = preview["sample_positions_page1"]
             if isinstance(page.get("rows"), list):
