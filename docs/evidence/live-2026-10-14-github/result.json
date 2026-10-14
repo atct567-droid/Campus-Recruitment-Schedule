@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-14T11:38:10.771889+08:00",
+  "execution_environment": "GitHub Actions ubuntu-latest",
+  "user_authorized": true,
+  "run_url": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38507244349",
+  "source_commit": "f3a2a02c84abc4d419cec075c15b817a664ae96c",
+  "artifact": {
+    "name": "guat-live-preview-38507244349",
+    "id": 11868900191,
+    "contains": "verification.json, verification.md, requests.jsonl"
+  },
+  "requests_attempted": 2,
+  "anonymous": true,
+  "proxy_bypassed": false,
+  "tls_verification": true,
+  "interval_seconds": 2,
+  "calendar_writes": false,
+  "requests": [
+    {
+      "url": "https://bysjyw.guat.edu.cn/api/view/jobFair/list?calendarStartDate=2026-10-14&pageNum=1&pageSize=50",
+      "http_status": 400,
+      "content_type": "application/json;charset=UTF-8",
+      "response_json": {
+        "code": 400,
+        "msg": "请登录后再浏览",
+        "data": null
+      }
+    },
+    {
+      "url": "https://bysjyw.guat.edu.cn/index",
+      "http_status": 200,
+      "content_type": "text/html",
+      "body": "HTML application shell; no recruitment records extracted. Full response sample in workflow artifact."
+    }
+  ],
+  "anonymous_access": {
+    "jobFair_list": "denied: response explicitly requires login",
+    "getJobFair": "not tested: no discovered fair ID",
+    "positionList": "not tested: no discovered fair ID",
+    "companyGroupList": "not tested: no discovered fair ID"
+  },
+  "collected_real_records": {
+    "fairs": 0,
+    "companies": 0,
+    "positions": 0
+  },
+  "full_30_day_collection": false,
+  "date_semantics": "unverified",
+  "field_mapping": "unverified: no recruitment data response",
+  "conclusion": "This run confirms the current anonymous list request is rejected with a login requirement. It does not establish authenticated access or retrieval success. No authentication bypass attempted."
+}

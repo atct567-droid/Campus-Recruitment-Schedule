@@ -1,0 +1,65 @@
+name: Designated Google Calendar unattended sync
+
+on:
+  schedule:
+    # Asia/Shanghai 06:00, 12:00, 18:00.
+    - cron: '0 4,10,22 * * *'
+  workflow_dispatch:
+    inputs:
+      enable_real_sync:
+        description: 'Explicit write request; also needs ENABLE_REAL_CALENDAR_SYNC=true'
+        type: boolean
+        default: false
+      check_access:
+        description: 'Read-only preflight/remote preview in dry-run; missing credentials keep the offline plan'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  # Share the lock with recruitment.yml to avoid competing SQLite checkpoints.
+  group: guat-recruitment-state-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  synchronize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e '.[calendar]'
+      - name: Restore sanitized real recruitment data and hashed calendar mappings
+        uses: actions/cache/restore@v4
+        with:
+          path: state-cache/
+          key: recruitment-real-${{ github.run_id }}
+          restore-keys: recruitment-real-
+      - name: Plan by default; write only after explicit manual or scheduled opt-in
+        env:
+          GOOGLE_CALENDAR_ID: ${{ vars.GOOGLE_CALENDAR_ID }}
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+          ENABLE_REAL_CALENDAR_SYNC: ${{ vars.ENABLE_REAL_CALENDAR_SYNC || 'false' }}
+          ENABLE_SCHEDULED_CALENDAR_SYNC: ${{ vars.ENABLE_SCHEDULED_CALENDAR_SYNC || 'false' }}
+          CALENDAR_TRIGGER: ${{ github.event_name == 'schedule' && 'schedule' || 'manual' }}
+          CALENDAR_WRITE_REQUESTED: ${{ inputs.enable_real_sync && 'true' || 'false' }}
+          CALENDAR_CHECK_ACCESS: ${{ inputs.check_access && 'true' || 'false' }}
+        run: python scripts/run_calendar_workflow.py
+      - name: Save opaque event mappings after the synchronization step
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: state-cache/
+          key: recruitment-real-${{ github.run_id }}
+      - name: Save safe dry-run or synchronization evidence (no credentials/database)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: calendar-sync-${{ github.run_id }}
+          path: reports/calendar/
+          if-no-files-found: warn
+          retention-days: 14

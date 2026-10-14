@@ -1,0 +1,36 @@
+{
+  "synthetic": false,
+  "verified": false,
+  "contract_note": "Replace null paths only after reviewing real API JSON; do not mark verified based on synthetic fixtures",
+  "fields": {
+    "fair": {
+      "job_fair_id": null,
+      "title": null,
+      "event_type": null,
+      "start_time": null,
+      "end_time": null,
+      "location": null,
+      "organizer": null,
+      "source_url": null,
+      "announcement_date": null,
+      "status": null
+    },
+    "company": {
+      "company_id": null,
+      "company_name": null
+    },
+    "position": {
+      "position_id": null,
+      "company_id": null,
+      "position_name": null,
+      "requirements": null,
+      "recruitment_count": null,
+      "source_url": null
+    }
+  },
+  "status_values": {},
+  "query": {
+    "strategy": "baseline",
+    "verified": false
+  }
+}

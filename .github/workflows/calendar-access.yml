@@ -1,0 +1,31 @@
+name: Google Calendar access check (read only)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  access:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e '.[calendar]'
+      - name: Check only the configured shared calendar without event writes
+        env:
+          GOOGLE_CALENDAR_ID: ${{ vars.GOOGLE_CALENDAR_ID }}
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+        run: python -m campus_recruitment.cli calendar-check --output-dir reports/calendar-access
+      - name: Save safe permission result even when credentials or sharing are missing
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: calendar-access-${{ github.run_id }}
+          path: reports/calendar-access/
+          if-no-files-found: warn
+          retention-days: 14

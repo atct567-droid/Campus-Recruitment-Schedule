@@ -1,0 +1,40 @@
+{
+  "synthetic": true,
+  "verified": true,
+  "contract_note": "Synthetic schema only; not a school API contract",
+  "fields": {
+    "fair": {
+      "job_fair_id": "fair_id",
+      "title": "title",
+      "event_type": "type",
+      "start_time": "start",
+      "end_time": "end",
+      "location": "location",
+      "organizer": "organizer",
+      "source_url": "url",
+      "announcement_date": "announced",
+      "status": "state"
+    },
+    "company": {
+      "company_id": "company_id",
+      "company_name": "company_name"
+    },
+    "position": {
+      "position_id": "position_id",
+      "company_id": "company_id",
+      "position_name": "name",
+      "requirements": "requirements",
+      "recruitment_count": "count",
+      "source_url": "url"
+    }
+  },
+  "status_values": {
+    "open": "scheduled",
+    "cancelled": "cancelled",
+    "postponed": "postponed"
+  },
+  "query": {
+    "strategy": "baseline",
+    "verified": true
+  }
+}

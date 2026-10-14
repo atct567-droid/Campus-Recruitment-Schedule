@@ -1,0 +1,163 @@
+[
+  {
+    "timestamp": "2026-10-14T04:33:28.726841+00:00",
+    "path": "/api/view/getJobFair/666",
+    "params": {},
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 7663.31,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:33:36.391065+00:00",
+    "path": "/api/view/position/companyGroupList",
+    "params": {
+      "jobFairId": "666",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 7294.49,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:33:43.687028+00:00",
+    "path": "/api/view/position/companyGroupList",
+    "params": {
+      "jobFairId": "666",
+      "pageNum": 2,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 3514.68,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:33:47.202807+00:00",
+    "path": "/api/view/position/companyGroupList",
+    "params": {
+      "jobFairId": "666",
+      "pageNum": 3,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 2114.79,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:33:49.318668+00:00",
+    "path": "/api/view/position/companyGroupList",
+    "params": {
+      "jobFairId": "666",
+      "pageNum": 4,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 2011.94,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:33:51.331748+00:00",
+    "path": "/api/view/position/companyGroupList",
+    "params": {
+      "jobFairId": "666",
+      "pageNum": 5,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 1366.7,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:33:53.331843+00:00",
+    "path": "/api/view/jobFair/positionList",
+    "params": {
+      "jobFairId": "666",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 1665.99,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:33:55.331926+00:00",
+    "path": "/api/view/jobFair/positionList",
+    "params": {
+      "jobFairId": "666",
+      "pageNum": 2,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 1664.01,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:33:57.332010+00:00",
+    "path": "/api/view/jobFair/positionList",
+    "params": {
+      "jobFairId": "666",
+      "pageNum": 3,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 1380.57,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:33:59.332089+00:00",
+    "path": "/api/view/jobFair/positionList",
+    "params": {
+      "jobFairId": "666",
+      "pageNum": 4,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 1361.56,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:34:01.332177+00:00",
+    "path": "/api/view/jobFair/positionList",
+    "params": {
+      "jobFairId": "666",
+      "pageNum": 5,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 1294.69,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  }
+]

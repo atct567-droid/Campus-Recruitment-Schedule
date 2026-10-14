@@ -1,0 +1,60 @@
+{
+  "phase": 1,
+  "started_at": "2026-10-14T01:22:50.715686+08:00",
+  "base_url": "https://bysjyw.guat.edu.cn",
+  "anonymous": true,
+  "scope": "Anonymous API contract verification only; no calendar synchronization",
+  "anchor_date": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "accepted_business_codes": [
+    "200"
+  ],
+  "settings": {
+    "page_size": 50,
+    "interval_seconds": 2.0,
+    "connect_timeout": 5.0,
+    "read_timeout": 20.0,
+    "retries": 2,
+    "request_budget": 200,
+    "max_pages": 1000
+  },
+  "endpoints": {
+    "jobFair/list": {
+      "status": "failed",
+      "error": {
+        "kind": "proxy_policy",
+        "message": "HTTPSConnectionPool(host='bysjyw.guat.edu.cn', port=443): Max retries exceeded with url: /api/view/jobFair/list?pageNum=1&pageSize=50 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+        "http_status": null
+      }
+    },
+    "getJobFair": {
+      "status": "not_tested",
+      "reason": "List failed; no discovered fair ID"
+    },
+    "jobFair/positionList": {
+      "status": "not_tested",
+      "reason": "List failed; no discovered fair ID"
+    },
+    "position/companyGroupList": {
+      "status": "not_tested",
+      "reason": "List failed; no discovered fair ID"
+    }
+  },
+  "queries": [],
+  "failures": [
+    {
+      "operation": "jobFair/list",
+      "kind": "proxy_policy",
+      "message": "HTTPSConnectionPool(host='bysjyw.guat.edu.cn', port=443): Max retries exceeded with url: /api/view/jobFair/list?pageNum=1&pageSize=50 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "http_status": null
+    }
+  ],
+  "date_semantics": {
+    "status": "unverified",
+    "reason": "Initial list request failed"
+  },
+  "api_validation": "incomplete",
+  "phase1_complete": false,
+  "requests_attempted": 1,
+  "finished_at": "2026-10-14T01:22:50.721923+08:00"
+}

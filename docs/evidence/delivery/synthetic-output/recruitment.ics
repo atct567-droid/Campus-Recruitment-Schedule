@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Campus Recruitment Schedule//GUAT//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Asia/Shanghai
+BEGIN:VTIMEZONE
+TZID:Asia/Shanghai
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:CST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:guat-c7e616822f366fb1b5e0756af498cc11d2c0862edcb32ca65882f622ff39de1b@c
+ ampus-recruitment-schedule
+DTSTAMP:20261013T180437Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T090000
+DTEND;TZID=Asia/Shanghai:20261015T120000
+SUMMARY:综合双选会（合成）
+LOCATION:合成教学楼 A\, B\; 一号\\会场
+DESCRIPTION:来源：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID
+ ：666\n数据类型：synthetic\n嵌入式软件开发（95分，企业 c
+ 1）\nPCB工程师（95分，企业 c2）\n助理硬件工程师（95分
+ ，企业 c2）\n自动化工程师（65分，企业 c3）
+STATUS:CONFIRMED
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT60M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-8b5551ea922dd24625c45051c64adb50fdff91fecdf5327a02c7b0be3933965e@c
+ ampus-recruitment-schedule
+DTSTAMP:20261013T180437Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T110000
+DTEND;TZID=Asia/Shanghai:20261015T130000
+SUMMARY:嵌入式专场宣讲（合成）
+LOCATION:合成教学楼 A\, B\; 一号\\会场
+DESCRIPTION:来源：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID
+ ：667\n数据类型：synthetic\nEmbedded Engineer（95分，企业 c1）
+STATUS:CONFIRMED
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT60M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-6f81082badfd007354ac6ebb78adaa04bfedf9a1fb9a01909788bad472008ea3@c
+ ampus-recruitment-schedule
+DTSTAMP:20261013T180437Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261016T100000
+DTEND;TZID=Asia/Shanghai:20261016T120000
+SUMMARY:取消活动（合成）
+LOCATION:合成教学楼 A\, B\; 一号\\会场
+DESCRIPTION:来源：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID
+ ：668\n数据类型：synthetic
+STATUS:CANCELLED
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+END:VEVENT
+BEGIN:VEVENT
+UID:guat-172e1676eda470ede17e9d491554bcbe97ba4691f92880064c8cb29ec35a467e@c
+ ampus-recruitment-schedule
+DTSTAMP:20261013T180437Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T233000
+DTEND;TZID=Asia/Shanghai:20261016T010000
+SUMMARY:跨天活动（合成）
+LOCATION:合成教学楼 A\, B\; 一号\\会场
+DESCRIPTION:来源：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID
+ ：670\n数据类型：synthetic
+STATUS:CONFIRMED
+URL:https://bysjyw.guat.edu.cn/jobfairSearch
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:招聘活动提醒
+TRIGGER:-PT60M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+{
+  "verified_at": "2026-10-14T17:29:06+08:00",
+  "url": "https://raw.githubusercontent.com/atct567-droid/Campus-Recruitment-Schedule/ics-feed/recruitment.ics",
+  "anonymous_http_status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "bytes": 71447,
+  "sha256": "82c83acfa3f9de7819e76981756d46932bb1d718e4509887030d1a7281153f57",
+  "published_feed_commit": "8da9b64",
+  "source_data_as_of": "2026-10-14T12:34:02+08:00",
+  "source_provenance": "school_api",
+  "independent_parser": "icalendar",
+  "events": 46,
+  "oct15_events": 9,
+  "overall_detail_collection_complete": false,
+  "partial_fair_ids": [
+    "666"
+  ],
+  "new_events_without_explicit_time": 0,
+  "status_for_unverified_cancellation_semantics": "TENTATIVE",
+  "local_tests_passed": 258,
+  "ruff": "passed",
+  "original_offline_pipeline": "passed",
+  "original_independent_output_validation": "passed",
+  "apple_device_subscription_verified": false,
+  "real_google_or_icloud_account_write": false,
+  "scheduled_updates_enabled": false,
+  "scheduled_updates_blocker": "Workflow is on feature branch; main has not been merged."
+}

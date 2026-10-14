@@ -1,0 +1,4 @@
+﻿company_id,company_name,related_job_fair_ids,last_checked_at,provenance,first_seen_at,revision
+c1,合成电子科技,"[""666"", ""667""]",2026-10-14T02:04:37+08:00,synthetic,2026-10-14T02:04:37+08:00,0
+c2,合成电子科技,"[""666""]",2026-10-14T02:04:37+08:00,synthetic,2026-10-14T02:04:37+08:00,0
+c3,合成自动化,"[""666""]",2026-10-14T02:04:37+08:00,synthetic,2026-10-14T02:04:37+08:00,0

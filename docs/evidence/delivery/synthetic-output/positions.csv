@@ -1,0 +1,8 @@
+﻿position_id,company_id,job_fair_id,position_name,requirements,recruitment_count,source_url,matching_score,matching_priority,matching_reasons,last_checked_at,provenance,issues,first_seen_at,revision
+p1,c1,666,嵌入式软件开发,C/C++、STM32、MCU、RTOS，单片机开发,3,https://bysjyw.guat.edu.cn/jobfairSearch,95,high,"[""嵌入式：岗位名称匹配，要求支持"", ""技术岗位要求匹配：STM32/单片机""]",2026-10-14T02:04:37+08:00,synthetic,[],2026-10-14T02:04:37+08:00,0
+p2,c2,666,PCB工程师,印制电路板布局布线及电路设计,2,https://bysjyw.guat.edu.cn/jobfairSearch,95,high,"[""PCB/电路设计：岗位名称匹配，要求支持""]",2026-10-14T02:04:37+08:00,synthetic,[],2026-10-14T02:04:37+08:00,0
+p6,c2,666,助理硬件工程师,模拟电路、数字电路、硬件调试,2,https://bysjyw.guat.edu.cn/jobfairSearch,95,high,"[""硬件研发：岗位名称匹配，要求支持"", ""技术岗位要求匹配：电子工程""]",2026-10-14T02:04:37+08:00,synthetic,[],2026-10-14T02:04:37+08:00,0
+p1,c1,667,Embedded Engineer,"Firmware, FPGA, ARM, MCU",1,https://bysjyw.guat.edu.cn/jobfairSearch,95,high,"[""嵌入式：岗位名称匹配，要求支持"", ""技术岗位要求匹配：STM32/单片机、FPGA""]",2026-10-14T02:04:37+08:00,synthetic,[],2026-10-14T02:04:37+08:00,0
+p5,c3,666,自动化工程师,PLC 工业控制，电气自动化,,https://bysjyw.guat.edu.cn/jobfairSearch,65,medium,"[""自动化/电气：岗位名称匹配，要求支持""]",2026-10-14T02:04:37+08:00,synthetic,"[""招聘人数格式未知，未推测""]",2026-10-14T02:04:37+08:00,0
+p3,c1,666,硬件销售,销售硬件设备，拓展客户,,https://bysjyw.guat.edu.cn/jobfairSearch,0,excluded,"[""岗位名称命中销售/非研发排除规则""]",2026-10-14T02:04:37+08:00,synthetic,[],2026-10-14T02:04:37+08:00,0
+p4,c3,666,软件测试工程师,Web自动化测试,1,https://bysjyw.guat.edu.cn/jobfairSearch,0,low,"[""软件测试不能自动等同硬件测试""]",2026-10-14T02:04:37+08:00,synthetic,[],2026-10-14T02:04:37+08:00,0

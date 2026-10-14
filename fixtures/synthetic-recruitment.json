@@ -1,0 +1,242 @@
+{
+  "provenance": "synthetic",
+  "reference_date": "2026-10-14",
+  "date_semantics": "all",
+  "page_cap": 2,
+  "layouts": {
+    "/api/view/jobFair/positionList": "data.rows",
+    "/api/view/position/companyGroupList": "data"
+  },
+  "fairs": [
+    {
+      "fair_id": "666",
+      "title": "综合双选会（合成）",
+      "type": "job_fair",
+      "start": "2026-10-15 09:00",
+      "end": "2026-10-15 12:00",
+      "state": "open",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    },
+    {
+      "fair_id": "667",
+      "title": "嵌入式专场宣讲（合成）",
+      "type": "important_talk",
+      "start": "2026-10-15 11:00",
+      "end": "2026-10-15 13:00",
+      "state": "open",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    },
+    {
+      "fair_id": "668",
+      "title": "取消活动（合成）",
+      "type": "talk",
+      "start": "2026-10-16 10:00",
+      "end": "2026-10-16 12:00",
+      "state": "cancelled",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    },
+    {
+      "fair_id": "669",
+      "title": "时间待确认（合成）",
+      "type": "talk",
+      "start": "2026-10-17",
+      "end": null,
+      "state": "open",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    },
+    {
+      "fair_id": "670",
+      "title": "跨天活动（合成）",
+      "type": "talk",
+      "start": "2026-10-15 23:30",
+      "end": "2026-10-16 01:00",
+      "state": "open",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    },
+    {
+      "fair_id": "671",
+      "title": "历史活动（合成）",
+      "type": "talk",
+      "start": "2026-10-10 09:00",
+      "end": "2026-10-10 11:00",
+      "state": "open",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    }
+  ],
+  "details": {
+    "666": {
+      "fair_id": "666",
+      "title": "综合双选会（合成）",
+      "type": "job_fair",
+      "start": "2026-10-15 09:00",
+      "end": "2026-10-15 12:00",
+      "state": "open",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    },
+    "667": {
+      "fair_id": "667",
+      "title": "嵌入式专场宣讲（合成）",
+      "type": "important_talk",
+      "start": "2026-10-15 11:00",
+      "end": "2026-10-15 13:00",
+      "state": "open",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    },
+    "668": {
+      "fair_id": "668",
+      "title": "取消活动（合成）",
+      "type": "talk",
+      "start": "2026-10-16 10:00",
+      "end": "2026-10-16 12:00",
+      "state": "cancelled",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    },
+    "669": {
+      "fair_id": "669",
+      "title": "时间待确认（合成）",
+      "type": "talk",
+      "start": "2026-10-17",
+      "end": null,
+      "state": "open",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    },
+    "670": {
+      "fair_id": "670",
+      "title": "跨天活动（合成）",
+      "type": "talk",
+      "start": "2026-10-15 23:30",
+      "end": "2026-10-16 01:00",
+      "state": "open",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    },
+    "671": {
+      "fair_id": "671",
+      "title": "历史活动（合成）",
+      "type": "talk",
+      "start": "2026-10-10 09:00",
+      "end": "2026-10-10 11:00",
+      "state": "open",
+      "location": "合成教学楼 A, B; 一号\\会场",
+      "organizer": "合成就业中心",
+      "url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+      "announced": "2026-10-13"
+    }
+  },
+  "companies": {
+    "666": [
+      {
+        "company_id": "c1",
+        "company_name": "合成电子科技"
+      },
+      {
+        "company_id": "c2",
+        "company_name": "合成电子科技"
+      },
+      {
+        "company_id": "c3",
+        "company_name": "合成自动化"
+      }
+    ],
+    "667": [
+      {
+        "company_id": "c1",
+        "company_name": "合成电子科技"
+      }
+    ]
+  },
+  "positions": {
+    "666": [
+      {
+        "position_id": "p1",
+        "company_id": "c1",
+        "name": "嵌入式软件开发",
+        "requirements": "C/C++、STM32、MCU、RTOS，单片机开发",
+        "count": 3,
+        "url": "https://bysjyw.guat.edu.cn/jobfairSearch"
+      },
+      {
+        "position_id": "p2",
+        "company_id": "c2",
+        "name": "PCB工程师",
+        "requirements": "印制电路板布局布线及电路设计",
+        "count": "2",
+        "url": "https://bysjyw.guat.edu.cn/jobfairSearch"
+      },
+      {
+        "position_id": "p3",
+        "company_id": "c1",
+        "name": "硬件销售",
+        "requirements": "销售硬件设备，拓展客户",
+        "count": null,
+        "url": "https://bysjyw.guat.edu.cn/jobfairSearch"
+      },
+      {
+        "position_id": "p4",
+        "company_id": "c3",
+        "name": "软件测试工程师",
+        "requirements": "Web自动化测试",
+        "count": 1,
+        "url": "https://bysjyw.guat.edu.cn/jobfairSearch"
+      },
+      {
+        "position_id": "p5",
+        "company_id": "c3",
+        "name": "自动化工程师",
+        "requirements": "PLC 工业控制，电气自动化",
+        "count": "若干",
+        "url": "https://bysjyw.guat.edu.cn/jobfairSearch"
+      },
+      {
+        "position_id": "p6",
+        "company_id": "c2",
+        "name": "助理硬件工程师",
+        "requirements": "模拟电路、数字电路、硬件调试",
+        "count": 2,
+        "url": "https://bysjyw.guat.edu.cn/jobfairSearch"
+      }
+    ],
+    "667": [
+      {
+        "position_id": "p1",
+        "company_id": "c1",
+        "name": "Embedded Engineer",
+        "requirements": "Firmware, FPGA, ARM, MCU",
+        "count": 1,
+        "url": "https://bysjyw.guat.edu.cn/jobfairSearch"
+      }
+    ]
+  }
+}

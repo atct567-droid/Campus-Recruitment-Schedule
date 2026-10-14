@@ -1,0 +1,93 @@
+{
+  "validation": "passed",
+  "synthetic_records": 0,
+  "fairs": 46,
+  "unique_companies": 112,
+  "unique_positions": 408,
+  "position_fair_relations": 433,
+  "time_window": "2026-10-14 inclusive to 2026-11-13 exclusive, Asia/Shanghai",
+  "fully_collected_fairs": 45,
+  "overall_collection_complete": false,
+  "large_fair_partial": true,
+  "duplicate_relation_keys": 0,
+  "positions_missing_company_id_join": 0,
+  "salary_source_anomalies": [
+    {
+      "jobFairId": "719",
+      "positionId": 18757,
+      "companyName": "东莞市硅翔绝缘材料有限公司",
+      "positionName": "嵌入式软件工程师",
+      "salaryDesc": "6-7元/月"
+    },
+    {
+      "jobFairId": "719",
+      "positionId": 18756,
+      "companyName": "东莞市硅翔绝缘材料有限公司",
+      "positionName": "电气工程师",
+      "salaryDesc": "6-7元/月"
+    },
+    {
+      "jobFairId": "719",
+      "positionId": 18755,
+      "companyName": "东莞市硅翔绝缘材料有限公司",
+      "positionName": "PIE工程师",
+      "salaryDesc": "6-7元/月"
+    },
+    {
+      "jobFairId": "719",
+      "positionId": 18753,
+      "companyName": "东莞市硅翔绝缘材料有限公司",
+      "positionName": "SMT工程师",
+      "salaryDesc": "6-7元/月"
+    },
+    {
+      "jobFairId": "666",
+      "positionId": 19144,
+      "companyName": "东莞市翔通光电技术有限公司",
+      "positionName": "工艺工程师",
+      "salaryDesc": "6-7元/月薪"
+    },
+    {
+      "jobFairId": "666",
+      "positionId": 19145,
+      "companyName": "东莞市翔通光电技术有限公司",
+      "positionName": "设备工程师",
+      "salaryDesc": "6-7元/月薪"
+    },
+    {
+      "jobFairId": "666",
+      "positionId": 19146,
+      "companyName": "东莞市翔通光电技术有限公司",
+      "positionName": "计划员",
+      "salaryDesc": "6-7元/月薪"
+    },
+    {
+      "jobFairId": "666",
+      "positionId": 19147,
+      "companyName": "东莞市翔通光电技术有限公司",
+      "positionName": "质量工程师",
+      "salaryDesc": "6-7元/月薪"
+    },
+    {
+      "jobFairId": "666",
+      "positionId": 19148,
+      "companyName": "东莞市翔通光电技术有限公司",
+      "positionName": "采购员",
+      "salaryDesc": "6-7元/月薪"
+    },
+    {
+      "jobFairId": "666",
+      "positionId": 18588,
+      "companyName": "深圳大中华喜来登酒店有限公司",
+      "positionName": "宾客服务中心文员",
+      "salaryDesc": "3-4元/月"
+    }
+  ],
+  "source_runs": [
+    "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38509364071",
+    "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38510083248",
+    "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38511817513"
+  ],
+  "real_calendar_sync_performed": false,
+  "private_credentials_published": false
+}

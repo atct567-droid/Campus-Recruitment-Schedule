@@ -1,0 +1,190 @@
+{
+  "branch": "feature/recruitment-phases-2-3",
+  "pushed": true,
+  "core_commit": "95dba42b87ca216016cf4e4b43f02ff882c23875",
+  "pull_request": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/pull/1",
+  "draft": true,
+  "main_merged": false,
+  "github_actions": {
+    "ci": "success",
+    "push_run": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38444773370",
+    "pull_request_run": "https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38444903617",
+    "matrix": [
+      {
+        "id": 115460176008,
+        "name": "test (3.10)",
+        "status": "completed",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run python -m pip install -e '.[test,calendar]'",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run ruff check src tests scripts",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Unit, mock, fault injection and offline integration tests",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Offline pipeline",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Independent JSON, CSV and ICS format validation",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Save synthetic evidence and test results",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ],
+        "log_evidence": [
+          "2026-10-13T18:12:03.6665526Z All checks passed!",
+          "2026-10-13T18:12:05.9853823Z 188 passed in 1.14s",
+          "2026-10-13T18:12:06.1617685Z {\"mode\": \"offline\", \"status\": \"complete\", \"provenance\": \"synthetic\", \"counts\": {\"fair\": 5, \"company\": 3, \"position\": 7}, \"requests_attempted\": 22}",
+          "2026-10-13T18:12:06.2729417Z {\"status\": \"validated\", \"fairs\": 5, \"companies\": 3, \"positions\": 7, \"ics_events\": 4, \"provenance\": [\"synthetic\"]}"
+        ]
+      },
+      {
+        "id": 115460176403,
+        "name": "test (3.12)",
+        "status": "completed",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run python -m pip install -e '.[test,calendar]'",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run ruff check src tests scripts",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Unit, mock, fault injection and offline integration tests",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Offline pipeline",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Independent JSON, CSV and ICS format validation",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Save synthetic evidence and test results",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ],
+        "log_evidence": [
+          "2026-10-13T18:12:06.1622577Z All checks passed!",
+          "2026-10-13T18:12:07.6125254Z 188 passed in 1.12s",
+          "2026-10-13T18:12:07.8493166Z {\"mode\": \"offline\", \"status\": \"complete\", \"provenance\": \"synthetic\", \"counts\": {\"fair\": 5, \"company\": 3, \"position\": 7}, \"requests_attempted\": 22}",
+          "2026-10-13T18:12:07.9613581Z {\"status\": \"validated\", \"fairs\": 5, \"companies\": 3, \"positions\": 7, \"ics_events\": 4, \"provenance\": [\"synthetic\"]}"
+        ]
+      }
+    ]
+  },
+  "scheduled_workflow": "configured; not executed from default branch; live collection defaults off",
+  "school_api": "unverified; no new live request",
+  "google_calendar": "unverified; no authorization or real synchronization"
+}
