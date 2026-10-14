@@ -1,0 +1,511 @@
+[
+  {
+    "timestamp": "2026-10-14T04:11:17.351172+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 1646.94,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:19.351312+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-01",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 314.43,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:21.351447+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-13",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 339.59,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:23.351588+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-14",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 328.34,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:25.351714+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-15",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 331.41,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:27.351847+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-16",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 327.32,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:29.351965+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-17",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 329.66,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:31.352096+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-18",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 315.64,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:33.352215+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-19",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 326.99,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:35.352331+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-20",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 321.27,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:37.352437+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-21",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 328.02,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:39.352564+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-22",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 333.8,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:41.352686+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-23",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 313.57,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:43.352822+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-24",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 326.51,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:45.352951+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-25",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 326.05,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:47.353078+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-26",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 849.29,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:49.353216+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-27",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 318.85,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:51.353331+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-28",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 298.5,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:53.353459+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-29",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 313.77,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:55.353586+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-30",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 311.12,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:57.353707+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-10-31",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 329.47,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:11:59.353827+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-01",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 329.96,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:01.353979+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-02",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 328.82,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:03.354112+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-03",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 327.79,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:05.354235+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-04",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 316.92,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:07.354365+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-05",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 314.19,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:09.354493+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-06",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 317.62,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:11.354603+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-07",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 325.31,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:13.354745+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-08",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 323.14,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:15.354835+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-09",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 333.24,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:17.354976+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-10",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 324.59,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:19.355100+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-11",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 320.09,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:21.355235+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-12",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 330.08,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  },
+  {
+    "timestamp": "2026-10-14T04:12:23.355375+00:00",
+    "path": "/api/view/jobFair/list",
+    "params": {
+      "calendarStartDate": "2026-11-13",
+      "pageNum": 1,
+      "pageSize": 10
+    },
+    "attempt": 1,
+    "http_status": 200,
+    "elapsed_ms": 327.94,
+    "content_type": "application/json",
+    "business_code": 200,
+    "outcome": "json_verified"
+  }
+]

@@ -1,5 +1,7 @@
 # 用户授权后的真实匿名采集验证
 
+此页保留11:38、pageSize=50的历史失败。随后 pageSize=10 已实际匿名成功，并取得46场、112家企业、408个去重岗位的公开数据；部分深分页仍受限。最新状态见 [公开访问说明](../../school-public-access.md) 和 [全部真实公开名单](../school-public-2026-10-14/full-report.md)。不能用这个历史失败判断所有招聘信息都要登录。
+
 验证时间：2026-10-14 11:38（Asia/Shanghai）。独立 GitHub Actions runner，顺序请求、两秒间隔、TLS 校验开启，不发送账号、Token 或 Cookie，不涉及日历写入。
 
 运行记录：[38507244349](https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38507244349)。完整证据 artifact：`guat-live-preview-38507244349`。

@@ -18,3 +18,11 @@
 ## 用户授权后的真实匿名采集（2026-10-14 11:38）
 
 用户明确要求执行采集后，在独立 preview/guat-live-20261014 分支触发 GitHub Actions 的真实匿名验证；没有修改云环境代理策略、合并 main 或开启日历写入。首次不带日期的列表请求 HTTP 400；补齐 calendarStartDate=2026-10-14 后仍为 HTTP 400，真实 JSON 为 `{"code":400,"msg":"请登录后再浏览","data":null}`。同一 runner 的 /index 返回 HTTP 200。因此本次已经取得学校服务器响应，当前匿名列表请求被要求登录。停止继续请求受限接口，不推断其他接口的权限或日期语义。真实招聘会/企业/岗位仍为 0，未来30天全量采集未完成。完整请求日志与响应样本保存在 [运行 38507244349](https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38507244349) 的 artifact；持久摘要见 [真实验证记录](evidence/live-2026-10-14-github/result.md)。
+
+## 匿名公开访问核实与真实结果（2026-10-14 12:34）
+
+用户指出公开页面无需登录后，以全新未登录浏览器观察正常访问，并用 requests 复现。pageSize=10、无 Authorization/Cookie 时四接口 HTTP200/code200；早期50/100条请求的拒绝不能概括为全部信息需要登录。calendarStartDate 在跨月窗口和边界实际符合当天筛选；34次目录请求取得10月14日至11月12日共46场。
+
+已完成公开范围预览：112家去重企业、408个不同(companyId,positionId)岗位，433条招聘会关联记录。45场子请求全部页已收齐；综合双选会企业第6页在此前请求中HTTP400，本次仅读公开前5页和响应直接提供的岗位列表，保留217条该场岗位关联，不声称917个声明岗位全部取得。整体 collection_complete=false，公开预览执行完成。10条异常薪资保留原值并标注需确认；CSV/JSON数量、ID去重、企业关联、时间窗口与隐私独立核对通过。
+
+代码增加公开页上下文、每页10条配置、逐日语义变化防护、预算和真实访问标志、快照恢复与受限页停止。236项离线测试和原有103项通过；预览分支Python3.10/3.12 CI实际成功。main未合并，仓库定时开关及Google写入开关未开启，没有真实日历同步。当前结果和全部名单见 [真实公开招聘报告](evidence/school-public-2026-10-14/full-report.md)、[公开访问配置](school-public-access.md)、[运行38511817513](https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38511817513)。

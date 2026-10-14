@@ -2,7 +2,7 @@
 
 桂林航天工业学院校招信息系统，数据入口：<https://bysjyw.guat.edu.cn/index>。
 
-已实现完整离线链路：匿名客户端 → 配置标准化 → SQLite 去重与历史 → 可解释岗位筛选 → 时间冲突 → 中文日报/周报和 JSON/CSV → ICS → Google Calendar dry-run/受控 OAuth 适配器。真实学校访问与 Google 授权仍未验证，真实采集和同步默认关闭。
+已实现匿名客户端 → 配置标准化 → SQLite 去重与历史 → 岗位筛选 → 时间冲突 → 中文日报/周报和 JSON/CSV → ICS → Google Calendar dry-run/受控同步。学校四接口匿名访问已实际验证，未来30天目录取得46场；部分深分页受限，明细完整性单独标注。真实 Google 授权/写入仍未验证，定时采集和同步开关保持关闭。
 
 ## 完整离线运行
 
@@ -23,9 +23,11 @@ python -m venv .venv
 
 ## 本次验证结果
 
+最新实际结果见 [学校公开访问说明](docs/school-public-access.md)。使用官网公开页面的 pageSize=10，无 Authorization/Cookie，四接口返回 HTTP 200/code 200；calendarStartDate 当前为当天筛选，2026-10-14 至11-12逐日取得46场活动。综合双选会企业第6页遭拒绝，因此公共预览有明确的明细范围限制，不能声称全量。下述 CONNECT 403 保留为早期云环境历史记录。
+
 北京时间 2026-10-14 的真实云端探测，在第一个 `jobFair/list` 请求的 HTTPS CONNECT 阶段被代理拒绝：`Tunnel connection failed: 403 Forbidden`。未收到学校接口响应，`http_status` 为 `null`，没有可验证的业务 code 或 JSON。此结果不能证明学校接口拒绝匿名访问。
 
-原始证据保存在 [docs/evidence/cloud-2026-10-14/](docs/evidence/cloud-2026-10-14/)，说明见 [第一阶段验证与部署文档](docs/phase1.md)。其他三个接口、日期查询语义均未验证，未采集招聘数据，未创建或同步日历事件。
+早期证据保存在 [docs/evidence/cloud-2026-10-14/](docs/evidence/cloud-2026-10-14/)，说明见 [第一阶段验证与部署文档](docs/phase1.md)。这些历史失败不代表最新采集状态。未创建或同步真实日历事件。
 
 ## 第一阶段探测
 
@@ -49,14 +51,14 @@ python -m venv .venv
 首次获得真实样本后，核对 ID 和招聘会开始日期字段，再运行：
 
 ```bash
-.venv/bin/campus-recruitment --id-field jobFairId --date-field ACTUAL_START_DATE_FIELD --output-dir reports/phase1-with-dates
+.venv/bin/campus-recruitment --id-field jobFairId --date-field startTime --page-size 10 --public-page jobfairSearch --output-dir reports/phase1-with-dates
 ```
 
-`ACTUAL_START_DATE_FIELD` 必须替换为响应中核实的字段名。不可把发布时间或报名截止时间当作招聘会开始时间。不指定 `--date-field` 时，工具只记录日期查询响应，不推断其语义。
+startTime 已从实际学校 JSON 核实。不可把发布时间或报名截止时间当作招聘会开始时间。不指定 --date-field 时，工具只记录日期查询响应，不推断其语义。
 
 ## 安全与完整性约定
 
-- 默认只接受业务 code `200`（整数或字符串），其他值即失败。这是待验证的客户端配置，不是对学校接口的已验证结论。若真实响应或官方说明确认另一成功 code，显式设置 `--success-code`；不要为消除报错而添加未知值。
+- 默认只接受业务 code 200（整数或字符串），当前实际学校成功响应为整数200。其他值即失败；不要为消除报错而添加未知值。
 - 每次请求（包括重试）默认至少间隔 2 秒，串行执行；不携带授权头、登录 Cookie 或 netrc 认证。保留系统代理和 CA 配置，TLS 校验始终开启，不跟随重定向。
 - 默认连接/读取超时为 5/20 秒，最多重试 2 次。仅重试超时、连接失败和 HTTP `429/500/502/503/504`；遇到权限拒绝、代理策略拒绝、TLS 错误不重试。尊重 `Retry-After`，等待值超过 60 秒则停止，留待稍后运行。
 - 支持顶层 `rows`、`data.rows` 和数组 `data`；读取顶层或 `data` 对象中的 `total/totalPage`。未知结构、冲突、提前空页、重复行或分页总数变化会失败，不返回伪完整数据。
