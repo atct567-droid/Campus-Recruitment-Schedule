@@ -51,6 +51,10 @@ def collect(client, normalizer, plan: QueryPlan, *, fair_ids=(), page_size=50, m
                 result = client.list_fairs(query, page_size=page_size)
                 for row in result.rows:
                     identifier = normalizer.identifier(row, "fair", "job_fair_id")
+                    if plan.strategy == "daily" and plan.verified:
+                        observed = normalizer.fair(row, snapshot.checked_at).start_date
+                        if observed != query:
+                            raise ApiError("query_semantics", "Daily query returned a different or missing start date; coverage is incomplete")
                     if identifier in summaries and summaries[identifier] != row:
                         snapshot.warnings.append(f"招聘会 {identifier} 重复摘要，使用详情核对")
                     summaries[identifier] = row

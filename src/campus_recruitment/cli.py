@@ -77,7 +77,8 @@ def run(args):
                      query.get("verified") is True, max_queries=args.max_queries)
     plan.dates()  # Reject unsafe/unbounded date ranges before constructing a transport.
     db_path = args.db or Path("state") / f"{args.mode}.db"
-    options = {"request_budget": args.request_budget, "max_pages": args.max_pages,
+    request_budget = args.request_budget if args.request_budget is not None else normalizer.config.get("public_request_budget", 200)
+    options = {"request_budget": request_budget, "max_pages": args.max_pages,
                "max_records": args.max_records, "interval": args.interval, "retries": args.retries,
                "success_codes": normalizer.config.get("success_codes", [200])}
     if args.mode == "real":
@@ -120,6 +121,7 @@ def run(args):
             private_path.write_text(json.dumps(private_result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             private_path.chmod(0o600)
         status.update(status="failed" if snapshot.errors else ("complete" if snapshot.complete else "limited"),
+                      real_school_access_verified=args.mode == "real" and any(event.get("outcome") == "json_verified" for event in request_events),
                       run_id=run_id, provenance=normalizer.provenance, start=start.isoformat(), end_exclusive=end.isoformat(),
                       collection_complete=snapshot.complete, query_semantics_verified=snapshot.query_verified,
                       requests_attempted=client.attempts, counts={kind: len(store.list(kind)) for kind in ("fair", "company", "position")},
@@ -200,7 +202,7 @@ def parser():
     job.add_argument("--fair-id", action="append", default=[])
     job.add_argument("--strategy", choices=["baseline", "daily", "monthly", "start"])
     for name, default in (("max-queries", 40), ("max-pages", 1000), ("max-records", 10000),
-                          ("max-fairs", 200), ("request-budget", 200), ("page-size", 50), ("retries", 2)):
+                          ("max-fairs", 200), ("request-budget", None), ("page-size", 50), ("retries", 2)):
         job.add_argument("--" + name, type=int, default=default)
     job.add_argument("--interval", type=float, default=2.0)
     job.add_argument("--no-reports", action="store_true")
