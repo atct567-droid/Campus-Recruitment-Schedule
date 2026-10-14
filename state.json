@@ -8,7 +8,7 @@
         "start_time": "2026-10-14T15:00:00+08:00",
         "end_time": "2026-10-14T18:00:00+08:00",
         "location": "南校区飞天楼313",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=689",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -16,11 +16,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：689\n地点：南校区飞天楼313\n数据类型：school_api\n参会企业：广东丰明电子科技有限公司（3693）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电性工程师（0分，广东丰明电子科技有限公司 / 3693）\n结构工程师（0分，广东丰明电子科技有限公司 / 3693）\n制程工艺工程师（0分，广东丰明电子科技有限公司 / 3693）\n市场专员（0分，广东丰明电子科技有限公司 / 3693）\n销售工程师（0分，广东丰明电子科技有限公司 / 3693）\n质量工程师（0分，广东丰明电子科技有限公司 / 3693）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=689\n\n招聘会 ID：689\n地点：南校区飞天楼313\n数据类型：school_api\n参会企业：广东丰明电子科技有限公司（3693）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电性工程师（0分，广东丰明电子科技有限公司 / 3693）\n结构工程师（0分，广东丰明电子科技有限公司 / 3693）\n制程工艺工程师（0分，广东丰明电子科技有限公司 / 3693）\n市场专员（0分，广东丰明电子科技有限公司 / 3693）\n销售工程师（0分，广东丰明电子科技有限公司 / 3693）\n质量工程师（0分，广东丰明电子科技有限公司 / 3693）"
       },
-      "hash": "54ae28a172878eb647c47c00ba5f87988c42af4017d2fb084e9e94676dcc600e",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "5a17ff619d49fb819d7be78580b900461f514e9994ee77c4c8525195fc3cf7f0",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "692": {
       "fair": {
@@ -29,7 +29,7 @@
         "start_time": "2026-10-14T15:00:00+08:00",
         "end_time": "2026-10-14T18:00:00+08:00",
         "location": "南校区飞天楼206",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=692",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -37,11 +37,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：692\n地点：南校区飞天楼206\n数据类型：school_api\n参会企业：广东世运电路科技股份有限公司（3958）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n储干（技术类）（0分，广东世运电路科技股份有限公司 / 3958）\n储干（市场营销类）（0分，广东世运电路科技股份有限公司 / 3958）\n储干（品质保证类）（0分，广东世运电路科技股份有限公司 / 3958）\n储干（生产管理类）（0分，广东世运电路科技股份有限公司 / 3958）\n储干（设备维修类）（0分，广东世运电路科技股份有限公司 / 3958）\n储干（职能类）（0分，广东世运电路科技股份有限公司 / 3958）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=692\n\n招聘会 ID：692\n地点：南校区飞天楼206\n数据类型：school_api\n参会企业：广东世运电路科技股份有限公司（3958）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n储干（技术类）（0分，广东世运电路科技股份有限公司 / 3958）\n储干（市场营销类）（0分，广东世运电路科技股份有限公司 / 3958）\n储干（品质保证类）（0分，广东世运电路科技股份有限公司 / 3958）\n储干（生产管理类）（0分，广东世运电路科技股份有限公司 / 3958）\n储干（设备维修类）（0分，广东世运电路科技股份有限公司 / 3958）\n储干（职能类）（0分，广东世运电路科技股份有限公司 / 3958）"
       },
-      "hash": "c216f94a449ede1da3bbe6da7fcf59500a7591e3200d479fe96dfd21b5ab35c3",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "75df9281cca1584b5057f732e4afad5fc2e7517570ee40f2a0d930ea44ead8e7",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "708": {
       "fair": {
@@ -50,7 +50,7 @@
         "start_time": "2026-10-14T15:00:00+08:00",
         "end_time": "2026-10-14T18:00:00+08:00",
         "location": "北校区明志楼324",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=708",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -58,11 +58,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：708\n地点：北校区明志楼324\n数据类型：school_api\n参会企业：广东申菱环境系统股份有限公司（3650）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n售后技术支持工程师（65分，广东申菱环境系统股份有限公司 / 3650）\n暖通机电工程师（0分，广东申菱环境系统股份有限公司 / 3650）\n合同项目管理岗（0分，广东申菱环境系统股份有限公司 / 3650）\n结构工程师（0分，广东申菱环境系统股份有限公司 / 3650）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=708\n\n招聘会 ID：708\n地点：北校区明志楼324\n数据类型：school_api\n参会企业：广东申菱环境系统股份有限公司（3650）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n售后技术支持工程师（65分，广东申菱环境系统股份有限公司 / 3650）\n暖通机电工程师（0分，广东申菱环境系统股份有限公司 / 3650）\n合同项目管理岗（0分，广东申菱环境系统股份有限公司 / 3650）\n结构工程师（0分，广东申菱环境系统股份有限公司 / 3650）"
       },
-      "hash": "6f785ee9609e4171ec2d5ba070f476f3cdf73b1a7e59cdbb0166b0d583b85b6e",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "b275cce1f0f71eaa603c632dd9a2aa22c0622cd31c05e0c3eca6ef6555daf3df",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "709": {
       "fair": {
@@ -71,7 +71,7 @@
         "start_time": "2026-10-14T15:00:00+08:00",
         "end_time": "2026-10-14T18:00:00+08:00",
         "location": "南校区飞天楼108",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=709",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -79,11 +79,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：709\n地点：南校区飞天楼108\n数据类型：school_api\n参会企业：深圳市一博科技股份有限公司（3609）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\nPCB设计工程师（95分，深圳市一博科技股份有限公司 / 3609）\nPCB设计工程师（75分，深圳市一博科技股份有限公司 / 3609）\n工程设计（50分，深圳市一博科技股份有限公司 / 3609）\n质量工程师（50分，深圳市一博科技股份有限公司 / 3609）\n工艺工程师（50分，深圳市一博科技股份有限公司 / 3609）\n计划工程师（50分，深圳市一博科技股份有限公司 / 3609）\n研发工程师（50分，深圳市一博科技股份有限公司 / 3609）\nSI仿真工程师（0分，深圳市一博科技股份有限公司 / 3609）\n管培生（生产管理）（0分，深圳市一博科技股份有限公司 / 3609）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=709\n\n招聘会 ID：709\n地点：南校区飞天楼108\n数据类型：school_api\n参会企业：深圳市一博科技股份有限公司（3609）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\nPCB设计工程师（95分，深圳市一博科技股份有限公司 / 3609）\nPCB设计工程师（75分，深圳市一博科技股份有限公司 / 3609）\n工程设计（50分，深圳市一博科技股份有限公司 / 3609）\n质量工程师（50分，深圳市一博科技股份有限公司 / 3609）\n工艺工程师（50分，深圳市一博科技股份有限公司 / 3609）\n计划工程师（50分，深圳市一博科技股份有限公司 / 3609）\n研发工程师（50分，深圳市一博科技股份有限公司 / 3609）\nSI仿真工程师（0分，深圳市一博科技股份有限公司 / 3609）\n管培生（生产管理）（0分，深圳市一博科技股份有限公司 / 3609）"
       },
-      "hash": "e01b04eb5f9c49e1a4bbe78a82bfad09e88a81382823d9a0dfd237672593644b",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "dcfff6c5ce12e475f29dd7d93b6a06644376bb4c151514f800c26bde823157bd",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "716": {
       "fair": {
@@ -92,7 +92,7 @@
         "start_time": "2026-10-14T15:00:00+08:00",
         "end_time": "2026-10-14T18:00:00+08:00",
         "location": "南校区飞天楼207",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=716",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -100,11 +100,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：716\n地点：南校区飞天楼207\n数据类型：school_api\n参会企业：广东集创科技有限公司（5396）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n销售储备（0分，广东集创科技有限公司 / 5396）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=716\n\n招聘会 ID：716\n地点：南校区飞天楼207\n数据类型：school_api\n参会企业：广东集创科技有限公司（5396）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n销售储备（0分，广东集创科技有限公司 / 5396）"
       },
-      "hash": "847008a1b5e6a0c18ad88561cbf99b2f633b0a6b2f4007284b69dbc444290182",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "5d93d5b97a00be88c19e4d3e2935ce19d4451f56355d86da6b60b604b8c27a3b",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "660": {
       "fair": {
@@ -113,7 +113,7 @@
         "start_time": "2026-10-14T19:00:00+08:00",
         "end_time": "2026-10-14T21:00:00+08:00",
         "location": "北校区招聘大厅",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=660",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -121,11 +121,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：660\n地点：北校区招聘大厅\n数据类型：school_api\n参会企业：深圳市雷迪奥视觉技术有限公司（3586）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电子工程师（75分，深圳市雷迪奥视觉技术有限公司 / 3586）\n电子测试工程师（65分，深圳市雷迪奥视觉技术有限公司 / 3586）\n海外技术支持工程师（45分，深圳市雷迪奥视觉技术有限公司 / 3586）\nTE工程师（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\nIE工程师（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\n品质工程师（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\nPMC工程师（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\n采购工程师（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\n人力资源专员（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\n海外销售（0分，深圳市雷迪奥视觉技术有限公司 / 3586）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=660\n\n招聘会 ID：660\n地点：北校区招聘大厅\n数据类型：school_api\n参会企业：深圳市雷迪奥视觉技术有限公司（3586）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电子工程师（75分，深圳市雷迪奥视觉技术有限公司 / 3586）\n电子测试工程师（65分，深圳市雷迪奥视觉技术有限公司 / 3586）\n海外技术支持工程师（45分，深圳市雷迪奥视觉技术有限公司 / 3586）\nTE工程师（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\nIE工程师（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\n品质工程师（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\nPMC工程师（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\n采购工程师（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\n人力资源专员（0分，深圳市雷迪奥视觉技术有限公司 / 3586）\n海外销售（0分，深圳市雷迪奥视觉技术有限公司 / 3586）"
       },
-      "hash": "8baa0928fee1fb8d3c33a893c874e05040785450af21b001f5456a87acb23730",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "214b1fd7b81e7172277e3d14c2cadf2b703d6312d647a2029a359e582ccde0d7",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "711": {
       "fair": {
@@ -134,7 +134,7 @@
         "start_time": "2026-10-14T19:00:00+08:00",
         "end_time": "2026-10-14T21:00:00+08:00",
         "location": "南校区探天楼B102",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=711",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -142,11 +142,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：711\n地点：南校区探天楼B102\n数据类型：school_api\n参会企业：欣旺达动力科技股份有限公司（4807）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n工艺工程师（25分，欣旺达动力科技股份有限公司 / 4807）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=711\n\n招聘会 ID：711\n地点：南校区探天楼B102\n数据类型：school_api\n参会企业：欣旺达动力科技股份有限公司（4807）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n工艺工程师（25分，欣旺达动力科技股份有限公司 / 4807）"
       },
-      "hash": "cb033dec2d02548c5e1c8926e351d54247fb787e8951b875239dffc3b83b5419",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "be7c690ba8b1620a729beb1a9723f75b893c5318a8bbd210f6bd9da1c025a746",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "675": {
       "fair": {
@@ -155,7 +155,7 @@
         "start_time": "2026-10-15T10:00:00+08:00",
         "end_time": "2026-10-15T12:00:00+08:00",
         "location": "南校区飞天楼307",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=675",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -163,11 +163,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：675\n地点：南校区飞天楼307\n数据类型：school_api\n参会企业：东莞铭普光磁股份有限公司（4055）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电源研发储干（25分，东莞铭普光磁股份有限公司 / 4055）\n磁器件研发储干（0分，东莞铭普光磁股份有限公司 / 4055）\n光电研发储干（0分，东莞铭普光磁股份有限公司 / 4055）\nFAE技术应用储干（0分，东莞铭普光磁股份有限公司 / 4055）\n生产管理储干（0分，东莞铭普光磁股份有限公司 / 4055）\n质量储干（0分，东莞铭普光磁股份有限公司 / 4055）\n设备管理储干（0分，东莞铭普光磁股份有限公司 / 4055）\n工业工程储干（0分，东莞铭普光磁股份有限公司 / 4055）\n工艺工程储干（0分，东莞铭普光磁股份有限公司 / 4055）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=675\n\n招聘会 ID：675\n地点：南校区飞天楼307\n数据类型：school_api\n参会企业：东莞铭普光磁股份有限公司（4055）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电源研发储干（25分，东莞铭普光磁股份有限公司 / 4055）\n磁器件研发储干（0分，东莞铭普光磁股份有限公司 / 4055）\n光电研发储干（0分，东莞铭普光磁股份有限公司 / 4055）\nFAE技术应用储干（0分，东莞铭普光磁股份有限公司 / 4055）\n生产管理储干（0分，东莞铭普光磁股份有限公司 / 4055）\n质量储干（0分，东莞铭普光磁股份有限公司 / 4055）\n设备管理储干（0分，东莞铭普光磁股份有限公司 / 4055）\n工业工程储干（0分，东莞铭普光磁股份有限公司 / 4055）\n工艺工程储干（0分，东莞铭普光磁股份有限公司 / 4055）"
       },
-      "hash": "b185e8b2e08c788e1cb29340ecf91268d591d7ee6f78241ead26327b319a14fd",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "d00ab7bce09f4fa697c22e991a1cc92abe93cafa957c03cc2948559b1de57880",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "684": {
       "fair": {
@@ -176,7 +176,7 @@
         "start_time": "2026-10-15T10:00:00+08:00",
         "end_time": "2026-10-15T12:00:00+08:00",
         "location": "南校区飞天楼206",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=684",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -184,11 +184,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：684\n地点：南校区飞天楼206\n数据类型：school_api\n参会企业：长城电源技术(广西)有限公司（3521）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n运维助理工程师（25分，长城电源技术(广西)有限公司 / 3521）\nTE/IE/PE/ME/波峰焊工程师（0分，长城电源技术(广西)有限公司 / 3521）\n质量助理工程师（0分，长城电源技术(广西)有限公司 / 3521）\n测试助理工程师（0分，长城电源技术(广西)有限公司 / 3521）\nIE助理工程师（0分，长城电源技术(广西)有限公司 / 3521）\nPMC助理工程师（0分，长城电源技术(广西)有限公司 / 3521）\n成本核算（0分，长城电源技术(广西)有限公司 / 3521）\n质量助理工程师（0分，长城电源技术(广西)有限公司 / 3521）\n管理储备（0分，长城电源技术(广西)有限公司 / 3521）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=684\n\n招聘会 ID：684\n地点：南校区飞天楼206\n数据类型：school_api\n参会企业：长城电源技术(广西)有限公司（3521）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n运维助理工程师（25分，长城电源技术(广西)有限公司 / 3521）\nTE/IE/PE/ME/波峰焊工程师（0分，长城电源技术(广西)有限公司 / 3521）\n质量助理工程师（0分，长城电源技术(广西)有限公司 / 3521）\n测试助理工程师（0分，长城电源技术(广西)有限公司 / 3521）\nIE助理工程师（0分，长城电源技术(广西)有限公司 / 3521）\nPMC助理工程师（0分，长城电源技术(广西)有限公司 / 3521）\n成本核算（0分，长城电源技术(广西)有限公司 / 3521）\n质量助理工程师（0分，长城电源技术(广西)有限公司 / 3521）\n管理储备（0分，长城电源技术(广西)有限公司 / 3521）"
       },
-      "hash": "515a740f62d822cea3c8bb3c00e90212fe815dea37f7cfc99378e349ab7f5b19",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "aebc9f9beb443117b145baf94469aba96664f0e47b031d9dbcb93646b82b11aa",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "669": {
       "fair": {
@@ -197,7 +197,7 @@
         "start_time": "2026-10-15T15:00:00+08:00",
         "end_time": "2026-10-15T18:00:00+08:00",
         "location": "南校区飞天楼313",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=669",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -205,11 +205,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：669\n地点：南校区飞天楼313\n数据类型：school_api\n参会企业：广东气派科技有限公司（3620）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n工艺工程（25分，广东气派科技有限公司 / 3620）\n程序开发（25分，广东气派科技有限公司 / 3620）\n品质工程（25分，广东气派科技有限公司 / 3620）\n设备工程（0分，广东气派科技有限公司 / 3620）\n生产管理（0分，广东气派科技有限公司 / 3620）\n电镀工程（0分，广东气派科技有限公司 / 3620）\n大客户销售（0分，广东气派科技有限公司 / 3620）\n职能管理（0分，广东气派科技有限公司 / 3620）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=669\n\n招聘会 ID：669\n地点：南校区飞天楼313\n数据类型：school_api\n参会企业：广东气派科技有限公司（3620）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n工艺工程（25分，广东气派科技有限公司 / 3620）\n程序开发（25分，广东气派科技有限公司 / 3620）\n品质工程（25分，广东气派科技有限公司 / 3620）\n设备工程（0分，广东气派科技有限公司 / 3620）\n生产管理（0分，广东气派科技有限公司 / 3620）\n电镀工程（0分，广东气派科技有限公司 / 3620）\n大客户销售（0分，广东气派科技有限公司 / 3620）\n职能管理（0分，广东气派科技有限公司 / 3620）"
       },
-      "hash": "607d7a594cd2e9815b62b65964ab8367087c335f43a54f7aed374c963168e163",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "0cd1507c23d0a4415ccf7032706d92b5ddde0d236a2cb7126486fe7d1b3cf559",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "693": {
       "fair": {
@@ -218,7 +218,7 @@
         "start_time": "2026-10-15T15:00:00+08:00",
         "end_time": "2026-10-15T18:00:00+08:00",
         "location": "南校区飞天楼107",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=693",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -226,11 +226,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：693\n地点：南校区飞天楼107\n数据类型：school_api\n参会企业：广东恒兴饲料实业股份有限公司（3711）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n品管部储备干部（0分，广东恒兴饲料实业股份有限公司 / 3711）\n营销储备干部（0分，广东恒兴饲料实业股份有限公司 / 3711）\n财务储备干部（0分，广东恒兴饲料实业股份有限公司 / 3711）\n行政 人事储备干部（0分，广东恒兴饲料实业股份有限公司 / 3711）\n生产储备干 部（0分，广东恒兴饲料实业股份有限公司 / 3711）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=693\n\n招聘会 ID：693\n地点：南校区飞天楼107\n数据类型：school_api\n参会企业：广东恒兴饲料实业股份有限公司（3711）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n品管部储备干部（0分，广东恒兴饲料实业股份有限公司 / 3711）\n营销储备干部（0分，广东恒兴饲料实业股份有限公司 / 3711）\n财务储备干部（0分，广东恒兴饲料实业股份有限公司 / 3711）\n行政 人事储备干部（0分，广东恒兴饲料实业股份有限公司 / 3711）\n生产储备干 部（0分，广东恒兴饲料实业股份有限公司 / 3711）"
       },
-      "hash": "6f1d95ad71b3e3ec0091e78528ede5fe00766113e3ecbd182d3a90b14f709523",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "fff763d127c04de00570c5a8648888af14cddd179b14294f6e8723c8eb9c6b1e",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "697": {
       "fair": {
@@ -239,7 +239,7 @@
         "start_time": "2026-10-15T15:00:00+08:00",
         "end_time": "2026-10-15T18:00:00+08:00",
         "location": "南校区飞天楼204",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=697",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -247,11 +247,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：697\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：玖龙纸业（北海）有限公司（4153）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n设备培训生（0分，玖龙纸业（北海）有限公司 / 4153）\n生产培训生（0分，玖龙纸业（北海）有限公司 / 4153）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=697\n\n招聘会 ID：697\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：玖龙纸业（北海）有限公司（4153）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n设备培训生（0分，玖龙纸业（北海）有限公司 / 4153）\n生产培训生（0分，玖龙纸业（北海）有限公司 / 4153）"
       },
-      "hash": "3f15e34059c9e8483823750a1aaf4484743cf7affff7068ccbe26bb57e13ded6",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "5d98a2fc82ba0fe71535ea559312d3733ddfca54d46033bad1b17e56a7cf66e2",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "706": {
       "fair": {
@@ -260,7 +260,7 @@
         "start_time": "2026-10-15T15:00:00+08:00",
         "end_time": "2026-10-15T18:00:00+08:00",
         "location": "北校区明志楼324",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=706",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -268,11 +268,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：706\n地点：北校区明志楼324\n数据类型：school_api\n参会企业：中国能源建设集团湖南火电建设有限公司（4017）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n项目工程技术岗（0分，中国能源建设集团湖南火电建设有限公司 / 4017）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=706\n\n招聘会 ID：706\n地点：北校区明志楼324\n数据类型：school_api\n参会企业：中国能源建设集团湖南火电建设有限公司（4017）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n项目工程技术岗（0分，中国能源建设集团湖南火电建设有限公司 / 4017）"
       },
-      "hash": "a88461aa12ef0f7fcd594c80adb027d98623a83be7ced3b6ba34a62aa4ff07ec",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "e2c1dd79f6b3f790f65a13eab77e78fbad2e15e82420cc241b9eb3664862ba8c",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "727": {
       "fair": {
@@ -281,7 +281,7 @@
         "start_time": "2026-10-15T15:00:00+08:00",
         "end_time": "2026-10-15T18:00:00+08:00",
         "location": "南校区飞天楼212",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=727",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -289,11 +289,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：727\n地点：南校区飞天楼212\n数据类型：school_api\n参会企业：深圳市恒力天科技有限公司（4370）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n机械助理工程师（0分，深圳市恒力天科技有限公司 / 4370）\n电气助理工程师（0分，深圳市恒力天科技有限公司 / 4370）\n软件工助理工程师（0分，深圳市恒力天科技有限公司 / 4370）\nPM助理（0分，深圳市恒力天科技有限公司 / 4370）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=727\n\n招聘会 ID：727\n地点：南校区飞天楼212\n数据类型：school_api\n参会企业：深圳市恒力天科技有限公司（4370）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n机械助理工程师（0分，深圳市恒力天科技有限公司 / 4370）\n电气助理工程师（0分，深圳市恒力天科技有限公司 / 4370）\n软件工助理工程师（0分，深圳市恒力天科技有限公司 / 4370）\nPM助理（0分，深圳市恒力天科技有限公司 / 4370）"
       },
-      "hash": "1d41f243dbdf0e82bd121f789320c89fe41ad86aaab9715b57967aca598c4f18",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "8631e96dc7c4f16df5d8ee04ac4b18d89910500edc80a17c898c139038bddd45",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "695": {
       "fair": {
@@ -302,7 +302,7 @@
         "start_time": "2026-10-15T19:00:00+08:00",
         "end_time": "2026-10-15T21:00:00+08:00",
         "location": "南校区飞天楼204",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=695",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -310,11 +310,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：695\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：广东中鹏电气有限公司（4385）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n售后岗（0分，广东中鹏电气有限公司 / 4385）\n销售岗（0分，广东中鹏电气有限公司 / 4385）\n仓储岗（0分，广东中鹏电气有限公司 / 4385）\n计划物流岗（0分，广东中鹏电气有限公司 / 4385）\n制造储干（0分，广东中鹏电气有限公司 / 4385）\n海外销售支持岗（0分，广东中鹏电气有限公司 / 4385）\n海外营销岗（0分，广东中鹏电气有限公司 / 4385）\n国内营销岗（0分，广东中鹏电气有限公司 / 4385）\n采购岗（0分，广东中鹏电气有限公司 / 4385）\n设备管理岗（0分，广东中鹏电气有限公司 / 4385）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=695\n\n招聘会 ID：695\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：广东中鹏电气有限公司（4385）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n售后岗（0分，广东中鹏电气有限公司 / 4385）\n销售岗（0分，广东中鹏电气有限公司 / 4385）\n仓储岗（0分，广东中鹏电气有限公司 / 4385）\n计划物流岗（0分，广东中鹏电气有限公司 / 4385）\n制造储干（0分，广东中鹏电气有限公司 / 4385）\n海外销售支持岗（0分，广东中鹏电气有限公司 / 4385）\n海外营销岗（0分，广东中鹏电气有限公司 / 4385）\n国内营销岗（0分，广东中鹏电气有限公司 / 4385）\n采购岗（0分，广东中鹏电气有限公司 / 4385）\n设备管理岗（0分，广东中鹏电气有限公司 / 4385）"
       },
-      "hash": "666390157765bcd8a40570feadc9d9988349afc7901b245022083529eb64de7e",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "c1276f6ac8f837c4c52dfc079d455ffaf5a27faec47b9a0f82384ba2dd50ed2f",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "712": {
       "fair": {
@@ -323,7 +323,7 @@
         "start_time": "2026-10-15T19:00:00+08:00",
         "end_time": "2026-10-15T21:00:00+08:00",
         "location": "南校区探天楼B101",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=712",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -331,11 +331,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：712\n地点：南校区探天楼B101\n数据类型：school_api\n参会企业：成都黑天鹅餐饮管理有限公司新希望路分店（3856）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n黑天鹅服务顾问（0分，成都黑天鹅餐饮管理有限公司新希望路分店 / 3856）\n好利来储备干部（0分，成都黑天鹅餐饮管理有限公司新希望路分店 / 3856）\n好利来品牌配送专员（0分，成都黑天鹅餐饮管理有限公司新希望路分店 / 3856）\n好利来分店出纳（0分，成都黑天鹅餐饮管理有限公司新希望路分店 / 3856）\n好利来技术制作（0分，成都黑天鹅餐饮管理有限公司新希望路分店 / 3856）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=712\n\n招聘会 ID：712\n地点：南校区探天楼B101\n数据类型：school_api\n参会企业：成都黑天鹅餐饮管理有限公司新希望路分店（3856）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n黑天鹅服务顾问（0分，成都黑天鹅餐饮管理有限公司新希望路分店 / 3856）\n好利来储备干部（0分，成都黑天鹅餐饮管理有限公司新希望路分店 / 3856）\n好利来品牌配送专员（0分，成都黑天鹅餐饮管理有限公司新希望路分店 / 3856）\n好利来分店出纳（0分，成都黑天鹅餐饮管理有限公司新希望路分店 / 3856）\n好利来技术制作（0分，成都黑天鹅餐饮管理有限公司新希望路分店 / 3856）"
       },
-      "hash": "7c9179fcaee37f906bfadda817e50b63d5f80be567788a23ccff4c5e8f3578ae",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "f4b301c833351fba461ec13057dccef89a62689d824b602a607e72c3da396006",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "707": {
       "fair": {
@@ -344,7 +344,7 @@
         "start_time": "2026-10-16T10:00:00+08:00",
         "end_time": "2026-10-16T12:00:00+08:00",
         "location": "南校区飞天楼212",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=707",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -352,11 +352,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：707\n地点：南校区飞天楼212\n数据类型：school_api\n参会企业：珠海金智维人工智能股份有限公司（5377）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n助理开发工程师（0分，珠海金智维人工智能股份有限公司 / 5377）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=707\n\n招聘会 ID：707\n地点：南校区飞天楼212\n数据类型：school_api\n参会企业：珠海金智维人工智能股份有限公司（5377）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n助理开发工程师（0分，珠海金智维人工智能股份有限公司 / 5377）"
       },
-      "hash": "60e093be5ce5262512c16e8f864f13a9bfd5d554279963078af4fcc3c5a8e637",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "f9b7cad6ccba842aa9bbc4433ee76f2eba9835df1aad3ae45f3447a7e5a007f3",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "655": {
       "fair": {
@@ -365,7 +365,7 @@
         "start_time": "2026-10-16T15:00:00+08:00",
         "end_time": "2026-10-16T18:00:00+08:00",
         "location": "南校区飞天楼110",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=655",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -373,11 +373,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：655\n地点：南校区飞天楼110\n数据类型：school_api\n参会企业：大族激光科技产业集团股份有限公司（4053）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n技术支持工程师（校招1021）（65分，大族激光科技产业集团股份有限公司 / 4053）\n电气工程师（校招025）（65分，大族激光科技产业集团股份有限公司 / 4053）\n技术支持工程师（校招015）（65分，大族激光科技产业集团股份有限公司 / 4053）\n技术员（校招1013）（0分，大族激光科技产业集团股份有限公司 / 4053）\n营销管培生（校招1014）（0分，大族激光科技产业集团股份有限公司 / 4053）\n机械工程师（校招024）（0分，大族激光科技产业集团股份有限公司 / 4053）\n工艺工程师（校招027）（0分，大族激光科技产业集团股份有限公司 / 4053）\n应用工程师（校招017）（0分，大族激光科技产业集团股份有限公司 / 4053）\n制冷助理工程师（校招018）（0分，大族激光科技产业集团股份有限公司 / 4053）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=655\n\n招聘会 ID：655\n地点：南校区飞天楼110\n数据类型：school_api\n参会企业：大族激光科技产业集团股份有限公司（4053）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n技术支持工程师（校招1021）（65分，大族激光科技产业集团股份有限公司 / 4053）\n电气工程师（校招025）（65分，大族激光科技产业集团股份有限公司 / 4053）\n技术支持工程师（校招015）（65分，大族激光科技产业集团股份有限公司 / 4053）\n技术员（校招1013）（0分，大族激光科技产业集团股份有限公司 / 4053）\n营销管培生（校招1014）（0分，大族激光科技产业集团股份有限公司 / 4053）\n机械工程师（校招024）（0分，大族激光科技产业集团股份有限公司 / 4053）\n工艺工程师（校招027）（0分，大族激光科技产业集团股份有限公司 / 4053）\n应用工程师（校招017）（0分，大族激光科技产业集团股份有限公司 / 4053）\n制冷助理工程师（校招018）（0分，大族激光科技产业集团股份有限公司 / 4053）"
       },
-      "hash": "df8f0be94ede32d3ad17b20f3d891051704e3650b989a8612bace4d56bf6b3c1",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "bfd863a30826c9592109bdc5abaee85b435c79f5a751ea719ae4e03274aa30eb",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "672": {
       "fair": {
@@ -386,7 +386,7 @@
         "start_time": "2026-10-16T15:00:00+08:00",
         "end_time": "2026-10-16T18:00:00+08:00",
         "location": "南校区飞天楼212",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=672",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -394,11 +394,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：672\n地点：南校区飞天楼212\n数据类型：school_api\n参会企业：桂林深科技有限公司（3631）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n测试工程（0分，桂林深科技有限公司 / 3631）\n工艺工程（0分，桂林深科技有限公司 / 3631）\n项目管理（0分，桂林深科技有限公司 / 3631）\nIE工程（0分，桂林深科技有限公司 / 3631）\n品质管理（0分，桂林深科技有限公司 / 3631）\n暖通工程（0分，桂林深科技有限公司 / 3631）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=672\n\n招聘会 ID：672\n地点：南校区飞天楼212\n数据类型：school_api\n参会企业：桂林深科技有限公司（3631）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n测试工程（0分，桂林深科技有限公司 / 3631）\n工艺工程（0分，桂林深科技有限公司 / 3631）\n项目管理（0分，桂林深科技有限公司 / 3631）\nIE工程（0分，桂林深科技有限公司 / 3631）\n品质管理（0分，桂林深科技有限公司 / 3631）\n暖通工程（0分，桂林深科技有限公司 / 3631）"
       },
-      "hash": "0bee1288ced72074cc08188bcdb015cb7b3a10e96bdedaf06de8eb9e2898dbb8",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "710688cd454638881a22b05ff5088fd3daefa0f90b816519aabb48cdf7f8ed29",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "674": {
       "fair": {
@@ -407,7 +407,7 @@
         "start_time": "2026-10-16T15:00:00+08:00",
         "end_time": "2026-10-16T18:00:00+08:00",
         "location": "南校区飞天楼111",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=674",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -415,11 +415,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：674\n地点：南校区飞天楼111\n数据类型：school_api\n参会企业：安徽星河动力装备科技有限公司（4715）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n装配岗（0分，安徽星河动力装备科技有限公司 / 4715）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=674\n\n招聘会 ID：674\n地点：南校区飞天楼111\n数据类型：school_api\n参会企业：安徽星河动力装备科技有限公司（4715）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n装配岗（0分，安徽星河动力装备科技有限公司 / 4715）"
       },
-      "hash": "ec8ef45288736b501c093e8b887fb8a0af23750615172aae8b31af69d19f14af",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "f60e41a0675fe48d5a80a4a418674545526f732ce892b2a363ae4a030354ccc4",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "683": {
       "fair": {
@@ -428,7 +428,7 @@
         "start_time": "2026-10-16T15:00:00+08:00",
         "end_time": "2026-10-16T18:00:00+08:00",
         "location": "南校区飞天楼204",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=683",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -436,11 +436,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：683\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：迅得机械（东莞）有限公司（3378）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电气工程师/PLC编程人员（65分，迅得机械（东莞）有限公司 / 3378）\n机械工程师（0分，迅得机械（东莞）有限公司 / 3378）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=683\n\n招聘会 ID：683\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：迅得机械（东莞）有限公司（3378）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电气工程师/PLC编程人员（65分，迅得机械（东莞）有限公司 / 3378）\n机械工程师（0分，迅得机械（东莞）有限公司 / 3378）"
       },
-      "hash": "d567cdc2081615a8ae44abd6f9198eaf64239f2305405ac92ec1b552c5b65f14",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "6cbdd73b2cea418a94514c4f72a69339e1bf982fef4d1082d447c932f948672e",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "688": {
       "fair": {
@@ -449,7 +449,7 @@
         "start_time": "2026-10-16T15:00:00+08:00",
         "end_time": "2026-10-16T18:00:00+08:00",
         "location": "南校区飞天楼208",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=688",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -457,11 +457,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：688\n地点：南校区飞天楼208\n数据类型：school_api\n参会企业：东莞市德普特电子有限公司（3621）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n管培生（生产管理岗）（0分，东莞市德普特电子有限公司 / 3621）\n管培生（设备技术岗）（0分，东莞市德普特电子有限公司 / 3621）\n管培生（工艺技术岗）（0分，东莞市德普特电子有限公司 / 3621）\n管培生（品质技术岗）（0分，东莞市德普特电子有限公司 / 3621）\n管培生（研发技术岗）（0分，东莞市德普特电子有限公司 / 3621）\n管培生（职能岗）（0分，东莞市德普特电子有限公司 / 3621）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=688\n\n招聘会 ID：688\n地点：南校区飞天楼208\n数据类型：school_api\n参会企业：东莞市德普特电子有限公司（3621）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n管培生（生产管理岗）（0分，东莞市德普特电子有限公司 / 3621）\n管培生（设备技术岗）（0分，东莞市德普特电子有限公司 / 3621）\n管培生（工艺技术岗）（0分，东莞市德普特电子有限公司 / 3621）\n管培生（品质技术岗）（0分，东莞市德普特电子有限公司 / 3621）\n管培生（研发技术岗）（0分，东莞市德普特电子有限公司 / 3621）\n管培生（职能岗）（0分，东莞市德普特电子有限公司 / 3621）"
       },
-      "hash": "c22d130441f3e0adbd9ef60e0517b3253cb939ab35858d26071cd6e07fa378c7",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "05ef2af098335fb5e185c42500b9eeeabde7da98a247bfb18464c2566e5c9290",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "710": {
       "fair": {
@@ -470,7 +470,7 @@
         "start_time": "2026-10-16T15:00:00+08:00",
         "end_time": "2026-10-16T18:00:00+08:00",
         "location": "南校区启天楼B座小广场",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=710",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -478,11 +478,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：710\n地点：南校区启天楼B座小广场\n数据类型：school_api\n参会企业：桂林风得控科技有限公司（3406）；桂林星云电子科技有限公司（3413）；桂林市朗谷科技有限公司（3428）；中国核工业华兴建设有限公司（3613）；广东派捷智能装备有限公司（3995）；中国核工业第五建设有限公司（4504）；亚波光子（深圳）科技有限公司（5427）；苏州迈时光电股份有限公司（5506）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n嵌入式软件工程师（95分，桂林风得控科技有限公司 / 3406）\nFPGA软件 工程师（95分，桂林星云电子科技有限公司 / 3413）\n硬件工程师（75分，桂林星云电子科技有限公司 / 3413）\nPCB助理工程师（75分，桂林市朗谷科技有限公司 / 3428）\n硬件研发类（功能板卡·仪器开发）（75分，广东派捷智能装备有限公司 / 3995）\n技术支持工程师（65分，桂林星云电子科技有限公司 / 3413）\n系统控制软件工程师（50分，桂林星云电子科技有限公司 / 3413）\n数字控制器软件工程师（50分，桂林星云电子科技有限公司 / 3413）\n电子电路工程师（50分，亚波光子（深圳）科技有限公司 / 5427）\n软件研发类（测试软件·程序开发维护）（25分，广东派捷智能装备有限公司 / 3995）\n工程技术类岗位（0分，中国核工业第五建设有限公司 / 4504）\nQT系统软件工程师（0分，桂林星云电子科技有限公司 / 3413）\n结构设计 工程师（0分，桂林星云电子科技有限公司 / 3413）\n机电工程师（0分，桂林星云电子科技有限公司 / 3413）\n工艺工程师（0分，桂林星云电子科技有限公司 / 3413）\n检验工程师（0分，桂林星云电子科技有限公司 / 3413）\n材料检测技术（0分，中国核工业华兴建设有限公司 / 3613）\n销售与应用工程师（0分，亚波光子（深圳）科技有限公司 / 5427）\n会计（0分，亚波光子（深圳）科技有限公司 / 5427）\n综合管理岗（0分，广东派捷智能装备有限公司 / 3995）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=710\n\n招聘会 ID：710\n地点：南校区启天楼B座小广场\n数据类型：school_api\n参会企业：桂林风得控科技有限公司（3406）；桂林星云电子科技有限公司（3413）；桂林市朗谷科技有限公司（3428）；中国核工业华兴建设有限公司（3613）；广东派捷智能装备有限公司（3995）；中国核工业第五建设有限公司（4504）；亚波光子（深圳）科技有限公司（5427）；苏州迈时光电股份有限公司（5506）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n嵌入式软件工程师（95分，桂林风得控科技有限公司 / 3406）\nFPGA软件 工程师（95分，桂林星云电子科技有限公司 / 3413）\n硬件工程师（75分，桂林星云电子科技有限公司 / 3413）\nPCB助理工程师（75分，桂林市朗谷科技有限公司 / 3428）\n硬件研发类（功能板卡·仪器开发）（75分，广东派捷智能装备有限公司 / 3995）\n技术支持工程师（65分，桂林星云电子科技有限公司 / 3413）\n系统控制软件工程师（50分，桂林星云电子科技有限公司 / 3413）\n数字控制器软件工程师（50分，桂林星云电子科技有限公司 / 3413）\n电子电路工程师（50分，亚波光子（深圳）科技有限公司 / 5427）\n软件研发类（测试软件·程序开发维护）（25分，广东派捷智能装备有限公司 / 3995）\n工程技术类岗位（0分，中国核工业第五建设有限公司 / 4504）\nQT系统软件工程师（0分，桂林星云电子科技有限公司 / 3413）\n结构设计 工程师（0分，桂林星云电子科技有限公司 / 3413）\n机电工程师（0分，桂林星云电子科技有限公司 / 3413）\n工艺工程师（0分，桂林星云电子科技有限公司 / 3413）\n检验工程师（0分，桂林星云电子科技有限公司 / 3413）\n材料检测技术（0分，中国核工业华兴建设有限公司 / 3613）\n销售与应用工程师（0分，亚波光子（深圳）科技有限公司 / 5427）\n会计（0分，亚波光子（深圳）科技有限公司 / 5427）\n综合管理岗（0分，广东派捷智能装备有限公司 / 3995）"
       },
-      "hash": "9ee90278f6cb473f998997ab5ca1d21ac763d66f1ff1a5d80cc98980925a616e",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "4a31a03ded50c869b02392c8800f0fa40e288afc6e27d6a9c783c5ceabe9917c",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "717": {
       "fair": {
@@ -491,7 +491,7 @@
         "start_time": "2026-10-16T15:00:00+08:00",
         "end_time": "2026-10-16T18:00:00+08:00",
         "location": "南校区飞天楼213",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=717",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -499,11 +499,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：717\n地点：南校区飞天楼213\n数据类型：school_api\n参会企业：桂林东衡光通讯技术有限公司（4416）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n质量管理储干（0分，桂林东衡光通讯技术有限公司 / 4416）\n生产储备干部（0分，桂林东衡光通讯技术有限公司 / 4416）\n工艺储备干部（0分，桂林东衡光通讯技术有限公司 / 4416）\n技术支持储备干部（0分，桂林东衡光通讯技术有限公司 / 4416）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=717\n\n招聘会 ID：717\n地点：南校区飞天楼213\n数据类型：school_api\n参会企业：桂林东衡光通讯技术有限公司（4416）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n质量管理储干（0分，桂林东衡光通讯技术有限公司 / 4416）\n生产储备干部（0分，桂林东衡光通讯技术有限公司 / 4416）\n工艺储备干部（0分，桂林东衡光通讯技术有限公司 / 4416）\n技术支持储备干部（0分，桂林东衡光通讯技术有限公司 / 4416）"
       },
-      "hash": "ace1c45c8b1338a64b82ace822c76f8b859d9340987a33fcdf6723931d66d7c2",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "3da1aee0ab800617b585c88bc0d042b5a323dbf716207f01260930eb8401ff8a",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "682": {
       "fair": {
@@ -512,7 +512,7 @@
         "start_time": "2026-10-16T19:00:00+08:00",
         "end_time": "2026-10-16T21:00:00+08:00",
         "location": "南校区飞天楼208",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=682",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -520,11 +520,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：682\n地点：南校区飞天楼208\n数据类型：school_api\n参会企业：深圳市杰普特光电股份有限公司（4060）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n校园大使（0分，深圳市杰普特光电股份有限公司 / 4060）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=682\n\n招聘会 ID：682\n地点：南校区飞天楼208\n数据类型：school_api\n参会企业：深圳市杰普特光电股份有限公司（4060）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n校园大使（0分，深圳市杰普特光电股份有限公司 / 4060）"
       },
-      "hash": "aa8b1b0f691475566380c5ba8c14a563f522f1d59c916fb6c99692264ec442d4",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "830c05b8754842ab0b015689c453e4f72bfdae1f4dfc50d868feccb8c333db42",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "666": {
       "fair": {
@@ -533,7 +533,7 @@
         "start_time": "2026-10-17T09:00:00+08:00",
         "end_time": "2026-10-17T18:00:00+08:00",
         "location": "南校区田径场",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=666",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -542,11 +542,11 @@
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。",
           "企业与岗位明细为已取得的公开部分，未收齐；不代表全部参会企业和岗位。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：666\n地点：南校区田径场\n数据类型：school_api\n参会企业：广东中泰工业科技股份有限公司（3375）；迅得机械（东莞）有限公司（3378）；桂林力源粮油食品集团有限公司（3385）；桂林风得控科技有限公司（3406）；广州青木电子商务有限公司桂林分公司（3411）；安美微客（上海）互联网科技有限公司桂林分公司（3430）；东莞市欧蒙家居用品有限公司（3503）；桂林福达股份有限公司（3518）；佛山冰火电子商务有限公司（3526）；广东保伦电子股份有限公司（3600）；深圳市崧盛电子股份有限公司（3606）；桂林深科技有限公司（3631）；深圳市兆兴博拓科技股份有限公司（3644）；广西桂林志公教育咨询有限公司（3664）；广东海大集团股份有限公司（广西大区）（3674）；宁波中嘉科贸有限公司（3696）；东莞市天辉五金制品有限公司（3723）；广西顺丰速运有限公司（3750）；广西桂康新材料有限公司（3754）；深圳市鸿荣源物业服务有限公司（3761）；广东纳特康电子股份有限公司（3770）；广东壹号食品股份有限公司（3794）；成都黑天鹅餐饮管理有限公司新希望路分店（3856）；桂林市桂海旅游开发有限公司（3998）；华图教育科技有限公司桂林分公司（4131）；广西京东信成供应链科技有限公司（4146）；龙涛供应链管理（广州）有限公司（4165）；华安财产保险股份有限公司广西分公司（4288）；海目星激光科技集团股份有限公司（4390）；桂林东衡光通讯技术有限公司（4416）；广东开尔文智能科技有限公司（4429）；广西愿腾汽车销售服务有限责任公司（4430）；鹏城通达（深圳）交通轨道有限公司（4435）；东莞市万科酒店管理有限公司（4477）；桂林腾亿传媒有限公司（4484）；广东力科新能源股份有限公司（4490）；中国太平洋财产保险股份有限公司广西分公司（4622）；安徽星河动力装备科技有限公司（4715）；深圳大中华喜来登酒店有限公司（5179）；广西桂林市勤学教育咨询有限公司（5241）；爱柯迪股份有限公司（5244）；方盛车桥（柳州）有限公司（5296）；广西桂路通新能源汽车销售有限公司（5311）；云伍航空装备（河北）有限公司（5353）；西安摩尔石油工程实验室股份有限公司（5356）；深圳绿威科技有限公司（5357）；深圳朗特智能控制股份有限公司（5358）；中科宇航（广州）装备工业有限公司（5359）；深圳壹连科技股份有限公司（5361）；广西漓源水产饲料有限公司（5364）\n企业摘要列出 50 家，共 71 家；完整列表见招聘报告。\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n企业与岗位明细为已取得的公开部分，未收齐；不代表全部参会企业和岗位。\n公开岗位（匹配分数优先）：\n嵌入式软件工程师（95分，桂林风得控科技有限公司 / 3406）\n硬件工程师（95分，深圳绿威科技有限公司 / 5357）\nNPI工程师（实习）（75分，深圳市崧盛电子股份有限公司 / 3606）\n嵌入式软件工程师（75分，江苏意优机器人科技有限公司 / 5503）\n电气工程师（65分，广东开尔文智能科技有限公司 / 4429）\n电气工程师/PLC编程人员（65分，迅得机械（东莞）有限公司 / 3378）\n电气工程岗（65分，广西漓源水产饲料有限公司 / 5364）\n电气工程岗（65分，桂林力源粮油食品集团有限公司 / 3385）\n研发储干（50分，广东保伦电子股份有限公司 / 3600）\n电源工程师（深圳/中山）（50分，深圳市崧盛电子股份有限公司 / 3606）\n软件开发工程师（50分，深圳市崧盛电子股份有限公司 / 3606）\n量产维护工程师（实习）（50分，深圳市崧盛电子股份有限公司 / 3606）\nPBC工程师（实习）（50分，深圳市崧盛电子股份有限公司 / 3606）\n电气工程师（45分，拉普拉斯（无锡）半导体科技有限公司 / 5497）\n研发验证工程师（25分，宁波中嘉科贸有限公司 / 3696）\n显示器验证 工程师（25分，宁波中嘉科贸有限公司 / 3696）\n外贸业务员（0分，广东纳特康电子股份有限公司 / 3770）\n内贸业务员（0分，广东纳特康电子股份有限公司 / 3770）\n研发工程师（0分，广东中泰工业科技股份有限公司 / 3375）\n销售工程师（0分，广东保伦电子股份有限公司 / 3600）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=666\n\n招聘会 ID：666\n地点：南校区田径场\n数据类型：school_api\n参会企业：广东中泰工业科技股份有限公司（3375）；迅得机械（东莞）有限公司（3378）；桂林力源粮油食品集团有限公司（3385）；桂林风得控科技有限公司（3406）；广州青木电子商务有限公司桂林分公司（3411）；安美微客（上海）互联网科技有限公司桂林分公司（3430）；东莞市欧蒙家居用品有限公司（3503）；桂林福达股份有限公司（3518）；佛山冰火电子商务有限公司（3526）；广东保伦电子股份有限公司（3600）；深圳市崧盛电子股份有限公司（3606）；桂林深科技有限公司（3631）；深圳市兆兴博拓科技股份有限公司（3644）；广西桂林志公教育咨询有限公司（3664）；广东海大集团股份有限公司（广西大区）（3674）；宁波中嘉科贸有限公司（3696）；东莞市天辉五金制品有限公司（3723）；广西顺丰速运有限公司（3750）；广西桂康新材料有限公司（3754）；深圳市鸿荣源物业服务有限公司（3761）；广东纳特康电子股份有限公司（3770）；广东壹号食品股份有限公司（3794）；成都黑天鹅餐饮管理有限公司新希望路分店（3856）；桂林市桂海旅游开发有限公司（3998）；华图教育科技有限公司桂林分公司（4131）；广西京东信成供应链科技有限公司（4146）；龙涛供应链管理（广州）有限公司（4165）；华安财产保险股份有限公司广西分公司（4288）；海目星激光科技集团股份有限公司（4390）；桂林东衡光通讯技术有限公司（4416）；广东开尔文智能科技有限公司（4429）；广西愿腾汽车销售服务有限责任公司（4430）；鹏城通达（深圳）交通轨道有限公司（4435）；东莞市万科酒店管理有限公司（4477）；桂林腾亿传媒有限公司（4484）；广东力科新能源股份有限公司（4490）；中国太平洋财产保险股份有限公司广西分公司（4622）；安徽星河动力装备科技有限公司（4715）；深圳大中华喜来登酒店有限公司（5179）；广西桂林市勤学教育咨询有限公司（5241）；爱柯迪股份有限公司（5244）；方盛车桥（柳州）有限公司（5296）；广西桂路通新能源汽车销售有限公司（5311）；云伍航空装备（河北）有限公司（5353）；西安摩尔石油工程实验室股份有限公司（5356）；深圳绿威科技有限公司（5357）；深圳朗特智能控制股份有限公司（5358）；中科宇航（广州）装备工业有限公司（5359）；深圳壹连科技股份有限公司（5361）；广西漓源水产饲料有限公司（5364）\n企业摘要列出 50 家，共 71 家；完整列表见招聘报告。\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n企业与岗位明细为已取得的公开部分，未收齐；不代表全部参会企业和岗位。\n公开岗位（匹配分数优先）：\n嵌入式软件工程师（95分，桂林风得控科技有限公司 / 3406）\n硬件工程师（95分，深圳绿威科技有限公司 / 5357）\nNPI工程师（实习）（75分，深圳市崧盛电子股份有限公司 / 3606）\n嵌入式软件工程师（75分，江苏意优机器人科技有限公司 / 5503）\n电气工程师（65分，广东开尔文智能科技有限公司 / 4429）\n电气工程师/PLC编程人员（65分，迅得机械（东莞）有限公司 / 3378）\n电气工程岗（65分，广西漓源水产饲料有限公司 / 5364）\n电气工程岗（65分，桂林力源粮油食品集团有限公司 / 3385）\n研发储干（50分，广东保伦电子股份有限公司 / 3600）\n电源工程师（深圳/中山）（50分，深圳市崧盛电子股份有限公司 / 3606）\n软件开发工程师（50分，深圳市崧盛电子股份有限公司 / 3606）\n量产维护工程师（实习）（50分，深圳市崧盛电子股份有限公司 / 3606）\nPBC工程师（实习）（50分，深圳市崧盛电子股份有限公司 / 3606）\n电气工程师（45分，拉普拉斯（无锡）半导体科技有限公司 / 5497）\n研发验证工程师（25分，宁波中嘉科贸有限公司 / 3696）\n显示器验证 工程师（25分，宁波中嘉科贸有限公司 / 3696）\n外贸业务员（0分，广东纳特康电子股份有限公司 / 3770）\n内贸业务员（0分，广东纳特康电子股份有限公司 / 3770）\n研发工程师（0分，广东中泰工业科技股份有限公司 / 3375）\n销售工程师（0分，广东保伦电子股份有限公司 / 3600）"
       },
-      "hash": "7e47b68ec164811daf6086f91816628d7ddda35cd8e9db242a83d08825686015",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "09bacd768a7fdfa5c0ba013a486a9060a90989a37266de325d00277248a90712",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "690": {
       "fair": {
@@ -555,7 +555,7 @@
         "start_time": "2026-10-17T15:00:00+08:00",
         "end_time": "2026-10-17T18:00:00+08:00",
         "location": "南校区飞天楼204",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=690",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -563,11 +563,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：690\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：爱柯迪股份有限公司（5244）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n加工工艺工程师（0分，爱柯迪股份有限公司 / 5244）\n压铸工艺工程师（0分，爱柯迪股份有限公司 / 5244）\n项目工程师（0分，爱柯迪股份有限公司 / 5244）\n质量工程师（0分，爱柯迪股份有限公司 / 5244）\n物控工程师（0分，爱柯迪股份有限公司 / 5244）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=690\n\n招聘会 ID：690\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：爱柯迪股份有限公司（5244）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n加工工艺工程师（0分，爱柯迪股份有限公司 / 5244）\n压铸工艺工程师（0分，爱柯迪股份有限公司 / 5244）\n项目工程师（0分，爱柯迪股份有限公司 / 5244）\n质量工程师（0分，爱柯迪股份有限公司 / 5244）\n物控工程师（0分，爱柯迪股份有限公司 / 5244）"
       },
-      "hash": "5ea44a46897a7654b803930994c96d83f347d1d531d37b8f7fc1b988cc64ac24",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "df6f4da0522177eaa35fdba894b13aa91d84d2aa7651215b8bb3a9ed7905b870",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "705": {
       "fair": {
@@ -576,7 +576,7 @@
         "start_time": "2026-10-17T15:00:00+08:00",
         "end_time": "2026-10-17T18:00:00+08:00",
         "location": "南校区飞天楼207",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=705",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -584,11 +584,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：705\n地点：南校区飞天楼207\n数据类型：school_api\n参会企业：桂林力源粮油食品集团有限公司（3385）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电气工程岗（65分，桂林力源粮油食品集团有限公司 / 3385）\n设备管理岗（0分，桂林力源粮油食品集团有限公司 / 3385）\n生产管理储备岗（0分，桂林力源粮油食品集团有限公司 / 3385）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=705\n\n招聘会 ID：705\n地点：南校区飞天楼207\n数据类型：school_api\n参会企业：桂林力源粮油食品集团有限公司（3385）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电气工程岗（65分，桂林力源粮油食品集团有限公司 / 3385）\n设备管理岗（0分，桂林力源粮油食品集团有限公司 / 3385）\n生产管理储备岗（0分，桂林力源粮油食品集团有限公司 / 3385）"
       },
-      "hash": "e020e55026be323c4273f8d9ffc3adc0352da7733beb410040cac9a0a809089c",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "dfcf9f8746a766cf4429708a40252de7d558ef7f6f4186966ec1ebaa62c07c94",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "719": {
       "fair": {
@@ -597,7 +597,7 @@
         "start_time": "2026-10-17T15:00:00+08:00",
         "end_time": "2026-10-17T18:00:00+08:00",
         "location": "南校区飞天楼212",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=719",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -605,11 +605,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：719\n地点：南校区飞天楼212\n数据类型：school_api\n参会企业：东莞市硅翔绝缘材料有限公司（3801）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n嵌入式软件工程师（75分，东莞市硅翔绝缘材料有限公司 / 3801）\n嵌入式软件工程师（75分，东莞市硅翔绝缘材料有限公司 / 3801）\n自动化工程师（65分，东莞市硅翔绝缘材料有限公司 / 3801）\n电气工程师（65分，东莞市硅翔绝缘材料有限公司 / 3801）\n品质/SQE工程师（0分，东莞市硅翔绝缘材料有限公司 / 3801）\nIE/工艺工程师（0分，东莞市硅翔绝缘材料有限公司 / 3801）\nSMT工程师（0分，东莞市硅翔绝缘材料有限公司 / 3801）\nPIE工程师（0分，东莞市硅翔绝缘材料有限公司 / 3801）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=719\n\n招聘会 ID：719\n地点：南校区飞天楼212\n数据类型：school_api\n参会企业：东莞市硅翔绝缘材料有限公司（3801）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n嵌入式软件工程师（75分，东莞市硅翔绝缘材料有限公司 / 3801）\n嵌入式软件工程师（75分，东莞市硅翔绝缘材料有限公司 / 3801）\n自动化工程师（65分，东莞市硅翔绝缘材料有限公司 / 3801）\n电气工程师（65分，东莞市硅翔绝缘材料有限公司 / 3801）\n品质/SQE工程师（0分，东莞市硅翔绝缘材料有限公司 / 3801）\nIE/工艺工程师（0分，东莞市硅翔绝缘材料有限公司 / 3801）\nSMT工程师（0分，东莞市硅翔绝缘材料有限公司 / 3801）\nPIE工程师（0分，东莞市硅翔绝缘材料有限公司 / 3801）"
       },
-      "hash": "ffc1725f74ba252a1f64359151fc018fd5fb6a66d6c50326c02acbea771c622d",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "715c2c857b083b749084d7d98ba72f5f22473539062f13328e504f2188072150",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "724": {
       "fair": {
@@ -618,7 +618,7 @@
         "start_time": "2026-10-17T15:00:00+08:00",
         "end_time": "2026-10-17T18:00:00+08:00",
         "location": "南校区飞天楼203",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=724",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -626,11 +626,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：724\n地点：南校区飞天楼203\n数据类型：school_api\n参会企业：双胞胎（集团）股份有限公司（3907）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n饲料生产储备干部（0分，双胞胎（集团）股份有限公司 / 3907）\n机电工程师（0分，双胞胎（集团）股份有限公司 / 3907）\n饲料生产技术岗（0分，双胞胎（集团）股份有限公司 / 3907）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=724\n\n招聘会 ID：724\n地点：南校区飞天楼203\n数据类型：school_api\n参会企业：双胞胎（集团）股份有限公司（3907）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n饲料生产储备干部（0分，双胞胎（集团）股份有限公司 / 3907）\n机电工程师（0分，双胞胎（集团）股份有限公司 / 3907）\n饲料生产技术岗（0分，双胞胎（集团）股份有限公司 / 3907）"
       },
-      "hash": "826fa7fd70a9fd773746fa51505adba8f83f2c82f0dd0a53f2fbebb37b391792",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "18fd174228e9e2ffbfa455db814086478a6b04b3ddb6a9ebf5b4d4589131653e",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "694": {
       "fair": {
@@ -639,7 +639,7 @@
         "start_time": "2026-10-19T15:00:00+08:00",
         "end_time": "2026-10-19T18:00:00+08:00",
         "location": "南校区飞天楼207",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=694",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -647,11 +647,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：694\n地点：南校区飞天楼207\n数据类型：school_api\n参会企业：深圳市星特科技有限公司（4027）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n机械助理工程师（0分，深圳市星特科技有限公司 / 4027）\n电气助理工程师（0分，深圳市星特科技有限公司 / 4027）\n视觉助理工程师（0分，深圳市星特科技有限公司 / 4027）\n项目助理工程师（0分，深圳市星特科技有限公司 / 4027）\n外贸专员（0分，深圳市星特科技有限公司 / 4027）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=694\n\n招聘会 ID：694\n地点：南校区飞天楼207\n数据类型：school_api\n参会企业：深圳市星特科技有限公司（4027）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n机械助理工程师（0分，深圳市星特科技有限公司 / 4027）\n电气助理工程师（0分，深圳市星特科技有限公司 / 4027）\n视觉助理工程师（0分，深圳市星特科技有限公司 / 4027）\n项目助理工程师（0分，深圳市星特科技有限公司 / 4027）\n外贸专员（0分，深圳市星特科技有限公司 / 4027）"
       },
-      "hash": "782d18f756358cbfc73124c10d7c7117f52b3cb2ca327553d7721a74eacb3048",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "8b4fa8f7756ff5a92e5ac93b5bd7713dc77c0d1d9f2392e08fed4fb3a3fefe0f",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "703": {
       "fair": {
@@ -660,7 +660,7 @@
         "start_time": "2026-10-19T15:00:00+08:00",
         "end_time": "2026-10-19T18:00:00+08:00",
         "location": "南校区飞天楼206",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=703",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -668,11 +668,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：703\n地点：南校区飞天楼206\n数据类型：school_api\n参会企业：熵基科技股份有限公司（3740）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n海外技术支持工程师（全球技术服务管培生）（65分，熵基科技股份有限公司 / 3740）\n海外销售工程师（全球营销管培生）（0分，熵基科技股份有限公司 / 3740）\n产品专员（0分，熵基科技股份有限公司 / 3740）\n国际商务代表/订单员（0分，熵基科技股份有限公司 / 3740）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=703\n\n招聘会 ID：703\n地点：南校区飞天楼206\n数据类型：school_api\n参会企业：熵基科技股份有限公司（3740）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n海外技术支持工程师（全球技术服务管培生）（65分，熵基科技股份有限公司 / 3740）\n海外销售工程师（全球营销管培生）（0分，熵基科技股份有限公司 / 3740）\n产品专员（0分，熵基科技股份有限公司 / 3740）\n国际商务代表/订单员（0分，熵基科技股份有限公司 / 3740）"
       },
-      "hash": "0c3d5e45e962cbb2c654554af8327a279d5bd3194758f1d74aefe1f039c3f58d",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "2d040ef026d7e6e0980bd4a8b413b548ccc4fd38193162a92a5823faac9e15f8",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "701": {
       "fair": {
@@ -681,7 +681,7 @@
         "start_time": "2026-10-20T15:00:00+08:00",
         "end_time": "2026-10-20T18:00:00+08:00",
         "location": "北校区明志楼323",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=701",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -689,11 +689,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：701\n地点：北校区明志楼323\n数据类型：school_api\n参会企业：中国电建集团山东电力建设第一工程有限公司（4491）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n热动工程师（0分，中国电建集团山东电力建设第一工程有限公司 / 4491）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=701\n\n招聘会 ID：701\n地点：北校区明志楼323\n数据类型：school_api\n参会企业：中国电建集团山东电力建设第一工程有限公司（4491）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n热动工程师（0分，中国电建集团山东电力建设第一工程有限公司 / 4491）"
       },
-      "hash": "b7cee38b394d5084d49ac80f57db4c409c4de4c185b8b034f4b6dfcc0c5077cb",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "ec7b7fd059e4a55c5a634c041bd7a83cb524a06312c95d08b0b2dd9dd21b3766",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "686": {
       "fair": {
@@ -702,7 +702,7 @@
         "start_time": "2026-10-20T19:00:00+08:00",
         "end_time": "2026-10-20T21:00:00+08:00",
         "location": "南校区飞天楼204",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=686",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -710,11 +710,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：686\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：海目星激光科技集团股份有限公司（4390）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n海目星27届校招生（0分，海目星激光科技集团股份有限公司 / 4390）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=686\n\n招聘会 ID：686\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：海目星激光科技集团股份有限公司（4390）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n海目星27届校招生（0分，海目星激光科技集团股份有限公司 / 4390）"
       },
-      "hash": "1120699b341e5f176fae115c59e99a3da2b9709c4070060dc23fff376d5b4926",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "9a0270cbfce989d97d1da7ea33b9e94d95f00393d1027495220cd3578a06db41",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "691": {
       "fair": {
@@ -723,7 +723,7 @@
         "start_time": "2026-10-22T15:00:00+08:00",
         "end_time": "2026-10-22T18:00:00+08:00",
         "location": "南校区飞天楼204",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=691",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -731,11 +731,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：691\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：苏州赛腾精密电子股份有限公司（4381）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电气工程师（65分，苏州赛腾精密电子股份有限公司 / 4381）\n机械工程师（0分，苏州赛腾精密电子股份有限公司 / 4381）\n软件工程师（0分，苏州赛腾精密电子股份有限公司 / 4381）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=691\n\n招聘会 ID：691\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：苏州赛腾精密电子股份有限公司（4381）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电气工程师（65分，苏州赛腾精密电子股份有限公司 / 4381）\n机械工程师（0分，苏州赛腾精密电子股份有限公司 / 4381）\n软件工程师（0分，苏州赛腾精密电子股份有限公司 / 4381）"
       },
-      "hash": "ec29dd83af73aa648df5831645da2dab20f0e1e82e75fe69394a3132efeed1d8",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "f52b80600166a23c4976558bb5f693876353b325a18882c65081c3d136a0c025",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "718": {
       "fair": {
@@ -744,7 +744,7 @@
         "start_time": "2026-10-22T15:00:00+08:00",
         "end_time": "2026-10-22T18:00:00+08:00",
         "location": "南校区飞天楼107",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=718",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -752,11 +752,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：718\n地点：南校区飞天楼107\n数据类型：school_api\n参会企业：燕京啤酒（桂林漓泉）股份有限公司（3432）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n营销管培生（0分，燕京啤酒（桂林漓泉）股份有限公司 / 3432）\n倒班班长储备（0分，燕京啤酒（桂林漓泉）股份有限公司 / 3432）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=718\n\n招聘会 ID：718\n地点：南校区飞天楼107\n数据类型：school_api\n参会企业：燕京啤酒（桂林漓泉）股份有限公司（3432）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n营销管培生（0分，燕京啤酒（桂林漓泉）股份有限公司 / 3432）\n倒班班长储备（0分，燕京啤酒（桂林漓泉）股份有限公司 / 3432）"
       },
-      "hash": "deefcf79fcb5025283959f71f1fe586249b149fdb90c6a49d926e534065b3f19",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "b69c7b28749254d44e5a092d37de07410d09e3a27fd05420d288c03728e4661a",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "725": {
       "fair": {
@@ -765,7 +765,7 @@
         "start_time": "2026-10-23T09:00:00+08:00",
         "end_time": "2026-10-23T13:00:00+08:00",
         "location": "北校区青春广场",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=725",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -773,11 +773,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：725\n地点：北校区青春广场\n数据类型：school_api\n参会企业：未确认\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n暂无已确认匹配岗位"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=725\n\n招聘会 ID：725\n地点：北校区青春广场\n数据类型：school_api\n参会企业：未确认\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n暂无已确认匹配岗位"
       },
-      "hash": "e276f8b0c8b573578016828df3dc48b0253503a4a19a65ff42e904fc30fefbe4",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "77485410a3bdc054f1fe9bf28d2f4af333152e475cdc72397382260ca2b4457e",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "681": {
       "fair": {
@@ -786,7 +786,7 @@
         "start_time": "2026-10-23T10:00:00+08:00",
         "end_time": "2026-10-23T12:00:00+08:00",
         "location": "南校区飞天楼212",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=681",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -794,11 +794,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：681\n地点：南校区飞天楼212\n数据类型：school_api\n参会企业：深圳壹连科技股份有限公司（5361）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n设备技术类（0分，深圳壹连科技股份有限公司 / 5361）\nIT（0分，深圳壹连科技股份有限公司 / 5361）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=681\n\n招聘会 ID：681\n地点：南校区飞天楼212\n数据类型：school_api\n参会企业：深圳壹连科技股份有限公司（5361）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n设备技术类（0分，深圳壹连科技股份有限公司 / 5361）\nIT（0分，深圳壹连科技股份有限公司 / 5361）"
       },
-      "hash": "3567fb18718dde9a342c7adcc797c23847c10edd47cb5066dd08639360864d16",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "10fac01def067d2e8b4214ffdf79bd9bd83ec2374e809c406392918154d06259",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "696": {
       "fair": {
@@ -807,7 +807,7 @@
         "start_time": "2026-10-23T15:00:00+08:00",
         "end_time": "2026-10-23T18:00:00+08:00",
         "location": "南校区探天楼A410",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=696",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -815,11 +815,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：696\n地点：南校区探天楼A410\n数据类型：school_api\n参会企业：东莞市科翰教育科技有限公司（5379）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n教育咨询师（0分，东莞市科翰教育科技有限公司 / 5379）\n语文班课老师（0分，东莞市科翰教育科技有限公司 / 5379）\n数学班课老师（0分，东莞市科翰教育科技有限公司 / 5379）\n英语班课老师（0分，东莞市科翰教育科技有限公司 / 5379）\n初中理化班课老师（0分，东莞市科翰教育科技有限公司 / 5379）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=696\n\n招聘会 ID：696\n地点：南校区探天楼A410\n数据类型：school_api\n参会企业：东莞市科翰教育科技有限公司（5379）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n教育咨询师（0分，东莞市科翰教育科技有限公司 / 5379）\n语文班课老师（0分，东莞市科翰教育科技有限公司 / 5379）\n数学班课老师（0分，东莞市科翰教育科技有限公司 / 5379）\n英语班课老师（0分，东莞市科翰教育科技有限公司 / 5379）\n初中理化班课老师（0分，东莞市科翰教育科技有限公司 / 5379）"
       },
-      "hash": "0f2102323b9760b8c87ff0a2173b23a5b5ec91d69f6b4b047737b5b3a9d8ce70",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "cabcd05801756c06f46f033a8dd446750d1b5d1b56ed4cc3fbfccbe7db721dc3",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "679": {
       "fair": {
@@ -828,7 +828,7 @@
         "start_time": "2026-10-28T15:00:00+08:00",
         "end_time": "2026-10-28T18:00:00+08:00",
         "location": "南校区飞天楼110",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=679",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -836,11 +836,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：679\n地点：南校区飞天楼110\n数据类型：school_api\n参会企业：崇达技术股份有限公司（3394）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n技术/职能储备干部（0分，崇达技术股份有限公司 / 3394）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=679\n\n招聘会 ID：679\n地点：南校区飞天楼110\n数据类型：school_api\n参会企业：崇达技术股份有限公司（3394）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n技术/职能储备干部（0分，崇达技术股份有限公司 / 3394）"
       },
-      "hash": "8eb6ff1a79e060b13001535f2c517570306205d1cf421839090a46adbfb2bee0",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "55446621e225e0de3b733eac6eb3a6facde395a5915fea10d2052e1caceee5d7",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "700": {
       "fair": {
@@ -849,7 +849,7 @@
         "start_time": "2026-10-28T15:00:00+08:00",
         "end_time": "2026-10-28T18:00:00+08:00",
         "location": "南校区飞天楼204",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=700",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -857,11 +857,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：700\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：东莞泰合复合材料有限公司（3588）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n质量工程师（0分，东莞泰合复合材料有限公司 / 3588）\n研发工程师（0分，东莞泰合复合材料有限公司 / 3588）\n生产组长（或技术员）（0分，东莞泰合复合材料有限公司 / 3588）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=700\n\n招聘会 ID：700\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：东莞泰合复合材料有限公司（3588）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n质量工程师（0分，东莞泰合复合材料有限公司 / 3588）\n研发工程师（0分，东莞泰合复合材料有限公司 / 3588）\n生产组长（或技术员）（0分，东莞泰合复合材料有限公司 / 3588）"
       },
-      "hash": "d70e074275242c9c3abc479412168fc6ebe4ecb23f0883705d789e97838a5e10",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "76b24d4117c99c8953c0eb26c4808b83d0d54a632f164aa32b054ad13ee5ed2a",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "728": {
       "fair": {
@@ -870,7 +870,7 @@
         "start_time": "2026-10-29T10:00:00+08:00",
         "end_time": "2026-10-29T12:00:00+08:00",
         "location": "南校区飞天楼207",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=728",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -878,11 +878,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：728\n地点：南校区飞天楼207\n数据类型：school_api\n参会企业：信泰光学（深圳）有限公司（4510）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n机械工程师（0分，信泰光学（深圳）有限公司 / 4510）\n研发工程师（0分，信泰光学（深圳）有限公司 / 4510）\n模具设计师（0分，信泰光学（深圳）有限公司 / 4510）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=728\n\n招聘会 ID：728\n地点：南校区飞天楼207\n数据类型：school_api\n参会企业：信泰光学（深圳）有限公司（4510）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n机械工程师（0分，信泰光学（深圳）有限公司 / 4510）\n研发工程师（0分，信泰光学（深圳）有限公司 / 4510）\n模具设计师（0分，信泰光学（深圳）有限公司 / 4510）"
       },
-      "hash": "afdfcf9a0569730f3eb81a9998971339c8b34e1aa97dfc865de6754f1c6dec8d",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "1dc951e64d4b994e38831b7ca39175b571ff1502fe6ee4f1f2bae857526a7d1b",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "726": {
       "fair": {
@@ -891,7 +891,7 @@
         "start_time": "2026-10-29T15:00:00+08:00",
         "end_time": "2026-10-29T18:00:00+08:00",
         "location": "南校区飞天楼204",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=726",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -899,11 +899,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：726\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：讯强电子（惠州）有限公司（5426）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n生产技术员（0分，讯强电子（惠州）有限公司 / 5426）\nPD技术员（0分，讯强电子（惠州）有限公司 / 5426）\n自动化技术员（0分，讯强电子（惠州）有限公司 / 5426）\nIE技术员（0分，讯强电子（惠州）有限公司 / 5426）\nPQE技术员（0分，讯强电子（惠州）有限公司 / 5426）\nIT技术员（0分，讯强电子（惠州）有限公司 / 5426）\nNPI技术员（0分，讯强电子（惠州）有限公司 / 5426）\n制造组长（0分，讯强电子（惠州）有限公司 / 5426）\n设备技术员（0分，讯强电子（惠州）有限公司 / 5426）\n品质技术员（0分，讯强电子（惠州）有限公司 / 5426）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=726\n\n招聘会 ID：726\n地点：南校区飞天楼204\n数据类型：school_api\n参会企业：讯强电子（惠州）有限公司（5426）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n生产技术员（0分，讯强电子（惠州）有限公司 / 5426）\nPD技术员（0分，讯强电子（惠州）有限公司 / 5426）\n自动化技术员（0分，讯强电子（惠州）有限公司 / 5426）\nIE技术员（0分，讯强电子（惠州）有限公司 / 5426）\nPQE技术员（0分，讯强电子（惠州）有限公司 / 5426）\nIT技术员（0分，讯强电子（惠州）有限公司 / 5426）\nNPI技术员（0分，讯强电子（惠州）有限公司 / 5426）\n制造组长（0分，讯强电子（惠州）有限公司 / 5426）\n设备技术员（0分，讯强电子（惠州）有限公司 / 5426）\n品质技术员（0分，讯强电子（惠州）有限公司 / 5426）"
       },
-      "hash": "4788a836fa5cec4eac142be8bdd807a93c66ca5cb58ce4186954c4b3a78ae635",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "78f2b016455381f197961c7c61b10ae70552e8f17d05b5caf7c1f7d850b76b2b",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "671": {
       "fair": {
@@ -912,7 +912,7 @@
         "start_time": "2026-11-03T15:00:00+08:00",
         "end_time": "2026-11-03T18:00:00+08:00",
         "location": "南校区探天楼B101",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=671",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -920,11 +920,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：671\n地点：南校区探天楼B101\n数据类型：school_api\n参会企业：鹏鼎控股(深圳)股份有限公司（3753）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n工程师（0分，鹏鼎控股(深圳)股份有限公司 / 3753）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=671\n\n招聘会 ID：671\n地点：南校区探天楼B101\n数据类型：school_api\n参会企业：鹏鼎控股(深圳)股份有限公司（3753）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n工程师（0分，鹏鼎控股(深圳)股份有限公司 / 3753）"
       },
-      "hash": "c72012e7674701d7ed9d156d377af70a28b56edb0dcf8485060e76ffe39b742c",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "fa626078f5f96ff808826d91758db11f0fd05bd5fc1bf0590d0c434c18526885",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "657": {
       "fair": {
@@ -933,7 +933,7 @@
         "start_time": "2026-11-03T19:00:00+08:00",
         "end_time": "2026-11-03T21:00:00+08:00",
         "location": "南校区探天楼B101",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=657",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -941,11 +941,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：657\n地点：南校区探天楼B101\n数据类型：school_api\n参会企业：北京三快在线科技有限公司（4356）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n门店管理储备岗（0分，北京三快在线科技有限公司 / 4356）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=657\n\n招聘会 ID：657\n地点：南校区探天楼B101\n数据类型：school_api\n参会企业：北京三快在线科技有限公司（4356）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n门店管理储备岗（0分，北京三快在线科技有限公司 / 4356）"
       },
-      "hash": "25e812f35356eaae7a54f16ba2fdf8daf57933339218ce33b551ef75b48c8f85",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "3b3d71915032ad0133feb2d91c5e65e00f4d0d83f9682235de3e0f5ea94882e5",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     },
     "704": {
       "fair": {
@@ -954,7 +954,7 @@
         "start_time": "2026-11-12T15:00:00+08:00",
         "end_time": "2026-11-12T18:00:00+08:00",
         "location": "南校区飞天楼211",
-        "source_url": "https://bysjyw.guat.edu.cn/jobfairSearch",
+        "source_url": "https://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=704",
         "status": "unknown",
         "status_verified": false,
         "provenance": "school_api",
@@ -962,11 +962,11 @@
           "活动时间来自学校公开接口，请以学校最新公告为准。",
           "取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。"
         ],
-        "calendar_description": "官网链接：https://bysjyw.guat.edu.cn/jobfairSearch\n招聘会 ID：704\n地点：南校区飞天楼211\n数据类型：school_api\n参会企业：江苏五洋自控技术股份有限公司（5368）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电气工程师（65分，江苏五洋自控技术股份有限公司 / 5368）\n营销管培生（0分，江苏五洋自控技术股份有限公司 / 5368）\n技术管培生（0分，江苏五洋自控技术股份有限公司 / 5368）\n助理工程师（0分，江苏五洋自控技术股份有限公司 / 5368）\n助理工程师（0分，江苏五洋自控技术股份有限公司 / 5368）\n业务储干（0分，江苏五洋自控技术股份有限公司 / 5368）\n机械液压工程师（0分，江苏五洋自控技术股份有限公司 / 5368）\n市场技术工程师（0分，江苏五洋自控技术股份有限公司 / 5368）\n采购助理（0分，江苏五洋自控技术股份有限公司 / 5368）"
+        "calendar_description": "官网链接：\nhttps://bysjyw.guat.edu.cn/m/pages/jobfair/jobfair-detail?jobFairId=704\n\n招聘会 ID：704\n地点：南校区飞天楼211\n数据类型：school_api\n参会企业：江苏五洋自控技术股份有限公司（5368）\n活动时间来自学校公开接口，请以学校最新公告为准。\n取消状态尚未核实，日历标为暂定，不依据列表缺失推断取消。\n公开岗位（匹配分数优先）：\n电气工程师（65分，江苏五洋自控技术股份有限公司 / 5368）\n营销管培生（0分，江苏五洋自控技术股份有限公司 / 5368）\n技术管培生（0分，江苏五洋自控技术股份有限公司 / 5368）\n助理工程师（0分，江苏五洋自控技术股份有限公司 / 5368）\n助理工程师（0分，江苏五洋自控技术股份有限公司 / 5368）\n业务储干（0分，江苏五洋自控技术股份有限公司 / 5368）\n机械液压工程师（0分，江苏五洋自控技术股份有限公司 / 5368）\n市场技术工程师（0分，江苏五洋自控技术股份有限公司 / 5368）\n采购助理（0分，江苏五洋自控技术股份有限公司 / 5368）"
       },
-      "hash": "e1f040d178ec6eadfdc3f00c7f0140f496d463cf5ab2a5e7479e71ab8bb7e902",
-      "revision": 0,
-      "updated_at": "2026-10-14T12:34:02+08:00"
+      "hash": "b632b74f30a76ca62270e8ba09ac26a44b431ec3b18d6e7e4fd4baf81b9bf4de",
+      "revision": 1,
+      "updated_at": "2026-10-14T18:06:29+08:00"
     }
   }
 }
