@@ -14,3 +14,7 @@
 ## 指定 Google Calendar 服务账号扩展
 
 服务账号优先认证、GOOGLE_CALENDAR_ID 单目标绑定、只读 accessRole 预检、哈希映射持久化/迁移、企业/岗位/地点/官网预览、1440/30 分钟提醒、独立授权与默认 dry-run 的定时工作流已实现。当前 223 项离线测试通过，保留原有 103 项；缺少凭据的完整 dry-run 已实际运行。GitHub 本次 push/PR CI 成功，Python 3.10/3.12 实际运行均为 223 passed，ruff 与离线格式校验通过。最新证据位于 evidence/service-account-calendar/。开发环境没有真实服务账号私钥，没有实际权限或写入验证；不输出或入库私钥，写入开关未开启，main 未合并。
+
+## 用户授权后的真实匿名采集（2026-10-14 11:38）
+
+用户明确要求执行采集后，在独立 preview/guat-live-20261014 分支触发 GitHub Actions 的真实匿名验证；没有修改云环境代理策略、合并 main 或开启日历写入。首次不带日期的列表请求 HTTP 400；补齐 calendarStartDate=2026-10-14 后仍为 HTTP 400，真实 JSON 为 `{"code":400,"msg":"请登录后再浏览","data":null}`。同一 runner 的 /index 返回 HTTP 200。因此本次已经取得学校服务器响应，当前匿名列表请求被要求登录。停止继续请求受限接口，不推断其他接口的权限或日期语义。真实招聘会/企业/岗位仍为 0，未来30天全量采集未完成。完整请求日志与响应样本保存在 [运行 38507244349](https://github.com/atct567-droid/Campus-Recruitment-Schedule/actions/runs/38507244349) 的 artifact；持久摘要见 [真实验证记录](evidence/live-2026-10-14-github/result.md)。
