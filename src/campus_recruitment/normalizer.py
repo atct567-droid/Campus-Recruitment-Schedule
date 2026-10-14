@@ -126,7 +126,7 @@ class Normalizer:
         return Fair(self.identifier(row, "fair", "job_fair_id"), **values,
                     start_time=start, end_time=end, start_date=day,
                     announcement_date=announced or announced_day,
-                    source_url=public_url(self.get(row, "fair", "source_url")),
+                    source_url=public_url(self.get(row, "fair", "source_url")) or public_url(self.config.get("source_page")),
                     status=status, status_verified=self.verified and status != "unknown",
                     last_checked_at=checked_at or now_iso(), provenance=self.provenance, issues=issues)
 
@@ -148,5 +148,5 @@ class Normalizer:
                         self.identifier(row, "position", "company_id"), fair_id,
                         clean_text(self.get(row, "position", "position_name")),
                         clean_text(self.get(row, "position", "requirements")), count,
-                        public_url(self.get(row, "position", "source_url")),
+                        public_url(self.get(row, "position", "source_url")) or public_url(self.config.get("source_page")),
                         last_checked_at=checked_at or now_iso(), provenance=self.provenance, issues=issues)
